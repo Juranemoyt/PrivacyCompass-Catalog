@@ -7,17 +7,27 @@
         "google-drive",
         "microsoft-onedrive"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "Background synchronization behavior depends on enabled backup/sync features; no comparable battery measurement published in checked sources",
       "battery": "Unknown.",
       "category": "Cloud storage",
       "description": "Cloud storage with end-to-end encrypted file content and metadata protections.",
       "developer": "Proton AG",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Proton describes Drive end-to-end encryption architecture.",
+          "claim": "Proton documents client-side/end-to-end encryption for Drive file contents and selected metadata.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Proton Drive security",
-          "url": "https://proton.me/drive/security",
-          "verified": "2026-09-21"
+          "source": "Proton Drive support",
+          "url": "https://proton.me/support/drive",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Proton lists Drive access for Android, iOS/iPadOS, Windows, macOS and web.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Proton Drive download page",
+          "url": "https://proton.me/drive/download",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -28,12 +38,15 @@
         "Offline files"
       ],
       "id": "proton-drive",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for cloud synchronization and remote file access; some downloaded files can be used offline",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires a Proton account",
         "Collaboration features differ from Google Workspace"
       ],
+      "minimumAndroid": "Not published",
       "name": "Proton Drive",
+      "networkActivity": "Network is required for cloud synchronization, upload/download, and sharing; previously downloaded offline files can remain locally accessible",
       "offline": true,
       "openSource": true,
       "packageName": "me.proton.android.drive",
@@ -46,8 +59,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=me.proton.android.drive",
       "pricing": "Free and paid plans; verify current official pricing",
+      "privacyDetails": {
+        "advertising": "Not documented as a core Drive use in the checked product documentation",
+        "analytics": "Not documented in the checked Drive product pages",
+        "collected": "Account and service metadata are separate from encrypted file content. Proton states that file contents and selected metadata such as filenames/folder names are encrypted on the device before upload.",
+        "controls": "Users control files, sharing, local/offline copies, and account storage; service-level privacy controls are documented separately.",
+        "deletion": "Cloud deletion and local copies are distinct; shared or exported copies can remain elsewhere.",
+        "encryption": "Proton states that Drive encrypts file contents, filenames, and folder names on the device before upload.",
+        "practicalImplications": "Client-side encryption reduces Proton's access to file contents and covered metadata, but account identifiers and operational metadata should not be assumed to be hidden.",
+        "purpose": "Provide encrypted cloud file storage, synchronization, sharing, and account operation.",
+        "recipients": "Proton infrastructure stores encrypted Drive data and necessary account/service metadata; user-chosen share recipients receive shared content according to sharing controls.",
+        "sale": "Not documented in the checked Drive product documentation",
+        "sharing": "File sharing is user-directed; links and shared access create intentional recipients.",
+        "tracking": "Not documented in the checked Drive product pages"
+      },
       "privacySummary": "Proton documents end-to-end encryption and publishes Android client source.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Proton Drive support and download documentation, checked 2026-09-22",
       "sourceRepo": "https://github.com/ProtonDriveApps/android-drive",
+      "storageRequirement": "Not published",
       "website": "https://proton.me/drive"
     }
   ]

@@ -6,17 +6,20 @@
       "alternativesFor": [
         "google-search"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown.",
       "category": "Search engines",
       "description": "Search engine and browser focused on reducing tracking and profiling.",
       "developer": "DuckDuckGo",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "DuckDuckGo states that it does not save or sell search history.",
+          "claim": "DuckDuckGo states it does not save identifiable search histories; browser and optional privacy-service features have separate data flows.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "DuckDuckGo Privacy Policy",
+          "source": "Official project documentation",
           "url": "https://duckduckgo.com/privacy",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -26,12 +29,15 @@
         "Private search"
       ],
       "id": "duckduckgo",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for primary online service",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Search results and local coverage can differ from Google Search",
         "Search requires network access"
       ],
+      "minimumAndroid": "Not published",
       "name": "DuckDuckGo",
+      "networkActivity": "Network required for primary online service; local features may vary",
       "offline": false,
       "openSource": true,
       "packageName": "com.duckduckgo.mobile.android",
@@ -44,8 +50,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android",
       "pricing": "No purchase price documented",
-      "privacySummary": "DuckDuckGo states that search histories are not saved or sold. Browser and search components have separate published details.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Search requests and limited operational data according to DuckDuckGo privacy disclosures; local browser data depends on settings.",
+        "controls": "Browser privacy protections, fire-button deletion and optional feature controls.",
+        "deletion": "Clearing browser data does not delete records independently retained by websites visited.",
+        "encryption": "Do not assume end-to-end encryption of all web/search activity.",
+        "practicalImplications": "DuckDuckGo states it does not save identifiable search histories; browser and optional privacy-service features have separate data flows.",
+        "purpose": "Search results, tracker blocking and browser/privacy services.",
+        "recipients": "Search delivery infrastructure and websites opened; selected third-party services may receive feature-specific requests.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "DuckDuckGo states it does not save identifiable search histories; browser and optional privacy-service features have separate data flows.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/duckduckgo/Android",
+      "storageRequirement": "Not published",
       "website": "https://duckduckgo.com/"
     }
   ]

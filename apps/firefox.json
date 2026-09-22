@@ -8,17 +8,20 @@
         "microsoft-edge",
         "samsung-internet"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown — test on your device under the same browsing workload.",
       "category": "Browsers",
       "description": "Open-source browser with tracking protection, extensions, and optional account sync.",
       "developer": "Mozilla",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Mozilla publishes Firefox data-practice disclosures.",
+          "claim": "Mozilla describes local browsing data separately from technical/interaction telemetry, sponsored New Tab content, optional account sync and optional AI features.",
           "classification": "DEVELOPER_DISCLOSED",
           "source": "Firefox Privacy Notice",
           "url": "https://www.mozilla.org/privacy/firefox/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -29,11 +32,14 @@
         "Password manager"
       ],
       "id": "firefox",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Some websites are optimized primarily for Chromium browsers"
       ],
+      "minimumAndroid": "Not published",
       "name": "Firefox",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "org.mozilla.firefox",
@@ -46,8 +52,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=org.mozilla.firefox",
       "pricing": "No purchase price documented",
-      "privacySummary": "Mozilla publishes a Firefox privacy notice and the Android source code. Sync is optional.",
+      "privacyDetails": {
+        "advertising": "Mozilla discloses optional sponsored New Tab content and advertising measurement.",
+        "analytics": "Mozilla discloses technical/interaction telemetry and separate daily usage ping controls.",
+        "collected": "Mozilla processes technical, settings and interaction data; local browsing data generally stays on device unless a disclosed feature sends it.",
+        "controls": "Enhanced Tracking Protection, telemetry settings, sponsored content, sync and add-ons.",
+        "deletion": "Deleting local browsing data does not necessarily remove previously synced copies or third-party site records.",
+        "encryption": "Sync and web transport protections are distinct; do not claim all browser traffic is end-to-end encrypted.",
+        "practicalImplications": "Mozilla describes local browsing data separately from technical/interaction telemetry, sponsored New Tab content, optional account sync and optional AI features.",
+        "purpose": "Browsing, security, sync, optional sponsored content and diagnostics.",
+        "recipients": "Mozilla and enabled third-party search/AI/website services; optional account sync uses Mozilla infrastructure.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Mozilla describes local browsing data separately from technical/interaction telemetry, sponsored New Tab content, optional account sync and optional AI features.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/mozilla-mobile/firefox-android",
+      "storageRequirement": "Not published",
       "website": "https://www.mozilla.org/firefox/"
     }
   ]

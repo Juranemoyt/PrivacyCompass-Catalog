@@ -4,17 +4,20 @@
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not published",
       "battery": "Unknown.",
       "category": "Authentication",
       "description": "Authenticator app for time-based and counter-based one-time codes with optional account sync.",
       "developer": "Google",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Google documents Authenticator setup, transfers, and optional account synchronization.",
+          "claim": "Google documents offline use, optional Google Account synchronization, use without an account, and QR-based transfer for Authenticator.",
           "classification": "DEVELOPER_DISCLOSED",
           "source": "Google Account Help",
           "url": "https://support.google.com/accounts/answer/1066447",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -24,22 +27,43 @@
         "Account sync"
       ],
       "id": "google-authenticator",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for local OTP generation; required for optional Google Account synchronization and online account services",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Encrypted portable export choices differ from some alternatives"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Authenticator",
+      "networkActivity": "OTP generation works offline; optional Google Account synchronization and account-related features use network access",
       "offline": true,
       "openSource": false,
       "packageName": "com.google.android.apps.authenticator2",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "IOS"
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2",
       "pricing": "No purchase price documented",
+      "privacyDetails": {
+        "advertising": "Not documented for Authenticator itself",
+        "analytics": "Not documented in the checked Authenticator support material",
+        "collected": "Google Authenticator can generate codes without an account; enabling Google Account sync expands the data boundary to Google's account services.",
+        "controls": "Users can use the app without a Google Account or enable account synchronization; manual QR transfer is also documented.",
+        "deletion": "Removing local entries, disabling sync, and deleting account-held data are separate actions and should be handled deliberately.",
+        "encryption": "The checked support source documents sync and transfer behavior but does not establish a product-specific end-to-end encryption claim for synchronized Authenticator data.",
+        "practicalImplications": "Local-only use keeps OTP generation on the device; account sync improves recovery and multi-device access but expands the service data boundary.",
+        "purpose": "Generate one-time codes and, when enabled, synchronize authenticator entries across devices.",
+        "recipients": "Google account infrastructure is involved when account synchronization is enabled; local-only use does not require that sync path.",
+        "sale": "Not documented in the checked Authenticator support material",
+        "sharing": "Account synchronization shares authenticator data with the user's Google account infrastructure; QR transfer is user-initiated.",
+        "tracking": "Not documented in the checked Authenticator support material"
+      },
       "privacySummary": "Code generation works locally; optional Google Account synchronization changes the data boundary.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Google Account Help, checked 2026-09-22",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://support.google.com/accounts/answer/1066447"
     }
   ]

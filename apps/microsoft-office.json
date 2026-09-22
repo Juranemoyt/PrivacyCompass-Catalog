@@ -4,17 +4,21 @@
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature-dependent; comparable battery/background-use measurement not established",
       "battery": "Unknown.",
       "category": "Office software",
       "description": "Document, spreadsheet, presentation, collaboration, and cloud productivity applications.",
       "developer": "Microsoft",
+      "downloadSize": "Not published",
+      "ecosystem": "MICROSOFT",
       "evidence": [
         {
-          "claim": "Microsoft documents privacy controls and connected experiences.",
+          "claim": "Connected experiences and cloud collaboration create different data flows from local-only document editing.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Microsoft Privacy Statement",
+          "source": "Microsoft privacy and product documentation",
           "url": "https://privacy.microsoft.com/privacystatement",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -26,15 +30,19 @@
         "Office collaboration"
       ],
       "id": "microsoft-office",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for online services; offline/local features depend on app and configuration",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Many features require an account or subscription",
         "Cloud and AI features require network access"
       ],
+      "minimumAndroid": "Not published",
       "name": "Microsoft 365",
+      "networkActivity": "Network use depends on cloud, synchronization and connected features",
       "offline": true,
       "openSource": false,
       "packageName": "com.microsoft.office.officehubrow",
+      "parentCompany": "Microsoft Corporation",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -44,8 +52,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow",
       "pricing": "Subscription and limited free use vary; verify current official pricing",
-      "privacySummary": "Microsoft publishes product and company privacy disclosures. Connected experiences can send content or usage data for the selected service.",
+      "privacyDetails": {
+        "advertising": "Feature and provider dependent; not established by checked app-specific documentation.",
+        "analytics": "Provider describes diagnostics; exact fields and defaults depend on app/platform/settings.",
+        "collected": "Documents and collaboration metadata when cloud features are used; diagnostics according to product settings.",
+        "controls": "Connected experiences, account/tenant controls, sharing permissions and document storage choice.",
+        "deletion": "Deleting local documents does not necessarily remove OneDrive/SharePoint or collaborator copies.",
+        "encryption": "Cloud storage protections are not the same as default end-to-end encryption of every shared document.",
+        "practicalImplications": "Connected experiences and cloud collaboration create different data flows from local-only document editing.",
+        "purpose": "Office editing, cloud storage, collaboration and connected experiences.",
+        "recipients": "Microsoft cloud/organization and collaborators selected for shared documents.",
+        "sale": "Not established by checked app-specific documentation.",
+        "sharing": "User-selected collaboration/sharing and enabled service integrations may add recipients.",
+        "tracking": "Privacy controls reduce selected tracking but do not eliminate all network or service data processing."
+      },
+      "privacySummary": "Connected experiences and cloud collaboration create different data flows from local-only document editing.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.microsoft.com/microsoft-365"
     }
   ]

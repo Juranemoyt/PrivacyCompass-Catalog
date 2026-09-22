@@ -4,17 +4,35 @@
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown — no device-specific measurement included.",
       "category": "Browsers",
       "description": "Google's cross-platform web browser with account sync and broad web compatibility.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Chrome privacy practices are described in a product-specific privacy notice.",
+          "claim": "Chrome can store browsing-related information locally or in a signed-in Google Account; history/tabs synchronization and Web & App Activity are separate choices.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Chrome Privacy Notice",
-          "url": "https://www.google.com/chrome/privacy/",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/chrome/answer/13948160",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/chrome/answer/13730681",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/websearch/answer/54068",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -24,14 +42,18 @@
         "Password manager"
       ],
       "id": "google-chrome",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Web browsing requires connectivity; previously saved content can be accessed offline where supported",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Some sync features require a Google account"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Chrome",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": true,
       "openSource": false,
       "packageName": "com.android.chrome",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -41,8 +63,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.android.chrome",
       "pricing": "No purchase price documented",
-      "privacySummary": "Google documents collection and processing in its Chrome Privacy Notice. Use without sign-in is supported, while sync requires an account.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Not fully established in the checked app-specific sources.",
+        "collected": "Browsing data, saved passwords/bookmarks, device and diagnostic information may be processed according to enabled features and settings.",
+        "controls": "Sign-in and sync choices, Web & App Activity, history deletion and browser privacy settings.",
+        "deletion": "Signing out or disabling history sync does not automatically delete data already saved in the Google Account.",
+        "encryption": "Google documents selectable encryption for certain synchronized data, not universal end-to-end encryption for all browsing data.",
+        "practicalImplications": "Chrome can store browsing-related information locally or in a signed-in Google Account; history/tabs synchronization and Web & App Activity are separate choices.",
+        "purpose": "Browsing, security protections, synchronization, search suggestions and optional personalization.",
+        "recipients": "Google services for account sync and optional features; websites and selected search engine receive requests made through the browser.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "Feature-dependent account, recipient or integration flows; no universal no-sharing claim.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Chrome can store browsing-related information locally or in a signed-in Google Account; history/tabs synchronization and Web & App Activity are separate choices.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.google.com/chrome/"
     }
   ]

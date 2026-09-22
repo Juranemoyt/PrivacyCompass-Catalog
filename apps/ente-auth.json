@@ -7,17 +7,27 @@
         "google-authenticator",
         "microsoft-authenticator"
       ],
+      "architecture": "arm64-v8a, armeabi-v7a, x86_64 (F-Droid 4.4.25)",
+      "backgroundActivity": "Not published",
       "battery": "Unknown.",
       "category": "Authentication",
       "description": "Open-source authenticator with end-to-end encrypted backup and multi-device access.",
       "developer": "Ente Technologies",
+      "downloadSize": "61 MiB APK (F-Droid 4.4.25; not installed size)",
       "evidence": [
         {
-          "claim": "Ente Auth publishes source and describes end-to-end encrypted synchronization.",
+          "claim": "Ente documents optional offline use and end-to-end encrypted synchronization for Auth.",
           "classification": "DEVELOPER_DISCLOSED",
           "source": "Ente Auth",
-          "url": "https://ente.io/auth/",
-          "verified": "2026-09-21"
+          "url": "https://ente.com/auth/",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "F-Droid lists Ente Auth 4.4.25 (1072) as requiring Android 7.0+, supporting arm64-v8a, armeabi-v7a and x86_64, with a 61 MiB APK.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "F-Droid Ente Auth package metadata",
+          "url": "https://f-droid.org/packages/io.ente.auth/",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/io.ente.auth/",
@@ -28,12 +38,15 @@
         "Offline access"
       ],
       "id": "ente-auth",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for offline code generation; required for encrypted synchronization and online account features",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Connected synchronization requires an account",
         "Provider-specific push approvals do not transfer as TOTP secrets"
       ],
+      "minimumAndroid": "Android 7.0+ (F-Droid 4.4.25)",
       "name": "Ente Auth",
+      "networkActivity": "Network is optional for local code generation; encrypted sync/backup requires network access",
       "offline": true,
       "openSource": true,
       "packageName": "io.ente.auth",
@@ -47,8 +60,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=io.ente.auth",
       "pricing": "No purchase price documented",
+      "privacyDetails": {
+        "advertising": "Not documented",
+        "analytics": "Not documented",
+        "collected": "An Ente account is optional for offline-only Auth use; account and synchronization data are involved when encrypted sync is enabled.",
+        "controls": "Users can operate offline without an account, use encrypted synchronization, and create local encrypted backups/exports.",
+        "deletion": "Local and synchronized copies need to be handled according to the mode in use; exported backup files remain separate copies.",
+        "encryption": "Ente documents end-to-end encrypted synchronization for Auth data.",
+        "practicalImplications": "Offline mode reduces the service data boundary, while sync improves recovery and multi-device access. Backup passwords and exported files must be protected.",
+        "purpose": "Generate OTP codes locally and, when enabled, synchronize encrypted authenticator data across devices.",
+        "recipients": "Ente infrastructure receives encrypted synchronization data when sync is enabled.",
+        "sale": "Not documented",
+        "sharing": "User-controlled export and encrypted sync are documented.",
+        "tracking": "Not documented"
+      },
       "privacySummary": "Ente publishes source and encryption documentation; an account is optional for local use and needed for encrypted synchronization.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "F-Droid 4.4.25 metadata and Ente documentation, checked 2026-09-22",
       "sourceRepo": "https://github.com/ente-io/ente",
+      "storageRequirement": "Not published",
       "unsupportedFeatures": [
         "Push approval",
         "Passkeys"

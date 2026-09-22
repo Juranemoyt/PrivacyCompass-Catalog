@@ -6,17 +6,34 @@
       "alternativesFor": [
         "google-password-manager"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "Push synchronization/notifications may use background services depending on build and settings",
       "battery": "Unknown.",
       "category": "Password managers",
       "description": "Cross-platform password manager with hosted and self-hosted options.",
       "developer": "Bitwarden Inc.",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Bitwarden publishes security assessments and audit information.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "Bitwarden compliance and audits",
-          "url": "https://bitwarden.com/help/is-bitwarden-audited/",
-          "verified": "2026-09-21"
+          "claim": "Bitwarden documents zero-knowledge encryption for vault contents while distinguishing account/operational metadata.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Bitwarden Security Whitepaper",
+          "url": "https://bitwarden.com/help/bitwarden-security-white-paper/",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "The Bitwarden Android repository lists minimum SDK 29 (Android 10).",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Bitwarden Android README",
+          "url": "https://github.com/bitwarden/android/blob/main/README.md",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Bitwarden documents Firebase-related push/crash behavior and notes that its F-Droid build removes Firebase.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Bitwarden security FAQ",
+          "url": "https://bitwarden.com/help/security-faqs/",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://mobileapp.bitwarden.com/fdroid/",
@@ -28,11 +45,14 @@
         "Offline access"
       ],
       "id": "bitwarden",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for account creation/sync and hosted services; local access to cached vault data can work offline",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires an account for synchronized vaults"
       ],
+      "minimumAndroid": "Android 10+ (project minimum SDK 29)",
       "name": "Bitwarden",
+      "networkActivity": "Synchronization, account access and hosted services require network access; previously available vault data can be accessed locally",
       "offline": true,
       "openSource": true,
       "packageName": "com.x8bit.bitwarden",
@@ -47,8 +67,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
       "pricing": "Free and paid plans; verify current official pricing",
+      "privacyDetails": {
+        "advertising": "Not documented as a core password-manager use",
+        "analytics": "Bitwarden documentation notes Firebase crash reporting on some Android builds/settings.",
+        "collected": "Bitwarden distinguishes end-to-end encrypted vault contents from account and operational metadata such as account identifiers.",
+        "controls": "Hosted or self-hosted deployment, client settings, and export choices provide different control points.",
+        "deletion": "Account and vault deletion are separate from any exported local copies.",
+        "encryption": "Bitwarden documents end-to-end/zero-knowledge encryption for vault data.",
+        "practicalImplications": "Zero-knowledge encryption protects vault contents, but it should not be interpreted as zero metadata. Plaintext exports create an unencrypted copy.",
+        "purpose": "Provide password-manager accounts, vault synchronization, security features, support and service operation.",
+        "recipients": "Service providers may process operational metadata; encrypted vault contents are designed so Bitwarden cannot read them.",
+        "sale": "Not documented in the checked security sources",
+        "sharing": "Vault sharing is user-directed; service infrastructure handles encrypted vault synchronization.",
+        "tracking": "Distribution channel matters; the F-Droid build is documented as removing Firebase components."
+      },
       "privacySummary": "Bitwarden publishes source, security documentation, and third-party audit material. Sync requires an account on a hosted or self-hosted server.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Bitwarden Android README compatibility section, checked 2026-09-22",
       "sourceRepo": "https://github.com/bitwarden/android",
+      "storageRequirement": "Not published",
       "website": "https://bitwarden.com/"
     }
   ]

@@ -4,17 +4,28 @@
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown.",
       "category": "Cloud storage",
       "description": "Cloud file storage, synchronization, sharing, and collaboration service.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Google documents security and privacy controls for Drive.",
+          "claim": "Drive stores files in Google's cloud and offers per-file/folder sharing controls. Default encryption at rest is distinct from optional Workspace client-side encryption.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Drive security and privacy",
-          "url": "https://www.google.com/drive/safety/",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/drive/answer/10519333",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/drive/answer/2494822",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -25,15 +36,19 @@
         "Offline files"
       ],
       "id": "google-drive",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online services/sync require connectivity; local or cached functionality varies by feature",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires a Google account",
         "Cloud synchronization uses network and background activity"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Drive",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": true,
       "openSource": false,
       "packageName": "com.google.android.apps.docs",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -43,8 +58,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.docs",
       "pricing": "Free allowance and paid plans; verify current official pricing",
-      "privacySummary": "Covered by Google privacy disclosures. Files are encrypted in transit and at rest; Drive does not advertise general end-to-end encryption.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Not fully established in the checked app-specific sources.",
+        "collected": "Uploaded files, document metadata, account information and sharing relationships are handled to provide Drive services.",
+        "controls": "Restricted sharing, named recipients, viewer/commenter/editor roles and revoking access.",
+        "deletion": "Deleting an original does not retract independently downloaded copies or guarantee immediate removal from recipients.",
+        "encryption": "Google documents encryption in transit/at rest; Workspace client-side encryption is a separate eligible/admin-enabled feature.",
+        "practicalImplications": "Drive stores files in Google's cloud and offers per-file/folder sharing controls. Default encryption at rest is distinct from optional Workspace client-side encryption.",
+        "purpose": "File storage, synchronization, collaboration and sharing.",
+        "recipients": "Google infrastructure and recipients granted access to shared files; link sharing can broaden access.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "Explicit file/folder access and link-sharing options.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Drive stores files in Google's cloud and offers per-file/folder sharing controls. Default encryption at rest is distinct from optional Workspace client-side encryption.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://drive.google.com/"
     }
   ]

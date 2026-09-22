@@ -8,17 +8,20 @@
         "microsoft-edge",
         "samsung-internet"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown — no comparable Galaxy S24 Ultra measurement included.",
       "category": "Browsers",
       "description": "Chromium-based browser with built-in content blocking and optional privacy services.",
       "developer": "Brave Software",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Brave documents browser data handling in its privacy policy.",
+          "claim": "Brave says it does not collect browsing history; optional Sync, Rewards, ads, Wallet and services have separate data practices.",
           "classification": "DEVELOPER_DISCLOSED",
           "source": "Brave Browser Privacy Policy",
           "url": "https://brave.com/privacy/browser/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -29,11 +32,14 @@
         "Account-free sync"
       ],
       "id": "brave",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Includes optional rewards, wallet, and sponsored-content features that some users may disable"
       ],
+      "minimumAndroid": "Not published",
       "name": "Brave",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "com.brave.browser",
@@ -46,8 +52,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.brave.browser",
       "pricing": "Core browser available without purchase",
-      "privacySummary": "Brave publishes source code and a browser privacy policy. Optional features may have separate data practices.",
+      "privacyDetails": {
+        "advertising": "Optional Brave ads/sponsored content have separate privacy disclosures.",
+        "analytics": "Brave discloses optional-service metrics and privacy-preserving ad measurements.",
+        "collected": "Optional service identifiers and data vary with enabled Sync, Rewards, ads and other features.",
+        "controls": "Shields, sponsored-content settings, Rewards opt-in, sync-chain controls and browser data deletion.",
+        "deletion": "Removing a device from Sync and deleting local data do not automatically delete all copies at other destinations.",
+        "encryption": "Brave says Sync data is encrypted with keys held on devices; this does not extend to all optional service metadata.",
+        "practicalImplications": "Brave says it does not collect browsing history; optional Sync, Rewards, ads, Wallet and services have separate data practices.",
+        "purpose": "Browsing, tracking protection and optional paid/rewards/connected services.",
+        "recipients": "Websites/search providers, Brave optional services, cloud hosting and custodial partners if enabled.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Brave says it does not collect browsing history; optional Sync, Rewards, ads, Wallet and services have separate data practices.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/brave/brave-browser",
+      "storageRequirement": "Not published",
       "website": "https://brave.com/"
     }
   ]

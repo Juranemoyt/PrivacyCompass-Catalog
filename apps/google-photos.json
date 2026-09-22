@@ -4,17 +4,35 @@
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown; automatic backup can use background network and battery.",
       "category": "Photo management",
       "description": "Cloud photo backup, organization, search, editing, and sharing service.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Google provides product privacy controls and general data disclosures.",
+          "claim": "Photos backup is configurable by account and device folder; optional Face Groups create face models and can be disabled.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Photos privacy",
-          "url": "https://safety.google/photos/",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/photos/answer/9343402",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/photos/answer/6128838",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/photos/answer/6128858",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -26,14 +44,18 @@
         "Metadata preservation"
       ],
       "id": "google-photos",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online services/sync require connectivity; local or cached functionality varies by feature",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Cloud backup requires a Google account"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Photos",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": true,
       "openSource": false,
       "packageName": "com.google.android.apps.photos",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "IOS",
@@ -41,8 +63,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos",
       "pricing": "Storage-plan dependent; verify current official pricing",
-      "privacySummary": "Google documents Photos controls and the broader account data practices in its privacy policy.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Not fully established in the checked app-specific sources.",
+        "collected": "Backed-up photos/videos and associated metadata; optional face models when Face Groups is enabled.",
+        "controls": "Backup toggles, folder selection, Face Groups controls, sharing and account data management.",
+        "deletion": "Turning backup off stops future backup but does not itself remove existing cloud copies; verify local copies before deleting cloud photos.",
+        "encryption": "Do not imply default end-to-end encryption for all backed-up Photos content from the checked sources.",
+        "practicalImplications": "Photos backup is configurable by account and device folder; optional Face Groups create face models and can be disabled.",
+        "purpose": "Photo backup, search, organization, sharing and optional face grouping.",
+        "recipients": "Google cloud infrastructure and user-selected sharing recipients.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "User-controlled photo sharing; cloud backup is distinct from sharing.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Photos backup is configurable by account and device folder; optional Face Groups create face models and can be disabled.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://photos.google.com/"
     }
   ]

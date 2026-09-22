@@ -4,17 +4,21 @@
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature-dependent; comparable battery/background-use measurement not established",
       "battery": "Unknown; background synchronization can use network and battery.",
       "category": "Cloud storage",
       "description": "Cloud file storage, synchronization, sharing, and Microsoft 365 integration.",
       "developer": "Microsoft",
+      "downloadSize": "Not published",
+      "ecosystem": "MICROSOFT",
       "evidence": [
         {
-          "claim": "Microsoft publishes a company privacy statement covering online services.",
+          "claim": "OneDrive cloud files and sharing are account/server based; optional offline files are not a replacement for an independent backup.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Microsoft Privacy Statement",
+          "source": "Microsoft privacy and product documentation",
           "url": "https://privacy.microsoft.com/privacystatement",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -25,15 +29,19 @@
         "Office collaboration"
       ],
       "id": "microsoft-onedrive",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for online services; offline/local features depend on app and configuration",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires a Microsoft account",
         "General file storage is not advertised as end-to-end encrypted"
       ],
+      "minimumAndroid": "Not published",
       "name": "Microsoft OneDrive",
+      "networkActivity": "Network use depends on cloud, synchronization and connected features",
       "offline": true,
       "openSource": false,
       "packageName": "com.microsoft.skydrive",
+      "parentCompany": "Microsoft Corporation",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -43,8 +51,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.skydrive",
       "pricing": "Free allowance and paid plans; verify current official pricing",
-      "privacySummary": "Microsoft describes collection, processing, sharing, retention, and controls in its privacy statement.",
+      "privacyDetails": {
+        "advertising": "Feature and provider dependent; not established by checked app-specific documentation.",
+        "analytics": "Provider describes diagnostics; exact fields and defaults depend on app/platform/settings.",
+        "collected": "Cloud files, account and file-sharing metadata according to the account and tenant configuration.",
+        "controls": "File/folder permissions, link settings, account controls and offline-file settings.",
+        "deletion": "Deleting a cloud file is distinct from revoking copies already downloaded by recipients.",
+        "encryption": "Do not equate encryption at rest or Personal Vault with universal end-to-end encryption.",
+        "practicalImplications": "OneDrive cloud files and sharing are account/server based; optional offline files are not a replacement for an independent backup.",
+        "purpose": "File synchronization, storage, sharing and Microsoft 365 collaboration.",
+        "recipients": "Microsoft or the organization administering the tenant; recipients selected by sharing permissions.",
+        "sale": "Not established by checked app-specific documentation.",
+        "sharing": "User-selected collaboration/sharing and enabled service integrations may add recipients.",
+        "tracking": "Privacy controls reduce selected tracking but do not eliminate all network or service data processing."
+      },
+      "privacySummary": "OneDrive cloud files and sharing are account/server based; optional offline files are not a replacement for an independent backup.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage"
     }
   ]

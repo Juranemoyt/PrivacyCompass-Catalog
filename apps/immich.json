@@ -6,17 +6,20 @@
       "alternativesFor": [
         "google-photos"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; backup workload and server connectivity affect use.",
       "category": "Photo management",
       "description": "Self-hosted open-source photo and video management platform.",
       "developer": "Immich contributors",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Immich publishes source and warns users to maintain independent backups.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "Immich documentation",
-          "url": "https://immich.app/docs/overview/introduction",
-          "verified": "2026-09-21"
+          "claim": "Immich is self-hosted photo management, not automatically end-to-end encrypted; server administrators and enabled integrations determine the privacy boundary.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Immich backup documentation",
+          "url": "https://immich.app/docs/administration/backup-and-restore",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -28,13 +31,16 @@
         "Metadata preservation"
       ],
       "id": "immich",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires server setup and maintenance",
         "Users must plan their own backups",
         "The project advises against treating it as the only copy of photos"
       ],
+      "minimumAndroid": "Not published",
       "name": "Immich",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "app.alextran.immich",
@@ -46,8 +52,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=app.alextran.immich",
       "pricing": "Open-source software; server and storage costs vary",
-      "privacySummary": "Data location and administrator access depend on the self-hosted server. Open source allows inspection but does not by itself guarantee a secure deployment.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Photos/videos, thumbnails, metadata and face-recognition data on the chosen server.",
+        "controls": "Server hosting, account roles, backups, public sharing and enabled machine-learning services.",
+        "deletion": "Immich warns that database dumps alone do not include photo/video files; preserve independent asset and database backups.",
+        "encryption": "Do not infer universal end-to-end encryption from self-hosting or transport encryption.",
+        "practicalImplications": "Immich is self-hosted photo management, not automatically end-to-end encrypted; server administrators and enabled integrations determine the privacy boundary.",
+        "purpose": "Photo backup, search, sharing and media processing.",
+        "recipients": "Self-hosted/server operator and configured integrations; shared recipients where enabled.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Immich is self-hosted photo management, not automatically end-to-end encrypted; server administrators and enabled integrations determine the privacy boundary.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/immich-app/immich",
+      "storageRequirement": "Not published",
       "website": "https://immich.app/"
     }
   ]

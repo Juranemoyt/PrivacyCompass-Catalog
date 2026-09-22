@@ -4,17 +4,21 @@
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown.",
       "category": "Email",
       "description": "Email client and service with Google account integration.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Google's privacy policy describes data collection and account controls.",
+          "claim": "Gmail processes email content for features such as spam detection, Smart Reply and Smart Compose; Google describes separate personalization controls.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Privacy Policy",
-          "url": "https://policies.google.com/privacy",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/mail/answer/10434152",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -25,14 +29,18 @@
         "Multiple accounts"
       ],
       "id": "gmail",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online services/sync require connectivity; local or cached functionality varies by feature",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "A Google account is required for the Gmail service"
       ],
+      "minimumAndroid": "Not published",
       "name": "Gmail",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": true,
       "openSource": false,
       "packageName": "com.google.android.gm",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "IOS",
@@ -40,8 +48,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.gm",
       "pricing": "Plan-dependent; verify current official pricing",
-      "privacySummary": "Covered by Google's privacy policy; service use requires an account.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Google documents performance data and crash analytics.",
+        "collected": "Email, attachments, contacts, account identifiers, diagnostics and some location information are described in Gmail's privacy explanation.",
+        "controls": "Gmail smart-feature/personalization settings, account data controls and message deletion.",
+        "deletion": "Disabling smart features does not automatically delete stored email or all account activity.",
+        "encryption": "Google documents encryption in transit and at rest; this does not establish default end-to-end encryption of every email.",
+        "practicalImplications": "Gmail processes email content for features such as spam detection, Smart Reply and Smart Compose; Google describes separate personalization controls.",
+        "purpose": "Email delivery, safety, smart features, synchronization and service reliability.",
+        "recipients": "Message recipients and Google infrastructure; integrations depend on account settings.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "Feature-dependent account, recipient or integration flows; no universal no-sharing claim.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Gmail processes email content for features such as spam detection, Smart Reply and Smart Compose; Google describes separate personalization controls.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://mail.google.com/"
     }
   ]

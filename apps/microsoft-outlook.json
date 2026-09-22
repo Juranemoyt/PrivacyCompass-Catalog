@@ -4,17 +4,21 @@
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature-dependent; comparable battery/background-use measurement not established",
       "battery": "Unknown.",
       "category": "Email",
       "description": "Email and calendar client integrated with Microsoft and third-party accounts.",
       "developer": "Microsoft",
+      "downloadSize": "Not published",
+      "ecosystem": "MICROSOFT",
       "evidence": [
         {
-          "claim": "Microsoft discloses data practices for its products and services.",
+          "claim": "Outlook is both a client and Microsoft-hosted mail service; third-party mail account privacy also depends on its provider.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Microsoft Privacy Statement",
+          "source": "Microsoft privacy and product documentation",
           "url": "https://privacy.microsoft.com/privacystatement",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -24,15 +28,19 @@
         "Offline mail"
       ],
       "id": "microsoft-outlook",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for online services; offline/local features depend on app and configuration",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires at least one email account",
         "Some features depend on Microsoft 365"
       ],
+      "minimumAndroid": "Not published",
       "name": "Microsoft Outlook",
+      "networkActivity": "Network use depends on cloud, synchronization and connected features",
       "offline": true,
       "openSource": false,
       "packageName": "com.microsoft.office.outlook",
+      "parentCompany": "Microsoft Corporation",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -42,8 +50,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook",
       "pricing": "Plan-dependent; verify current official pricing",
-      "privacySummary": "Microsoft publishes privacy disclosures and in-product controls; server-side practices also depend on the configured email provider.",
+      "privacyDetails": {
+        "advertising": "Feature and provider dependent; not established by checked app-specific documentation.",
+        "analytics": "Provider describes diagnostics; exact fields and defaults depend on app/platform/settings.",
+        "collected": "Messages, calendar data, account identifiers and diagnostics as relevant to the connected accounts.",
+        "controls": "Account/provider choice, connected features, app permissions and email retention settings.",
+        "deletion": "Removing a client account does not necessarily delete mail at the provider.",
+        "encryption": "Default mail should not be described as universally end-to-end encrypted.",
+        "practicalImplications": "Outlook is both a client and Microsoft-hosted mail service; third-party mail account privacy also depends on its provider.",
+        "purpose": "Mail/calendar delivery, synchronization, safety and optional connected features.",
+        "recipients": "Microsoft services and configured third-party mail providers; intended message recipients.",
+        "sale": "Not established by checked app-specific documentation.",
+        "sharing": "User-selected collaboration/sharing and enabled service integrations may add recipients.",
+        "tracking": "Privacy controls reduce selected tracking but do not eliminate all network or service data processing."
+      },
+      "privacySummary": "Outlook is both a client and Microsoft-hosted mail service; third-party mail account privacy also depends on its provider.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.microsoft.com/microsoft-365/outlook/outlook-for-business"
     }
   ]

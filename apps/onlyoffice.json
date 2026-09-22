@@ -6,17 +6,20 @@
       "alternativesFor": [
         "microsoft-office"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown.",
       "category": "Office software",
       "description": "Office editors available on desktop, mobile, web, and self-hosted servers.",
       "developer": "Ascensio System SIA",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "ONLYOFFICE publishes open-source components and licensing details.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "ONLYOFFICE GitHub organization",
+          "claim": "ONLYOFFICE desktop, mobile, hosted and self-hosted offerings have different privacy and account requirements.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Official project documentation",
           "url": "https://github.com/ONLYOFFICE",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -28,12 +31,15 @@
         "Self hosting"
       ],
       "id": "onlyoffice",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Feature set and licensing differ by product and deployment",
         "Cloud collaboration requires a server or provider"
       ],
+      "minimumAndroid": "Not published",
       "name": "ONLYOFFICE",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "com.onlyoffice.documents",
@@ -48,8 +54,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.onlyoffice.documents",
       "pricing": "Community and commercial offerings; verify current official pricing",
-      "privacySummary": "Open-source components and self-hosting are available; privacy depends on deployment and any connected cloud provider.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Documents and collaboration metadata according to selected product and hosting deployment.",
+        "controls": "Deployment choice, file-sharing permissions and connected cloud/account settings.",
+        "deletion": "Deleting a local document does not remove copies stored in a collaborative server.",
+        "encryption": "Self-hosted deployment is not by itself a universal end-to-end encryption guarantee.",
+        "practicalImplications": "ONLYOFFICE desktop, mobile, hosted and self-hosted offerings have different privacy and account requirements.",
+        "purpose": "Document editing, collaboration and optional cloud storage.",
+        "recipients": "Self-hosted administrator, connected storage provider or hosted service depending on deployment.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "ONLYOFFICE desktop, mobile, hosted and self-hosted offerings have different privacy and account requirements.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/ONLYOFFICE",
+      "storageRequirement": "Not published",
       "website": "https://www.onlyoffice.com/"
     }
   ]

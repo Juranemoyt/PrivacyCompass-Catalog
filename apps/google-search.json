@@ -4,17 +4,35 @@
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown.",
       "category": "Search engines",
       "description": "Web search service and Android app with personalized and account-linked features.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Google discloses collection, purposes, controls, and retention at the company-policy level.",
+          "claim": "Search may save queries and interactions to account history and use them for personalization; Google is rolling out separate Search Services History and Personalized Recommendations settings.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Privacy Policy",
-          "url": "https://policies.google.com/privacy",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/websearch/answer/17025248",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/websearch/answer/54068",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/websearch/answer/12410098",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -24,14 +42,18 @@
         "Image search"
       ],
       "id": "google-search",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online services/sync require connectivity; local or cached functionality varies by feature",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Personalized features may use account activity"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Search",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": false,
       "openSource": false,
       "packageName": "com.google.android.googlequicksearchbox",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "IOS",
@@ -39,8 +61,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox",
       "pricing": "No purchase price documented",
-      "privacySummary": "Google describes collected data, purposes, controls, and retention in its privacy policy.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Not fully established in the checked app-specific sources.",
+        "collected": "Queries, interaction history and contextual location/device signals depending on account settings.",
+        "controls": "Search Services History, Personalized Recommendations, Web & App Activity and deletion controls; settings may differ during rollout.",
+        "deletion": "Turning off personalization does not automatically erase previously stored activity.",
+        "encryption": "No general end-to-end encryption claim is established for search history.",
+        "practicalImplications": "Search may save queries and interactions to account history and use them for personalization; Google is rolling out separate Search Services History and Personalized Recommendations settings.",
+        "purpose": "Search delivery, security, recommendations and optional personalization.",
+        "recipients": "Google Search infrastructure and websites opened by the user.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "Feature-dependent account, recipient or integration flows; no universal no-sharing claim.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Search may save queries and interactions to account history and use them for personalization; Google is rolling out separate Search Services History and Personalized Recommendations settings.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.google.com/"
     }
   ]

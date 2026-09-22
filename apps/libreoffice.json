@@ -6,17 +6,20 @@
       "alternativesFor": [
         "microsoft-office"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; desktop workload dependent.",
       "category": "Office software",
       "description": "Open-source desktop office suite for documents, spreadsheets, and presentations.",
       "developer": "The Document Foundation",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "LibreOffice is published as open-source software by The Document Foundation.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "LibreOffice source code",
+          "claim": "LibreOffice desktop editing works locally without an account; update checks, extensions and remote documents are separate network interactions.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Official project documentation",
           "url": "https://www.libreoffice.org/about-us/source-code/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -28,12 +31,15 @@
         "No mandatory account"
       ],
       "id": "libreoffice",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "No official full-featured Android editor",
         "Complex Microsoft Office documents can render differently"
       ],
+      "minimumAndroid": "Not published",
       "name": "LibreOffice",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "",
@@ -44,8 +50,25 @@
       ],
       "playUrl": "",
       "pricing": "No purchase price documented",
-      "privacySummary": "Desktop software can be used locally without an account. Online update checks and extensions are separate network interactions.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Local documents remain on the selected device unless the user chooses external storage or network features.",
+        "controls": "Local file storage, macro security, update/extension choices and external sync.",
+        "deletion": "Deleting the program does not delete copies of documents on other devices/cloud providers.",
+        "encryption": "Document encryption depends on chosen save/password options, not universal encryption of every file.",
+        "practicalImplications": "LibreOffice desktop editing works locally without an account; update checks, extensions and remote documents are separate network interactions.",
+        "purpose": "Documents, spreadsheets and presentations.",
+        "recipients": "User-selected remote storage and extension/update services when accessed.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "LibreOffice desktop editing works locally without an account; update checks, extensions and remote documents are separate network interactions.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://git.libreoffice.org/core",
+      "storageRequirement": "Not published",
       "website": "https://www.libreoffice.org/"
     }
   ]

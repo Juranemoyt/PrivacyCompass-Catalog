@@ -6,17 +6,20 @@
       "alternativesFor": [
         "google-photos"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; local-only operation avoids continuous cloud backup by default.",
       "category": "Photo management",
       "description": "Offline open-source gallery for viewing and organizing local media.",
       "developer": "Fossify",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "The application source is publicly available.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "Fossify Gallery repository",
+          "claim": "Fossify Gallery is a local Android gallery, not a hosted photo backup provider.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Official project documentation",
           "url": "https://github.com/FossifyOrg/Gallery",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/org.fossify.gallery/",
@@ -27,12 +30,15 @@
         "Metadata preservation"
       ],
       "id": "fossify-gallery",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "No cloud backup service",
         "Android only"
       ],
+      "minimumAndroid": "Not published",
       "name": "Fossify Gallery",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "org.fossify.gallery",
@@ -41,8 +47,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=org.fossify.gallery",
       "pricing": "Verify current store listing",
-      "privacySummary": "Designed for local gallery use and published as open source. It is not a cloud backup service.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Local media and metadata accessed through device permissions; app-specific remote collection is not established by source listing alone.",
+        "controls": "Media permissions, local album organization and Android app data controls.",
+        "deletion": "Deleting the gallery app does not necessarily remove local media or backups.",
+        "encryption": "No cloud end-to-end encryption claim applies to a local gallery without an associated sync service.",
+        "practicalImplications": "Fossify Gallery is a local Android gallery, not a hosted photo backup provider.",
+        "purpose": "View, organize and edit on-device media.",
+        "recipients": "Files shared through Android share actions or external backup apps go to the selected recipients.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Fossify Gallery is a local Android gallery, not a hosted photo backup provider.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/FossifyOrg/Gallery",
+      "storageRequirement": "Not published",
       "website": "https://www.fossify.org/"
     }
   ]

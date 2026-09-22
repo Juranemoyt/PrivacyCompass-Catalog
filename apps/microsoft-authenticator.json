@@ -4,17 +4,27 @@
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Push approvals and some connected sign-in/backup flows require background/network-capable operation",
       "battery": "Unknown.",
       "category": "Authentication",
       "description": "Authenticator for one-time codes, Microsoft account approvals, and supported sign-in flows.",
       "developer": "Microsoft",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Microsoft publishes product privacy disclosures and support documentation.",
+          "claim": "Microsoft documents Authenticator backup and restore behavior and notes that restore is not cross-platform between Android and iOS.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Microsoft Privacy Statement",
-          "url": "https://privacy.microsoft.com/privacystatement",
-          "verified": "2026-09-21"
+          "source": "Microsoft Authenticator backup guidance",
+          "url": "https://support.microsoft.com/en-us/authenticator/back-up-your-accounts-in-microsoft-authenticator",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Microsoft documents that restore behavior varies by account type and that some work/school or passwordless credentials require sign-in or re-registration.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Authenticator restore guidance",
+          "url": "https://support.microsoft.com/en-US/authenticator/restore-account-credentials-from-microsoft-authenticator",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -24,12 +34,15 @@
         "Offline access"
       ],
       "id": "microsoft-authenticator",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for local TOTP generation; required for push approvals, backup/restore and connected sign-in flows",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Microsoft-specific push approvals are not portable to standard TOTP apps",
         "Backup and recovery behavior is platform-dependent"
       ],
+      "minimumAndroid": "Not published",
       "name": "Microsoft Authenticator",
+      "networkActivity": "Local TOTP can work offline; push approvals, account backup/restore and connected Microsoft sign-in flows require network access",
       "offline": true,
       "openSource": false,
       "packageName": "com.azure.authenticator",
@@ -39,8 +52,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.azure.authenticator",
       "pricing": "No purchase price documented",
+      "privacyDetails": {
+        "advertising": "Not documented for Authenticator itself in the checked support sources",
+        "analytics": "Not documented in the checked Authenticator support sources",
+        "collected": "Data handling varies by feature. Local TOTP generation has a different data boundary from cloud backup, push approvals, and Microsoft account sign-in flows.",
+        "controls": "Backup and account configuration are feature-dependent; some credentials require re-registration rather than portable export.",
+        "deletion": "Removing an app entry does not necessarily remove an authentication method from the underlying Microsoft/work/school account.",
+        "encryption": "The checked support sources describe backup/restore behavior but do not establish a universal end-to-end encryption claim for every credential type.",
+        "practicalImplications": "A migration must distinguish standard TOTP entries from push, passwordless, work/school, and device-bound credentials. The latter may require re-registration.",
+        "purpose": "Generate one-time codes, approve sign-ins, support passwordless or account-bound authentication flows, and optionally back up supported credentials.",
+        "recipients": "Microsoft infrastructure is involved for push approvals, backup/restore, and Microsoft-connected authentication features.",
+        "sale": "Not documented in the checked Authenticator support sources",
+        "sharing": "Cloud backup and connected authentication flows transmit data to Microsoft services; local TOTP generation does not require those flows.",
+        "tracking": "Not documented in the checked Authenticator support sources"
+      },
       "privacySummary": "Microsoft publishes privacy disclosures; local code generation and connected approval or backup features have different network needs.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Microsoft Authenticator backup/restore support, checked 2026-09-22",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.microsoft.com/security/mobile-authenticator-app"
     }
   ]

@@ -4,17 +4,21 @@
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature-dependent; comparable battery/background-use measurement not established",
       "battery": "Unknown.",
       "category": "Browsers",
       "description": "Chromium-based Android browser with content blockers and Samsung integration.",
       "developer": "Samsung Electronics",
+      "downloadSize": "Not published",
+      "ecosystem": "SAMSUNG",
       "evidence": [
         {
-          "claim": "Samsung publishes privacy disclosures for its services.",
+          "claim": "Browser privacy depends on enabled Smart anti-tracking, content blockers and optional Samsung-account sync.",
           "classification": "DEVELOPER_DISCLOSED",
           "source": "Samsung Privacy",
           "url": "https://privacy.samsung.com/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -24,22 +28,43 @@
         "Account sync"
       ],
       "id": "samsung-internet",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for online services; offline/local features depend on app and configuration",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Android only",
         "Sync requires a Samsung account"
       ],
+      "minimumAndroid": "Not published",
       "name": "Samsung Internet",
+      "networkActivity": "Network use depends on cloud, synchronization and connected features",
       "offline": true,
       "openSource": false,
       "packageName": "com.sec.android.app.sbrowser",
+      "parentCompany": "Samsung Electronics",
       "platforms": [
         "ANDROID"
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser",
       "pricing": "No purchase price documented",
-      "privacySummary": "Samsung provides service and company privacy notices; optional sync uses a Samsung account.",
+      "privacyDetails": {
+        "advertising": "Feature and provider dependent; not established by checked app-specific documentation.",
+        "analytics": "Provider describes diagnostics; exact fields and defaults depend on app/platform/settings.",
+        "collected": "Local browser history/cookies, optional synced browsing data and diagnostics according to settings.",
+        "controls": "Smart anti-tracking, content blockers, site permissions, browsing-data deletion and Samsung account sync.",
+        "deletion": "Deleting local history does not necessarily remove copies previously synced or shared elsewhere.",
+        "encryption": "No universal end-to-end encryption claim for browser synchronization is established by checked sources.",
+        "practicalImplications": "Browser privacy depends on enabled Smart anti-tracking, content blockers and optional Samsung-account sync.",
+        "purpose": "Browsing, anti-tracking and optional cross-device synchronization.",
+        "recipients": "Visited sites and search provider; Samsung services when sync/connected features are enabled.",
+        "sale": "Not established by checked app-specific documentation.",
+        "sharing": "User-selected collaboration/sharing and enabled service integrations may add recipients.",
+        "tracking": "Privacy controls reduce selected tracking but do not eliminate all network or service data processing."
+      },
+      "privacySummary": "Browser privacy depends on enabled Smart anti-tracking, content blockers and optional Samsung-account sync.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://developer.samsung.com/internet"
     }
   ]

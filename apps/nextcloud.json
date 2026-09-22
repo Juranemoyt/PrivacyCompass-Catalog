@@ -7,17 +7,27 @@
         "google-drive",
         "microsoft-onedrive"
       ],
+      "architecture": "arm64-v8a, x86_64 (F-Droid 35.0.0)",
+      "backgroundActivity": "Synchronization can use background activity depending on account and sync settings",
       "battery": "Unknown; synchronization settings affect background activity.",
       "category": "Cloud storage",
       "description": "Open-source, self-hostable file sync and collaboration platform.",
       "developer": "Nextcloud GmbH / community",
+      "downloadSize": "Not published for stable release in this catalog entry",
       "evidence": [
         {
-          "claim": "The Android client is published as open-source software.",
+          "claim": "F-Droid lists Nextcloud Android 35.0.0 as requiring Android 9.0+ and providing arm64-v8a and x86_64 APKs.",
           "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "F-Droid Nextcloud package metadata",
+          "url": "https://f-droid.org/packages/com.nextcloud.client/",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "The Nextcloud Android client source is publicly available.",
+          "classification": "DEVELOPER_DISCLOSED",
           "source": "Nextcloud Android repository",
           "url": "https://github.com/nextcloud/android",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/com.nextcloud.client/",
@@ -29,12 +39,15 @@
         "Offline files"
       ],
       "id": "nextcloud",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for server synchronization and remote access; cached local files can be available offline",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires a server account",
         "Maintenance and privacy depend on the hosting provider or administrator"
       ],
+      "minimumAndroid": "Android 9.0+ (F-Droid 35.0.0)",
       "name": "Nextcloud",
+      "networkActivity": "A Nextcloud server or hosted provider is required for synchronization; cached/offline files may remain locally accessible",
       "offline": true,
       "openSource": true,
       "packageName": "com.nextcloud.client",
@@ -49,8 +62,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.nextcloud.client",
       "pricing": "Software is open source; hosting costs vary",
+      "privacyDetails": {
+        "advertising": "Depends on hosting/provider and server configuration; not inherent to the open-source client itself",
+        "analytics": "Depends on server/client configuration and deployment",
+        "collected": "The Android client connects to a user-selected Nextcloud server; what is collected depends on the server operator, enabled apps, logging, and external integrations.",
+        "controls": "Self-hosting, provider choice, server configuration, app permissions and enabled integrations provide different control points.",
+        "deletion": "Local cached copies and server-side files are distinct; server retention and backup policy depend on the operator.",
+        "encryption": "Transport/storage protections and optional encryption features depend on deployment; self-hosted does not mean universal end-to-end encryption.",
+        "practicalImplications": "Self-hosting can improve control, but privacy is determined by the actual server deployment, administrator, logs, enabled integrations, and encryption configuration.",
+        "purpose": "Synchronize, access and share files and related collaboration data with a Nextcloud server.",
+        "recipients": "The selected Nextcloud server operator and configured integrations can receive data; self-hosting changes who operates that infrastructure but does not inherently eliminate logging or metadata.",
+        "sale": "Depends on hosting/provider; not established by the open-source client source alone",
+        "sharing": "Sharing is user/server-policy controlled; external integrations and federated sharing can add recipients.",
+        "tracking": "Depends on server/client configuration and deployment"
+      },
       "privacySummary": "Self-hosting can give the operator control over storage and logs. Actual privacy depends on the chosen server and administrator.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "F-Droid 35.0.0 metadata and Nextcloud Android release documentation, checked 2026-09-22",
       "sourceRepo": "https://github.com/nextcloud/android",
+      "storageRequirement": "Not published",
       "website": "https://nextcloud.com/"
     }
   ]

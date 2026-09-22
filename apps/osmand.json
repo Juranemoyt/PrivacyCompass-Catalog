@@ -6,17 +6,20 @@
       "alternativesFor": [
         "google-maps"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; extensive map rendering and GPS navigation can affect device use.",
       "category": "Maps",
       "description": "OpenStreetMap-based offline maps and navigation with extensive map controls.",
       "developer": "OsmAnd B.V.",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "OsmAnd publishes client source and privacy documentation.",
+          "claim": "OsmAnd's offline navigation and optional cloud/purchase services have different data flows.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "OsmAnd privacy policy",
+          "source": "Official project documentation",
           "url": "https://osmand.net/docs/legal/privacy-policy/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/net.osmand.plus/",
@@ -28,12 +31,15 @@
         "Cycling maps"
       ],
       "id": "osmand",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Interface and settings can be complex",
         "Live traffic coverage differs from Google Maps"
       ],
+      "minimumAndroid": "Not published",
       "name": "OsmAnd",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "net.osmand",
@@ -43,8 +49,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=net.osmand",
       "pricing": "Free and paid variants/features; verify current official pricing",
-      "privacySummary": "Core client source is public. Optional services and purchases may have separate processing.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Local maps, tracks and optional cloud/account data depending on features.",
+        "controls": "Location permissions, offline maps, track export and optional account/cloud features.",
+        "deletion": "Local tracks, exported files and cloud copies need separate management.",
+        "encryption": "No general end-to-end encryption claim for every optional OsmAnd service is established.",
+        "practicalImplications": "OsmAnd's offline navigation and optional cloud/purchase services have different data flows.",
+        "purpose": "Navigation, saved tracks, optional cloud backup and purchases.",
+        "recipients": "OsmAnd/connected services if used; user-selected track-sharing destinations.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "OsmAnd's offline navigation and optional cloud/purchase services have different data flows.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/osmandapp/OsmAnd",
+      "storageRequirement": "Not published",
       "website": "https://osmand.net/"
     }
   ]

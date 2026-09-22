@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "0.2.1",
+  "catalogVersion": "0.2.2",
   "guides": [
     {
       "destinationId": "ente-auth",
@@ -925,23 +925,41 @@
       ]
     }
   ],
-  "publishedAt": "2026-09-22T00:00:00Z",
+  "publishedAt": "2026-09-22T20:00:00Z",
   "schemaVersion": 1,
   "software": [
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown — no device-specific measurement included.",
       "category": "Browsers",
       "description": "Google's cross-platform web browser with account sync and broad web compatibility.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Chrome privacy practices are described in a product-specific privacy notice.",
+          "claim": "Chrome can store browsing-related information locally or in a signed-in Google Account; history/tabs synchronization and Web & App Activity are separate choices.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Chrome Privacy Notice",
-          "url": "https://www.google.com/chrome/privacy/",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/chrome/answer/13948160",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/chrome/answer/13730681",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/websearch/answer/54068",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -951,14 +969,18 @@
         "Password manager"
       ],
       "id": "google-chrome",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Web browsing requires connectivity; previously saved content can be accessed offline where supported",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Some sync features require a Google account"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Chrome",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": true,
       "openSource": false,
       "packageName": "com.android.chrome",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -968,8 +990,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.android.chrome",
       "pricing": "No purchase price documented",
-      "privacySummary": "Google documents collection and processing in its Chrome Privacy Notice. Use without sign-in is supported, while sync requires an account.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Not fully established in the checked app-specific sources.",
+        "collected": "Browsing data, saved passwords/bookmarks, device and diagnostic information may be processed according to enabled features and settings.",
+        "controls": "Sign-in and sync choices, Web & App Activity, history deletion and browser privacy settings.",
+        "deletion": "Signing out or disabling history sync does not automatically delete data already saved in the Google Account.",
+        "encryption": "Google documents selectable encryption for certain synchronized data, not universal end-to-end encryption for all browsing data.",
+        "practicalImplications": "Chrome can store browsing-related information locally or in a signed-in Google Account; history/tabs synchronization and Web & App Activity are separate choices.",
+        "purpose": "Browsing, security protections, synchronization, search suggestions and optional personalization.",
+        "recipients": "Google services for account sync and optional features; websites and selected search engine receive requests made through the browser.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "Feature-dependent account, recipient or integration flows; no universal no-sharing claim.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Chrome can store browsing-related information locally or in a signed-in Google Account; history/tabs synchronization and Web & App Activity are separate choices.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.google.com/chrome/"
     },
     {
@@ -979,17 +1018,20 @@
         "microsoft-edge",
         "samsung-internet"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown — test on your device under the same browsing workload.",
       "category": "Browsers",
       "description": "Open-source browser with tracking protection, extensions, and optional account sync.",
       "developer": "Mozilla",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Mozilla publishes Firefox data-practice disclosures.",
+          "claim": "Mozilla describes local browsing data separately from technical/interaction telemetry, sponsored New Tab content, optional account sync and optional AI features.",
           "classification": "DEVELOPER_DISCLOSED",
           "source": "Firefox Privacy Notice",
           "url": "https://www.mozilla.org/privacy/firefox/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1000,11 +1042,14 @@
         "Password manager"
       ],
       "id": "firefox",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Some websites are optimized primarily for Chromium browsers"
       ],
+      "minimumAndroid": "Not published",
       "name": "Firefox",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "org.mozilla.firefox",
@@ -1017,8 +1062,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=org.mozilla.firefox",
       "pricing": "No purchase price documented",
-      "privacySummary": "Mozilla publishes a Firefox privacy notice and the Android source code. Sync is optional.",
+      "privacyDetails": {
+        "advertising": "Mozilla discloses optional sponsored New Tab content and advertising measurement.",
+        "analytics": "Mozilla discloses technical/interaction telemetry and separate daily usage ping controls.",
+        "collected": "Mozilla processes technical, settings and interaction data; local browsing data generally stays on device unless a disclosed feature sends it.",
+        "controls": "Enhanced Tracking Protection, telemetry settings, sponsored content, sync and add-ons.",
+        "deletion": "Deleting local browsing data does not necessarily remove previously synced copies or third-party site records.",
+        "encryption": "Sync and web transport protections are distinct; do not claim all browser traffic is end-to-end encrypted.",
+        "practicalImplications": "Mozilla describes local browsing data separately from technical/interaction telemetry, sponsored New Tab content, optional account sync and optional AI features.",
+        "purpose": "Browsing, security, sync, optional sponsored content and diagnostics.",
+        "recipients": "Mozilla and enabled third-party search/AI/website services; optional account sync uses Mozilla infrastructure.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Mozilla describes local browsing data separately from technical/interaction telemetry, sponsored New Tab content, optional account sync and optional AI features.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/mozilla-mobile/firefox-android",
+      "storageRequirement": "Not published",
       "website": "https://www.mozilla.org/firefox/"
     },
     {
@@ -1028,17 +1090,20 @@
         "microsoft-edge",
         "samsung-internet"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown — no comparable Galaxy S24 Ultra measurement included.",
       "category": "Browsers",
       "description": "Chromium-based browser with built-in content blocking and optional privacy services.",
       "developer": "Brave Software",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Brave documents browser data handling in its privacy policy.",
+          "claim": "Brave says it does not collect browsing history; optional Sync, Rewards, ads, Wallet and services have separate data practices.",
           "classification": "DEVELOPER_DISCLOSED",
           "source": "Brave Browser Privacy Policy",
           "url": "https://brave.com/privacy/browser/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1049,11 +1114,14 @@
         "Account-free sync"
       ],
       "id": "brave",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Includes optional rewards, wallet, and sponsored-content features that some users may disable"
       ],
+      "minimumAndroid": "Not published",
       "name": "Brave",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "com.brave.browser",
@@ -1066,8 +1134,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.brave.browser",
       "pricing": "Core browser available without purchase",
-      "privacySummary": "Brave publishes source code and a browser privacy policy. Optional features may have separate data practices.",
+      "privacyDetails": {
+        "advertising": "Optional Brave ads/sponsored content have separate privacy disclosures.",
+        "analytics": "Brave discloses optional-service metrics and privacy-preserving ad measurements.",
+        "collected": "Optional service identifiers and data vary with enabled Sync, Rewards, ads and other features.",
+        "controls": "Shields, sponsored-content settings, Rewards opt-in, sync-chain controls and browser data deletion.",
+        "deletion": "Removing a device from Sync and deleting local data do not automatically delete all copies at other destinations.",
+        "encryption": "Brave says Sync data is encrypted with keys held on devices; this does not extend to all optional service metadata.",
+        "practicalImplications": "Brave says it does not collect browsing history; optional Sync, Rewards, ads, Wallet and services have separate data practices.",
+        "purpose": "Browsing, tracking protection and optional paid/rewards/connected services.",
+        "recipients": "Websites/search providers, Brave optional services, cloud hosting and custodial partners if enabled.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Brave says it does not collect browsing history; optional Sync, Rewards, ads, Wallet and services have separate data practices.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/brave/brave-browser",
+      "storageRequirement": "Not published",
       "website": "https://brave.com/"
     },
     {
@@ -1075,17 +1160,20 @@
       "alternativesFor": [
         "google-search"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown.",
       "category": "Search engines",
       "description": "Search engine and browser focused on reducing tracking and profiling.",
       "developer": "DuckDuckGo",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "DuckDuckGo states that it does not save or sell search history.",
+          "claim": "DuckDuckGo states it does not save identifiable search histories; browser and optional privacy-service features have separate data flows.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "DuckDuckGo Privacy Policy",
+          "source": "Official project documentation",
           "url": "https://duckduckgo.com/privacy",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1095,12 +1183,15 @@
         "Private search"
       ],
       "id": "duckduckgo",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for primary online service",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Search results and local coverage can differ from Google Search",
         "Search requires network access"
       ],
+      "minimumAndroid": "Not published",
       "name": "DuckDuckGo",
+      "networkActivity": "Network required for primary online service; local features may vary",
       "offline": false,
       "openSource": true,
       "packageName": "com.duckduckgo.mobile.android",
@@ -1113,24 +1204,59 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android",
       "pricing": "No purchase price documented",
-      "privacySummary": "DuckDuckGo states that search histories are not saved or sold. Browser and search components have separate published details.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Search requests and limited operational data according to DuckDuckGo privacy disclosures; local browser data depends on settings.",
+        "controls": "Browser privacy protections, fire-button deletion and optional feature controls.",
+        "deletion": "Clearing browser data does not delete records independently retained by websites visited.",
+        "encryption": "Do not assume end-to-end encryption of all web/search activity.",
+        "practicalImplications": "DuckDuckGo states it does not save identifiable search histories; browser and optional privacy-service features have separate data flows.",
+        "purpose": "Search results, tracker blocking and browser/privacy services.",
+        "recipients": "Search delivery infrastructure and websites opened; selected third-party services may receive feature-specific requests.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "DuckDuckGo states it does not save identifiable search histories; browser and optional privacy-service features have separate data flows.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/duckduckgo/Android",
+      "storageRequirement": "Not published",
       "website": "https://duckduckgo.com/"
     },
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown.",
       "category": "Search engines",
       "description": "Web search service and Android app with personalized and account-linked features.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Google discloses collection, purposes, controls, and retention at the company-policy level.",
+          "claim": "Search may save queries and interactions to account history and use them for personalization; Google is rolling out separate Search Services History and Personalized Recommendations settings.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Privacy Policy",
-          "url": "https://policies.google.com/privacy",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/websearch/answer/17025248",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/websearch/answer/54068",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/websearch/answer/12410098",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1140,14 +1266,18 @@
         "Image search"
       ],
       "id": "google-search",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online services/sync require connectivity; local or cached functionality varies by feature",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Personalized features may use account activity"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Search",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": false,
       "openSource": false,
       "packageName": "com.google.android.googlequicksearchbox",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "IOS",
@@ -1155,24 +1285,45 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox",
       "pricing": "No purchase price documented",
-      "privacySummary": "Google describes collected data, purposes, controls, and retention in its privacy policy.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Not fully established in the checked app-specific sources.",
+        "collected": "Queries, interaction history and contextual location/device signals depending on account settings.",
+        "controls": "Search Services History, Personalized Recommendations, Web & App Activity and deletion controls; settings may differ during rollout.",
+        "deletion": "Turning off personalization does not automatically erase previously stored activity.",
+        "encryption": "No general end-to-end encryption claim is established for search history.",
+        "practicalImplications": "Search may save queries and interactions to account history and use them for personalization; Google is rolling out separate Search Services History and Personalized Recommendations settings.",
+        "purpose": "Search delivery, security, recommendations and optional personalization.",
+        "recipients": "Google Search infrastructure and websites opened by the user.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "Feature-dependent account, recipient or integration flows; no universal no-sharing claim.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Search may save queries and interactions to account history and use them for personalization; Google is rolling out separate Search Services History and Personalized Recommendations settings.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.google.com/"
     },
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown.",
       "category": "Email",
       "description": "Email client and service with Google account integration.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Google's privacy policy describes data collection and account controls.",
+          "claim": "Gmail processes email content for features such as spam detection, Smart Reply and Smart Compose; Google describes separate personalization controls.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Privacy Policy",
-          "url": "https://policies.google.com/privacy",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/mail/answer/10434152",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1183,14 +1334,18 @@
         "Multiple accounts"
       ],
       "id": "gmail",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online services/sync require connectivity; local or cached functionality varies by feature",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "A Google account is required for the Gmail service"
       ],
+      "minimumAndroid": "Not published",
       "name": "Gmail",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": true,
       "openSource": false,
       "packageName": "com.google.android.gm",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "IOS",
@@ -1198,8 +1353,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.gm",
       "pricing": "Plan-dependent; verify current official pricing",
-      "privacySummary": "Covered by Google's privacy policy; service use requires an account.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Google documents performance data and crash analytics.",
+        "collected": "Email, attachments, contacts, account identifiers, diagnostics and some location information are described in Gmail's privacy explanation.",
+        "controls": "Gmail smart-feature/personalization settings, account data controls and message deletion.",
+        "deletion": "Disabling smart features does not automatically delete stored email or all account activity.",
+        "encryption": "Google documents encryption in transit and at rest; this does not establish default end-to-end encryption of every email.",
+        "practicalImplications": "Gmail processes email content for features such as spam detection, Smart Reply and Smart Compose; Google describes separate personalization controls.",
+        "purpose": "Email delivery, safety, smart features, synchronization and service reliability.",
+        "recipients": "Message recipients and Google infrastructure; integrations depend on account settings.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "Feature-dependent account, recipient or integration flows; no universal no-sharing claim.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Gmail processes email content for features such as spam detection, Smart Reply and Smart Compose; Google describes separate personalization controls.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://mail.google.com/"
     },
     {
@@ -1208,17 +1380,20 @@
         "gmail",
         "microsoft-outlook"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown.",
       "category": "Email",
       "description": "Email service with end-to-end encryption between Proton users and optional encrypted messages to others.",
       "developer": "Proton AG",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Proton documents Mail data processing and encryption limits.",
+          "claim": "Proton documents end-to-end encryption within supported mail flows; email to outside providers is not universally end-to-end encrypted by default.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Proton Mail Privacy Policy",
+          "source": "Official project documentation",
           "url": "https://proton.me/legal/privacy",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1228,12 +1403,15 @@
         "Multiple accounts"
       ],
       "id": "proton-mail",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for primary online service",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "An account is required",
         "Not every message to non-Proton recipients is end-to-end encrypted by default"
       ],
+      "minimumAndroid": "Not published",
       "name": "Proton Mail",
+      "networkActivity": "Network required for primary online service; local features may vary",
       "offline": false,
       "openSource": true,
       "packageName": "ch.protonmail.android",
@@ -1247,24 +1425,52 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=ch.protonmail.android",
       "pricing": "Free and paid plans; verify current official pricing",
-      "privacySummary": "Proton publishes service-specific privacy disclosures and open-source clients. Email metadata cannot all be end-to-end encrypted.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Account metadata, encrypted mailbox data and routing metadata according to Proton's service disclosures.",
+        "controls": "Account security, encrypted message options, aliases and retention/deletion controls.",
+        "deletion": "Recipients can retain copies; removing an account does not retract previously delivered mail.",
+        "encryption": "Proton-to-Proton mail is end-to-end encrypted; standard external email is not automatically end-to-end encrypted.",
+        "practicalImplications": "Proton documents end-to-end encryption within supported mail flows; email to outside providers is not universally end-to-end encrypted by default.",
+        "purpose": "Mail delivery, encryption, account operation and optional features.",
+        "recipients": "Proton infrastructure, message recipients and external mail providers as relevant.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Proton documents end-to-end encryption within supported mail flows; email to outside providers is not universally end-to-end encrypted by default.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/ProtonMail/android-mail",
+      "storageRequirement": "Not published",
       "website": "https://proton.me/mail"
     },
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown.",
       "category": "Cloud storage",
       "description": "Cloud file storage, synchronization, sharing, and collaboration service.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Google documents security and privacy controls for Drive.",
+          "claim": "Drive stores files in Google's cloud and offers per-file/folder sharing controls. Default encryption at rest is distinct from optional Workspace client-side encryption.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Drive security and privacy",
-          "url": "https://www.google.com/drive/safety/",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/drive/answer/10519333",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/drive/answer/2494822",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1275,15 +1481,19 @@
         "Offline files"
       ],
       "id": "google-drive",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online services/sync require connectivity; local or cached functionality varies by feature",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires a Google account",
         "Cloud synchronization uses network and background activity"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Drive",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": true,
       "openSource": false,
       "packageName": "com.google.android.apps.docs",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -1293,8 +1503,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.docs",
       "pricing": "Free allowance and paid plans; verify current official pricing",
-      "privacySummary": "Covered by Google privacy disclosures. Files are encrypted in transit and at rest; Drive does not advertise general end-to-end encryption.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Not fully established in the checked app-specific sources.",
+        "collected": "Uploaded files, document metadata, account information and sharing relationships are handled to provide Drive services.",
+        "controls": "Restricted sharing, named recipients, viewer/commenter/editor roles and revoking access.",
+        "deletion": "Deleting an original does not retract independently downloaded copies or guarantee immediate removal from recipients.",
+        "encryption": "Google documents encryption in transit/at rest; Workspace client-side encryption is a separate eligible/admin-enabled feature.",
+        "practicalImplications": "Drive stores files in Google's cloud and offers per-file/folder sharing controls. Default encryption at rest is distinct from optional Workspace client-side encryption.",
+        "purpose": "File storage, synchronization, collaboration and sharing.",
+        "recipients": "Google infrastructure and recipients granted access to shared files; link sharing can broaden access.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "Explicit file/folder access and link-sharing options.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Drive stores files in Google's cloud and offers per-file/folder sharing controls. Default encryption at rest is distinct from optional Workspace client-side encryption.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://drive.google.com/"
     },
     {
@@ -1303,17 +1530,27 @@
         "google-drive",
         "microsoft-onedrive"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "Background synchronization behavior depends on enabled backup/sync features; no comparable battery measurement published in checked sources",
       "battery": "Unknown.",
       "category": "Cloud storage",
       "description": "Cloud storage with end-to-end encrypted file content and metadata protections.",
       "developer": "Proton AG",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Proton describes Drive end-to-end encryption architecture.",
+          "claim": "Proton documents client-side/end-to-end encryption for Drive file contents and selected metadata.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Proton Drive security",
-          "url": "https://proton.me/drive/security",
-          "verified": "2026-09-21"
+          "source": "Proton Drive support",
+          "url": "https://proton.me/support/drive",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Proton lists Drive access for Android, iOS/iPadOS, Windows, macOS and web.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Proton Drive download page",
+          "url": "https://proton.me/drive/download",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1324,12 +1561,15 @@
         "Offline files"
       ],
       "id": "proton-drive",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for cloud synchronization and remote file access; some downloaded files can be used offline",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires a Proton account",
         "Collaboration features differ from Google Workspace"
       ],
+      "minimumAndroid": "Not published",
       "name": "Proton Drive",
+      "networkActivity": "Network is required for cloud synchronization, upload/download, and sharing; previously downloaded offline files can remain locally accessible",
       "offline": true,
       "openSource": true,
       "packageName": "me.proton.android.drive",
@@ -1342,8 +1582,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=me.proton.android.drive",
       "pricing": "Free and paid plans; verify current official pricing",
+      "privacyDetails": {
+        "advertising": "Not documented as a core Drive use in the checked product documentation",
+        "analytics": "Not documented in the checked Drive product pages",
+        "collected": "Account and service metadata are separate from encrypted file content. Proton states that file contents and selected metadata such as filenames/folder names are encrypted on the device before upload.",
+        "controls": "Users control files, sharing, local/offline copies, and account storage; service-level privacy controls are documented separately.",
+        "deletion": "Cloud deletion and local copies are distinct; shared or exported copies can remain elsewhere.",
+        "encryption": "Proton states that Drive encrypts file contents, filenames, and folder names on the device before upload.",
+        "practicalImplications": "Client-side encryption reduces Proton's access to file contents and covered metadata, but account identifiers and operational metadata should not be assumed to be hidden.",
+        "purpose": "Provide encrypted cloud file storage, synchronization, sharing, and account operation.",
+        "recipients": "Proton infrastructure stores encrypted Drive data and necessary account/service metadata; user-chosen share recipients receive shared content according to sharing controls.",
+        "sale": "Not documented in the checked Drive product documentation",
+        "sharing": "File sharing is user-directed; links and shared access create intentional recipients.",
+        "tracking": "Not documented in the checked Drive product pages"
+      },
       "privacySummary": "Proton documents end-to-end encryption and publishes Android client source.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Proton Drive support and download documentation, checked 2026-09-22",
       "sourceRepo": "https://github.com/ProtonDriveApps/android-drive",
+      "storageRequirement": "Not published",
       "website": "https://proton.me/drive"
     },
     {
@@ -1352,17 +1609,27 @@
         "google-drive",
         "microsoft-onedrive"
       ],
+      "architecture": "arm64-v8a, x86_64 (F-Droid 35.0.0)",
+      "backgroundActivity": "Synchronization can use background activity depending on account and sync settings",
       "battery": "Unknown; synchronization settings affect background activity.",
       "category": "Cloud storage",
       "description": "Open-source, self-hostable file sync and collaboration platform.",
       "developer": "Nextcloud GmbH / community",
+      "downloadSize": "Not published for stable release in this catalog entry",
       "evidence": [
         {
-          "claim": "The Android client is published as open-source software.",
+          "claim": "F-Droid lists Nextcloud Android 35.0.0 as requiring Android 9.0+ and providing arm64-v8a and x86_64 APKs.",
           "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "F-Droid Nextcloud package metadata",
+          "url": "https://f-droid.org/packages/com.nextcloud.client/",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "The Nextcloud Android client source is publicly available.",
+          "classification": "DEVELOPER_DISCLOSED",
           "source": "Nextcloud Android repository",
           "url": "https://github.com/nextcloud/android",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/com.nextcloud.client/",
@@ -1374,12 +1641,15 @@
         "Offline files"
       ],
       "id": "nextcloud",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for server synchronization and remote access; cached local files can be available offline",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires a server account",
         "Maintenance and privacy depend on the hosting provider or administrator"
       ],
+      "minimumAndroid": "Android 9.0+ (F-Droid 35.0.0)",
       "name": "Nextcloud",
+      "networkActivity": "A Nextcloud server or hosted provider is required for synchronization; cached/offline files may remain locally accessible",
       "offline": true,
       "openSource": true,
       "packageName": "com.nextcloud.client",
@@ -1394,24 +1664,59 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.nextcloud.client",
       "pricing": "Software is open source; hosting costs vary",
+      "privacyDetails": {
+        "advertising": "Depends on hosting/provider and server configuration; not inherent to the open-source client itself",
+        "analytics": "Depends on server/client configuration and deployment",
+        "collected": "The Android client connects to a user-selected Nextcloud server; what is collected depends on the server operator, enabled apps, logging, and external integrations.",
+        "controls": "Self-hosting, provider choice, server configuration, app permissions and enabled integrations provide different control points.",
+        "deletion": "Local cached copies and server-side files are distinct; server retention and backup policy depend on the operator.",
+        "encryption": "Transport/storage protections and optional encryption features depend on deployment; self-hosted does not mean universal end-to-end encryption.",
+        "practicalImplications": "Self-hosting can improve control, but privacy is determined by the actual server deployment, administrator, logs, enabled integrations, and encryption configuration.",
+        "purpose": "Synchronize, access and share files and related collaboration data with a Nextcloud server.",
+        "recipients": "The selected Nextcloud server operator and configured integrations can receive data; self-hosting changes who operates that infrastructure but does not inherently eliminate logging or metadata.",
+        "sale": "Depends on hosting/provider; not established by the open-source client source alone",
+        "sharing": "Sharing is user/server-policy controlled; external integrations and federated sharing can add recipients.",
+        "tracking": "Depends on server/client configuration and deployment"
+      },
       "privacySummary": "Self-hosting can give the operator control over storage and logs. Actual privacy depends on the chosen server and administrator.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "F-Droid 35.0.0 metadata and Nextcloud Android release documentation, checked 2026-09-22",
       "sourceRepo": "https://github.com/nextcloud/android",
+      "storageRequirement": "Not published",
       "website": "https://nextcloud.com/"
     },
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown; automatic backup can use background network and battery.",
       "category": "Photo management",
       "description": "Cloud photo backup, organization, search, editing, and sharing service.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Google provides product privacy controls and general data disclosures.",
+          "claim": "Photos backup is configurable by account and device folder; optional Face Groups create face models and can be disabled.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Photos privacy",
-          "url": "https://safety.google/photos/",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/photos/answer/9343402",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/photos/answer/6128838",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/photos/answer/6128858",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1423,14 +1728,18 @@
         "Metadata preservation"
       ],
       "id": "google-photos",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online services/sync require connectivity; local or cached functionality varies by feature",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Cloud backup requires a Google account"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Photos",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": true,
       "openSource": false,
       "packageName": "com.google.android.apps.photos",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "IOS",
@@ -1438,8 +1747,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos",
       "pricing": "Storage-plan dependent; verify current official pricing",
-      "privacySummary": "Google documents Photos controls and the broader account data practices in its privacy policy.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Not fully established in the checked app-specific sources.",
+        "collected": "Backed-up photos/videos and associated metadata; optional face models when Face Groups is enabled.",
+        "controls": "Backup toggles, folder selection, Face Groups controls, sharing and account data management.",
+        "deletion": "Turning backup off stops future backup but does not itself remove existing cloud copies; verify local copies before deleting cloud photos.",
+        "encryption": "Do not imply default end-to-end encryption for all backed-up Photos content from the checked sources.",
+        "practicalImplications": "Photos backup is configurable by account and device folder; optional Face Groups create face models and can be disabled.",
+        "purpose": "Photo backup, search, organization, sharing and optional face grouping.",
+        "recipients": "Google cloud infrastructure and user-selected sharing recipients.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "User-controlled photo sharing; cloud backup is distinct from sharing.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Photos backup is configurable by account and device folder; optional Face Groups create face models and can be disabled.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://photos.google.com/"
     },
     {
@@ -1447,17 +1773,20 @@
       "alternativesFor": [
         "google-photos"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; automatic backup frequency and media volume affect battery and network use.",
       "category": "Photo management",
       "description": "End-to-end encrypted photo backup and gallery with import tools.",
       "developer": "Ente Technologies",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Ente publishes its cryptographic design and audit materials.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "Ente security and privacy",
-          "url": "https://ente.io/security/",
-          "verified": "2026-09-21"
+          "claim": "Ente documents end-to-end encrypted photo backup and encrypted sharing; public-link holders can decrypt content if they have the link.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ente sharing documentation",
+          "url": "https://ente.io/help/photos/faq/sharing-and-collaboration",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/io.ente.photos.fdroid/",
@@ -1470,12 +1799,15 @@
         "Face recognition"
       ],
       "id": "ente-photos",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires an Ente account for cloud backup",
         "Migration from Google Photos may need Takeout exports and metadata reconciliation"
       ],
+      "minimumAndroid": "Not published",
       "name": "Ente Photos",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "io.ente.photos",
@@ -1489,8 +1821,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=io.ente.photos",
       "pricing": "Free allowance and paid plans; verify current official pricing",
-      "privacySummary": "Ente publishes source code, encryption documentation, and an external audit report.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Encrypted photo/video data and account/service metadata needed to operate backup and sync.",
+        "controls": "Backup selection, sharing access, link passwords/expiry and account recovery settings.",
+        "deletion": "A public link already copied by someone may remain accessible until access is revoked; local and remote copies differ.",
+        "encryption": "Ente describes end-to-end encryption and URL-fragment sharing keys; a recipient with the link can decrypt.",
+        "practicalImplications": "Ente documents end-to-end encrypted photo backup and encrypted sharing; public-link holders can decrypt content if they have the link.",
+        "purpose": "Encrypted backup, multi-device access, sharing and optional photo features.",
+        "recipients": "Ente stores encrypted media; selected recipients and anyone with a shared link may decrypt the content.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Ente documents end-to-end encrypted photo backup and encrypted sharing; public-link holders can decrypt content if they have the link.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/ente-io/ente",
+      "storageRequirement": "Not published",
       "website": "https://ente.io/"
     },
     {
@@ -1498,17 +1847,20 @@
       "alternativesFor": [
         "google-photos"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; backup workload and server connectivity affect use.",
       "category": "Photo management",
       "description": "Self-hosted open-source photo and video management platform.",
       "developer": "Immich contributors",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Immich publishes source and warns users to maintain independent backups.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "Immich documentation",
-          "url": "https://immich.app/docs/overview/introduction",
-          "verified": "2026-09-21"
+          "claim": "Immich is self-hosted photo management, not automatically end-to-end encrypted; server administrators and enabled integrations determine the privacy boundary.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Immich backup documentation",
+          "url": "https://immich.app/docs/administration/backup-and-restore",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1520,13 +1872,16 @@
         "Metadata preservation"
       ],
       "id": "immich",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires server setup and maintenance",
         "Users must plan their own backups",
         "The project advises against treating it as the only copy of photos"
       ],
+      "minimumAndroid": "Not published",
       "name": "Immich",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "app.alextran.immich",
@@ -1538,8 +1893,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=app.alextran.immich",
       "pricing": "Open-source software; server and storage costs vary",
-      "privacySummary": "Data location and administrator access depend on the self-hosted server. Open source allows inspection but does not by itself guarantee a secure deployment.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Photos/videos, thumbnails, metadata and face-recognition data on the chosen server.",
+        "controls": "Server hosting, account roles, backups, public sharing and enabled machine-learning services.",
+        "deletion": "Immich warns that database dumps alone do not include photo/video files; preserve independent asset and database backups.",
+        "encryption": "Do not infer universal end-to-end encryption from self-hosting or transport encryption.",
+        "practicalImplications": "Immich is self-hosted photo management, not automatically end-to-end encrypted; server administrators and enabled integrations determine the privacy boundary.",
+        "purpose": "Photo backup, search, sharing and media processing.",
+        "recipients": "Self-hosted/server operator and configured integrations; shared recipients where enabled.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Immich is self-hosted photo management, not automatically end-to-end encrypted; server administrators and enabled integrations determine the privacy boundary.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/immich-app/immich",
+      "storageRequirement": "Not published",
       "website": "https://immich.app/"
     },
     {
@@ -1547,17 +1919,20 @@
       "alternativesFor": [
         "google-photos"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; local-only operation avoids continuous cloud backup by default.",
       "category": "Photo management",
       "description": "Offline open-source gallery for viewing and organizing local media.",
       "developer": "Fossify",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "The application source is publicly available.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "Fossify Gallery repository",
+          "claim": "Fossify Gallery is a local Android gallery, not a hosted photo backup provider.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Official project documentation",
           "url": "https://github.com/FossifyOrg/Gallery",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/org.fossify.gallery/",
@@ -1568,12 +1943,15 @@
         "Metadata preservation"
       ],
       "id": "fossify-gallery",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "No cloud backup service",
         "Android only"
       ],
+      "minimumAndroid": "Not published",
       "name": "Fossify Gallery",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "org.fossify.gallery",
@@ -1582,24 +1960,52 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=org.fossify.gallery",
       "pricing": "Verify current store listing",
-      "privacySummary": "Designed for local gallery use and published as open source. It is not a cloud backup service.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Local media and metadata accessed through device permissions; app-specific remote collection is not established by source listing alone.",
+        "controls": "Media permissions, local album organization and Android app data controls.",
+        "deletion": "Deleting the gallery app does not necessarily remove local media or backups.",
+        "encryption": "No cloud end-to-end encryption claim applies to a local gallery without an associated sync service.",
+        "practicalImplications": "Fossify Gallery is a local Android gallery, not a hosted photo backup provider.",
+        "purpose": "View, organize and edit on-device media.",
+        "recipients": "Files shared through Android share actions or external backup apps go to the selected recipients.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Fossify Gallery is a local Android gallery, not a hosted photo backup provider.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/FossifyOrg/Gallery",
+      "storageRequirement": "Not published",
       "website": "https://www.fossify.org/"
     },
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown; active GPS navigation commonly uses location, screen, network, and processor resources.",
       "category": "Maps",
       "description": "Mapping, navigation, places, traffic, transit, and location-sharing service.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Google documents location collection and controls.",
+          "claim": "Maps Timeline is opt-in and may save precise device location; Incognito mode changes account-history behavior but does not hide activity from all other services.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google location technologies policy",
-          "url": "https://policies.google.com/technologies/location-data",
-          "verified": "2026-09-21"
+          "source": "Google Help",
+          "url": "https://support.google.com/maps/answer/10077010",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Official Google/Waze help documents the related privacy feature or user control.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Help",
+          "url": "https://support.google.com/maps/answer/9430563",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1612,14 +2018,18 @@
         "Place reviews"
       ],
       "id": "google-maps",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online navigation, search and traffic require connectivity; downloaded maps have limited offline functionality",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Some personalization and sharing features require an account"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Maps",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": true,
       "openSource": false,
       "packageName": "com.google.android.apps.maps",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "IOS",
@@ -1627,8 +2037,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
       "pricing": "No purchase price documented",
-      "privacySummary": "Google documents location-data processing and provides account and location-history controls.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Not fully established in the checked app-specific sources.",
+        "collected": "Searches, routes, location and optional Timeline history according to features and settings.",
+        "controls": "Timeline, Incognito mode, location permission, account history and sharing settings.",
+        "deletion": "Incognito mode does not delete prior Timeline or other account activity.",
+        "encryption": "Not applicable to a universal encryption claim for location/account history.",
+        "practicalImplications": "Maps Timeline is opt-in and may save precise device location; Incognito mode changes account-history behavior but does not hide activity from all other services.",
+        "purpose": "Navigation, local search, traffic and optional history/personalization.",
+        "recipients": "Google services and selected sharing recipients; other apps and providers can separately receive location data.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "Feature-dependent account, recipient or integration flows; no universal no-sharing claim.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Maps Timeline is opt-in and may save precise device location; Incognito mode changes account-history behavior but does not hide activity from all other services.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://maps.google.com/"
     },
     {
@@ -1636,17 +2063,20 @@
       "alternativesFor": [
         "google-maps"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; offline maps can reduce mobile-network activity, while GPS navigation still consumes power.",
       "category": "Maps",
       "description": "Offline-first open-source maps and navigation using OpenStreetMap data.",
       "developer": "Organic Maps community",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Organic Maps publishes source and a privacy policy describing its data practices.",
+          "claim": "Organic Maps documents offline-first navigation and its privacy policy; map downloads and external links still create network requests.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Organic Maps privacy policy",
+          "source": "Official project documentation",
           "url": "https://organicmaps.app/privacy/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/app.organicmaps/",
@@ -1657,13 +2087,16 @@
         "Cycling maps"
       ],
       "id": "organic-maps",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "No live traffic",
         "No Android Auto support documented",
         "Place and transit depth varies by OpenStreetMap coverage"
       ],
+      "minimumAndroid": "Not published",
       "name": "Organic Maps",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "app.organicmaps",
@@ -1673,8 +2106,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=app.organicmaps",
       "pricing": "No purchase price documented",
-      "privacySummary": "The project states it has no tracking and publishes its source. Map downloads and external links still involve network requests when used.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Map/location processing for navigation; precise remote data categories depend on features and privacy policy.",
+        "controls": "Location permissions, downloaded map storage and optional network use.",
+        "deletion": "Removing offline maps does not delete user-created exports stored elsewhere.",
+        "encryption": "No end-to-end encryption claim for navigation history is established.",
+        "practicalImplications": "Organic Maps documents offline-first navigation and its privacy policy; map downloads and external links still create network requests.",
+        "purpose": "Offline maps, routing and optional map downloads.",
+        "recipients": "Map download infrastructure and selected external links; third-party map data is not equivalent to an account service.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Organic Maps documents offline-first navigation and its privacy policy; map downloads and external links still create network requests.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/organicmaps/organicmaps",
+      "storageRequirement": "Not published",
       "unsupportedFeatures": [
         "Live traffic",
         "Android Auto"
@@ -1686,17 +2136,20 @@
       "alternativesFor": [
         "google-maps"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; extensive map rendering and GPS navigation can affect device use.",
       "category": "Maps",
       "description": "OpenStreetMap-based offline maps and navigation with extensive map controls.",
       "developer": "OsmAnd B.V.",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "OsmAnd publishes client source and privacy documentation.",
+          "claim": "OsmAnd's offline navigation and optional cloud/purchase services have different data flows.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "OsmAnd privacy policy",
+          "source": "Official project documentation",
           "url": "https://osmand.net/docs/legal/privacy-policy/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/net.osmand.plus/",
@@ -1708,12 +2161,15 @@
         "Cycling maps"
       ],
       "id": "osmand",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Interface and settings can be complex",
         "Live traffic coverage differs from Google Maps"
       ],
+      "minimumAndroid": "Not published",
       "name": "OsmAnd",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "net.osmand",
@@ -1723,8 +2179,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=net.osmand",
       "pricing": "Free and paid variants/features; verify current official pricing",
-      "privacySummary": "Core client source is public. Optional services and purchases may have separate processing.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Local maps, tracks and optional cloud/account data depending on features.",
+        "controls": "Location permissions, offline maps, track export and optional account/cloud features.",
+        "deletion": "Local tracks, exported files and cloud copies need separate management.",
+        "encryption": "No general end-to-end encryption claim for every optional OsmAnd service is established.",
+        "practicalImplications": "OsmAnd's offline navigation and optional cloud/purchase services have different data flows.",
+        "purpose": "Navigation, saved tracks, optional cloud backup and purchases.",
+        "recipients": "OsmAnd/connected services if used; user-selected track-sharing destinations.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "OsmAnd's offline navigation and optional cloud/purchase services have different data flows.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/osmandapp/OsmAnd",
+      "storageRequirement": "Not published",
       "website": "https://osmand.net/"
     },
     {
@@ -1732,17 +2205,34 @@
       "alternativesFor": [
         "google-password-manager"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "Push synchronization/notifications may use background services depending on build and settings",
       "battery": "Unknown.",
       "category": "Password managers",
       "description": "Cross-platform password manager with hosted and self-hosted options.",
       "developer": "Bitwarden Inc.",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Bitwarden publishes security assessments and audit information.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "Bitwarden compliance and audits",
-          "url": "https://bitwarden.com/help/is-bitwarden-audited/",
-          "verified": "2026-09-21"
+          "claim": "Bitwarden documents zero-knowledge encryption for vault contents while distinguishing account/operational metadata.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Bitwarden Security Whitepaper",
+          "url": "https://bitwarden.com/help/bitwarden-security-white-paper/",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "The Bitwarden Android repository lists minimum SDK 29 (Android 10).",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Bitwarden Android README",
+          "url": "https://github.com/bitwarden/android/blob/main/README.md",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Bitwarden documents Firebase-related push/crash behavior and notes that its F-Droid build removes Firebase.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Bitwarden security FAQ",
+          "url": "https://bitwarden.com/help/security-faqs/",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://mobileapp.bitwarden.com/fdroid/",
@@ -1754,11 +2244,14 @@
         "Offline access"
       ],
       "id": "bitwarden",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for account creation/sync and hosted services; local access to cached vault data can work offline",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires an account for synchronized vaults"
       ],
+      "minimumAndroid": "Android 10+ (project minimum SDK 29)",
       "name": "Bitwarden",
+      "networkActivity": "Synchronization, account access and hosted services require network access; previously available vault data can be accessed locally",
       "offline": true,
       "openSource": true,
       "packageName": "com.x8bit.bitwarden",
@@ -1773,8 +2266,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
       "pricing": "Free and paid plans; verify current official pricing",
+      "privacyDetails": {
+        "advertising": "Not documented as a core password-manager use",
+        "analytics": "Bitwarden documentation notes Firebase crash reporting on some Android builds/settings.",
+        "collected": "Bitwarden distinguishes end-to-end encrypted vault contents from account and operational metadata such as account identifiers.",
+        "controls": "Hosted or self-hosted deployment, client settings, and export choices provide different control points.",
+        "deletion": "Account and vault deletion are separate from any exported local copies.",
+        "encryption": "Bitwarden documents end-to-end/zero-knowledge encryption for vault data.",
+        "practicalImplications": "Zero-knowledge encryption protects vault contents, but it should not be interpreted as zero metadata. Plaintext exports create an unencrypted copy.",
+        "purpose": "Provide password-manager accounts, vault synchronization, security features, support and service operation.",
+        "recipients": "Service providers may process operational metadata; encrypted vault contents are designed so Bitwarden cannot read them.",
+        "sale": "Not documented in the checked security sources",
+        "sharing": "Vault sharing is user-directed; service infrastructure handles encrypted vault synchronization.",
+        "tracking": "Distribution channel matters; the F-Droid build is documented as removing Firebase components."
+      },
       "privacySummary": "Bitwarden publishes source, security documentation, and third-party audit material. Sync requires an account on a hosted or self-hosted server.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Bitwarden Android README compatibility section, checked 2026-09-22",
       "sourceRepo": "https://github.com/bitwarden/android",
+      "storageRequirement": "Not published",
       "website": "https://bitwarden.com/"
     },
     {
@@ -1783,17 +2293,27 @@
         "google-authenticator",
         "microsoft-authenticator"
       ],
+      "architecture": "arm64-v8a, armeabi-v7a, x86, x86_64 (F-Droid 3.4.3)",
+      "backgroundActivity": "F-Droid lists run-at-startup permission for 3.4.3; no general background-use measurement published",
       "battery": "Unknown; authenticator code generation is local.",
       "category": "Authentication",
       "description": "Open-source Android authenticator with encrypted local vaults and export support.",
       "developer": "Beem Development",
+      "downloadSize": "6.6 MiB APK (F-Droid 3.4.3; not installed size)",
       "evidence": [
         {
-          "claim": "Aegis publishes source and documents vault encryption and backups.",
+          "claim": "Aegis documents an encrypted local vault and user-controlled backup/export behavior.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Aegis project documentation",
+          "url": "https://github.com/beemdevelopment/Aegis",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "F-Droid lists Aegis 3.4.3 (82) as requiring Android 6.0+, supporting arm64-v8a, armeabi-v7a, x86 and x86_64, with a 6.6 MiB APK.",
           "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "Aegis documentation",
-          "url": "https://getaegis.app/",
-          "verified": "2026-09-21"
+          "source": "F-Droid Aegis package metadata",
+          "url": "https://f-droid.org/en/packages/com.beemdevelopment.aegis/",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/com.beemdevelopment.aegis/",
@@ -1804,12 +2324,15 @@
         "Offline access"
       ],
       "id": "aegis",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for local OTP generation; network may be used by user-selected backup/export workflows",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Android only",
         "User is responsible for securely backing up exported vaults"
       ],
+      "minimumAndroid": "Android 6.0+ (F-Droid 3.4.3)",
       "name": "Aegis Authenticator",
+      "networkActivity": "Core OTP generation is local; backup/export destination behavior depends on user choices",
       "offline": true,
       "openSource": true,
       "packageName": "com.beemdevelopment.aegis",
@@ -1818,8 +2341,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis",
       "pricing": "No purchase price documented",
+      "privacyDetails": {
+        "advertising": "Not documented",
+        "analytics": "Not documented",
+        "collected": "No account is required for local use; the checked project documentation describes a local encrypted vault rather than a hosted account service.",
+        "controls": "Vault encryption, password/biometric unlock, and user-controlled export/backup options are documented.",
+        "deletion": "Local app data and exported backup copies must be managed separately by the user.",
+        "encryption": "Project documentation describes AES-256-GCM vault encryption with password-derived and Android Keystore-supported unlocking.",
+        "practicalImplications": "Aegis can operate as a local-only authenticator, but the privacy of exported backups depends on where the user stores them. Plaintext exports expose OTP secrets.",
+        "purpose": "Local storage and generation of OTP credentials; optional exports/backups are user-directed.",
+        "recipients": "No routine remote recipient is documented for local vault use; external backup/storage providers chosen by the user are separate recipients.",
+        "sale": "Not documented",
+        "sharing": "User-initiated export or backup can share vault data with the selected destination.",
+        "tracking": "Not documented"
+      },
       "privacySummary": "The app is open source and keeps its vault locally unless the user exports or backs it up through another system.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "F-Droid 3.4.3 metadata, checked 2026-09-22",
       "sourceRepo": "https://github.com/beemdevelopment/Aegis",
+      "storageRequirement": "Not published",
       "website": "https://getaegis.app/"
     },
     {
@@ -1827,17 +2367,20 @@
       "alternativesFor": [
         "microsoft-office"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; desktop workload dependent.",
       "category": "Office software",
       "description": "Open-source desktop office suite for documents, spreadsheets, and presentations.",
       "developer": "The Document Foundation",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "LibreOffice is published as open-source software by The Document Foundation.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "LibreOffice source code",
+          "claim": "LibreOffice desktop editing works locally without an account; update checks, extensions and remote documents are separate network interactions.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Official project documentation",
           "url": "https://www.libreoffice.org/about-us/source-code/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1849,12 +2392,15 @@
         "No mandatory account"
       ],
       "id": "libreoffice",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "No official full-featured Android editor",
         "Complex Microsoft Office documents can render differently"
       ],
+      "minimumAndroid": "Not published",
       "name": "LibreOffice",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "",
@@ -1865,8 +2411,25 @@
       ],
       "playUrl": "",
       "pricing": "No purchase price documented",
-      "privacySummary": "Desktop software can be used locally without an account. Online update checks and extensions are separate network interactions.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Local documents remain on the selected device unless the user chooses external storage or network features.",
+        "controls": "Local file storage, macro security, update/extension choices and external sync.",
+        "deletion": "Deleting the program does not delete copies of documents on other devices/cloud providers.",
+        "encryption": "Document encryption depends on chosen save/password options, not universal encryption of every file.",
+        "practicalImplications": "LibreOffice desktop editing works locally without an account; update checks, extensions and remote documents are separate network interactions.",
+        "purpose": "Documents, spreadsheets and presentations.",
+        "recipients": "User-selected remote storage and extension/update services when accessed.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "LibreOffice desktop editing works locally without an account; update checks, extensions and remote documents are separate network interactions.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://git.libreoffice.org/core",
+      "storageRequirement": "Not published",
       "website": "https://www.libreoffice.org/"
     },
     {
@@ -1874,17 +2437,20 @@
       "alternativesFor": [
         "microsoft-office"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown.",
       "category": "Office software",
       "description": "Office editors available on desktop, mobile, web, and self-hosted servers.",
       "developer": "Ascensio System SIA",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "ONLYOFFICE publishes open-source components and licensing details.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "ONLYOFFICE GitHub organization",
+          "claim": "ONLYOFFICE desktop, mobile, hosted and self-hosted offerings have different privacy and account requirements.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Official project documentation",
           "url": "https://github.com/ONLYOFFICE",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1896,12 +2462,15 @@
         "Self hosting"
       ],
       "id": "onlyoffice",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Feature set and licensing differ by product and deployment",
         "Cloud collaboration requires a server or provider"
       ],
+      "minimumAndroid": "Not published",
       "name": "ONLYOFFICE",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "com.onlyoffice.documents",
@@ -1916,24 +2485,45 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.onlyoffice.documents",
       "pricing": "Community and commercial offerings; verify current official pricing",
-      "privacySummary": "Open-source components and self-hosting are available; privacy depends on deployment and any connected cloud provider.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Documents and collaboration metadata according to selected product and hosting deployment.",
+        "controls": "Deployment choice, file-sharing permissions and connected cloud/account settings.",
+        "deletion": "Deleting a local document does not remove copies stored in a collaborative server.",
+        "encryption": "Self-hosted deployment is not by itself a universal end-to-end encryption guarantee.",
+        "practicalImplications": "ONLYOFFICE desktop, mobile, hosted and self-hosted offerings have different privacy and account requirements.",
+        "purpose": "Document editing, collaboration and optional cloud storage.",
+        "recipients": "Self-hosted administrator, connected storage provider or hosted service depending on deployment.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "ONLYOFFICE desktop, mobile, hosted and self-hosted offerings have different privacy and account requirements.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/ONLYOFFICE",
+      "storageRequirement": "Not published",
       "website": "https://www.onlyoffice.com/"
     },
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature-dependent; comparable battery/background-use measurement not established",
       "battery": "Unknown.",
       "category": "Browsers",
       "description": "Chromium-based browser integrated with Microsoft services.",
       "developer": "Microsoft",
+      "downloadSize": "Not published",
+      "ecosystem": "MICROSOFT",
       "evidence": [
         {
-          "claim": "Microsoft provides an Edge privacy whitepaper and privacy statement.",
+          "claim": "Local browsing history, cookies, optional diagnostic data and Microsoft-account sync are separate data flows.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Microsoft Edge privacy",
-          "url": "https://learn.microsoft.com/deployedge/microsoft-edge-security-privacy",
-          "verified": "2026-09-21"
+          "source": "Microsoft privacy and product documentation",
+          "url": "https://support.microsoft.com/en-us/edge/microsoft-edge-browsing-data-and-privacy",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1943,14 +2533,18 @@
         "Password manager"
       ],
       "id": "microsoft-edge",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for online services; offline/local features depend on app and configuration",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Some integrated services and sync features require a Microsoft account"
       ],
+      "minimumAndroid": "Not published",
       "name": "Microsoft Edge",
+      "networkActivity": "Network use depends on cloud, synchronization and connected features",
       "offline": true,
       "openSource": false,
       "packageName": "com.microsoft.emmx",
+      "parentCompany": "Microsoft Corporation",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -1960,24 +2554,45 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx",
       "pricing": "No purchase price documented",
-      "privacySummary": "Microsoft documents diagnostic and browsing-data controls. Sync requires an account.",
+      "privacyDetails": {
+        "advertising": "Feature and provider dependent; not established by checked app-specific documentation.",
+        "analytics": "Provider describes diagnostics; exact fields and defaults depend on app/platform/settings.",
+        "collected": "Browsing history, optional diagnostic data, synced favorites/passwords and search suggestions according to settings.",
+        "controls": "Tracking prevention, optional diagnostics, sync categories and local/account browsing-data deletion.",
+        "deletion": "Local history deletion and Microsoft-account history deletion are separate; InPrivate does not hide traffic from sites or networks.",
+        "encryption": "The checked source does not establish end-to-end encryption for all synchronized browser data.",
+        "practicalImplications": "Local browsing history, cookies, optional diagnostic data and Microsoft-account sync are separate data flows.",
+        "purpose": "Browser functionality, security, diagnostics and optional synchronization.",
+        "recipients": "Microsoft receives required and enabled optional diagnostics and sync data; visited websites and search provider receive requested traffic.",
+        "sale": "Not established by checked app-specific documentation.",
+        "sharing": "User-selected collaboration/sharing and enabled service integrations may add recipients.",
+        "tracking": "Privacy controls reduce selected tracking but do not eliminate all network or service data processing."
+      },
+      "privacySummary": "Local browsing history, cookies, optional diagnostic data and Microsoft-account sync are separate data flows.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.microsoft.com/edge"
     },
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature-dependent; comparable battery/background-use measurement not established",
       "battery": "Unknown.",
       "category": "Browsers",
       "description": "Chromium-based Android browser with content blockers and Samsung integration.",
       "developer": "Samsung Electronics",
+      "downloadSize": "Not published",
+      "ecosystem": "SAMSUNG",
       "evidence": [
         {
-          "claim": "Samsung publishes privacy disclosures for its services.",
+          "claim": "Browser privacy depends on enabled Smart anti-tracking, content blockers and optional Samsung-account sync.",
           "classification": "DEVELOPER_DISCLOSED",
           "source": "Samsung Privacy",
           "url": "https://privacy.samsung.com/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -1987,38 +2602,63 @@
         "Account sync"
       ],
       "id": "samsung-internet",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for online services; offline/local features depend on app and configuration",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Android only",
         "Sync requires a Samsung account"
       ],
+      "minimumAndroid": "Not published",
       "name": "Samsung Internet",
+      "networkActivity": "Network use depends on cloud, synchronization and connected features",
       "offline": true,
       "openSource": false,
       "packageName": "com.sec.android.app.sbrowser",
+      "parentCompany": "Samsung Electronics",
       "platforms": [
         "ANDROID"
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser",
       "pricing": "No purchase price documented",
-      "privacySummary": "Samsung provides service and company privacy notices; optional sync uses a Samsung account.",
+      "privacyDetails": {
+        "advertising": "Feature and provider dependent; not established by checked app-specific documentation.",
+        "analytics": "Provider describes diagnostics; exact fields and defaults depend on app/platform/settings.",
+        "collected": "Local browser history/cookies, optional synced browsing data and diagnostics according to settings.",
+        "controls": "Smart anti-tracking, content blockers, site permissions, browsing-data deletion and Samsung account sync.",
+        "deletion": "Deleting local history does not necessarily remove copies previously synced or shared elsewhere.",
+        "encryption": "No universal end-to-end encryption claim for browser synchronization is established by checked sources.",
+        "practicalImplications": "Browser privacy depends on enabled Smart anti-tracking, content blockers and optional Samsung-account sync.",
+        "purpose": "Browsing, anti-tracking and optional cross-device synchronization.",
+        "recipients": "Visited sites and search provider; Samsung services when sync/connected features are enabled.",
+        "sale": "Not established by checked app-specific documentation.",
+        "sharing": "User-selected collaboration/sharing and enabled service integrations may add recipients.",
+        "tracking": "Privacy controls reduce selected tracking but do not eliminate all network or service data processing."
+      },
+      "privacySummary": "Browser privacy depends on enabled Smart anti-tracking, content blockers and optional Samsung-account sync.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://developer.samsung.com/internet"
     },
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature-dependent; comparable battery/background-use measurement not established",
       "battery": "Unknown; background synchronization can use network and battery.",
       "category": "Cloud storage",
       "description": "Cloud file storage, synchronization, sharing, and Microsoft 365 integration.",
       "developer": "Microsoft",
+      "downloadSize": "Not published",
+      "ecosystem": "MICROSOFT",
       "evidence": [
         {
-          "claim": "Microsoft publishes a company privacy statement covering online services.",
+          "claim": "OneDrive cloud files and sharing are account/server based; optional offline files are not a replacement for an independent backup.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Microsoft Privacy Statement",
+          "source": "Microsoft privacy and product documentation",
           "url": "https://privacy.microsoft.com/privacystatement",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -2029,15 +2669,19 @@
         "Office collaboration"
       ],
       "id": "microsoft-onedrive",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for online services; offline/local features depend on app and configuration",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires a Microsoft account",
         "General file storage is not advertised as end-to-end encrypted"
       ],
+      "minimumAndroid": "Not published",
       "name": "Microsoft OneDrive",
+      "networkActivity": "Network use depends on cloud, synchronization and connected features",
       "offline": true,
       "openSource": false,
       "packageName": "com.microsoft.skydrive",
+      "parentCompany": "Microsoft Corporation",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -2047,24 +2691,45 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.skydrive",
       "pricing": "Free allowance and paid plans; verify current official pricing",
-      "privacySummary": "Microsoft describes collection, processing, sharing, retention, and controls in its privacy statement.",
+      "privacyDetails": {
+        "advertising": "Feature and provider dependent; not established by checked app-specific documentation.",
+        "analytics": "Provider describes diagnostics; exact fields and defaults depend on app/platform/settings.",
+        "collected": "Cloud files, account and file-sharing metadata according to the account and tenant configuration.",
+        "controls": "File/folder permissions, link settings, account controls and offline-file settings.",
+        "deletion": "Deleting a cloud file is distinct from revoking copies already downloaded by recipients.",
+        "encryption": "Do not equate encryption at rest or Personal Vault with universal end-to-end encryption.",
+        "practicalImplications": "OneDrive cloud files and sharing are account/server based; optional offline files are not a replacement for an independent backup.",
+        "purpose": "File synchronization, storage, sharing and Microsoft 365 collaboration.",
+        "recipients": "Microsoft or the organization administering the tenant; recipients selected by sharing permissions.",
+        "sale": "Not established by checked app-specific documentation.",
+        "sharing": "User-selected collaboration/sharing and enabled service integrations may add recipients.",
+        "tracking": "Privacy controls reduce selected tracking but do not eliminate all network or service data processing."
+      },
+      "privacySummary": "OneDrive cloud files and sharing are account/server based; optional offline files are not a replacement for an independent backup.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage"
     },
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature-dependent; comparable battery/background-use measurement not established",
       "battery": "Unknown.",
       "category": "Email",
       "description": "Email and calendar client integrated with Microsoft and third-party accounts.",
       "developer": "Microsoft",
+      "downloadSize": "Not published",
+      "ecosystem": "MICROSOFT",
       "evidence": [
         {
-          "claim": "Microsoft discloses data practices for its products and services.",
+          "claim": "Outlook is both a client and Microsoft-hosted mail service; third-party mail account privacy also depends on its provider.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Microsoft Privacy Statement",
+          "source": "Microsoft privacy and product documentation",
           "url": "https://privacy.microsoft.com/privacystatement",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -2074,15 +2739,19 @@
         "Offline mail"
       ],
       "id": "microsoft-outlook",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for online services; offline/local features depend on app and configuration",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires at least one email account",
         "Some features depend on Microsoft 365"
       ],
+      "minimumAndroid": "Not published",
       "name": "Microsoft Outlook",
+      "networkActivity": "Network use depends on cloud, synchronization and connected features",
       "offline": true,
       "openSource": false,
       "packageName": "com.microsoft.office.outlook",
+      "parentCompany": "Microsoft Corporation",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -2092,24 +2761,45 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook",
       "pricing": "Plan-dependent; verify current official pricing",
-      "privacySummary": "Microsoft publishes privacy disclosures and in-product controls; server-side practices also depend on the configured email provider.",
+      "privacyDetails": {
+        "advertising": "Feature and provider dependent; not established by checked app-specific documentation.",
+        "analytics": "Provider describes diagnostics; exact fields and defaults depend on app/platform/settings.",
+        "collected": "Messages, calendar data, account identifiers and diagnostics as relevant to the connected accounts.",
+        "controls": "Account/provider choice, connected features, app permissions and email retention settings.",
+        "deletion": "Removing a client account does not necessarily delete mail at the provider.",
+        "encryption": "Default mail should not be described as universally end-to-end encrypted.",
+        "practicalImplications": "Outlook is both a client and Microsoft-hosted mail service; third-party mail account privacy also depends on its provider.",
+        "purpose": "Mail/calendar delivery, synchronization, safety and optional connected features.",
+        "recipients": "Microsoft services and configured third-party mail providers; intended message recipients.",
+        "sale": "Not established by checked app-specific documentation.",
+        "sharing": "User-selected collaboration/sharing and enabled service integrations may add recipients.",
+        "tracking": "Privacy controls reduce selected tracking but do not eliminate all network or service data processing."
+      },
+      "privacySummary": "Outlook is both a client and Microsoft-hosted mail service; third-party mail account privacy also depends on its provider.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.microsoft.com/microsoft-365/outlook/outlook-for-business"
     },
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature-dependent; comparable battery/background-use measurement not established",
       "battery": "Unknown.",
       "category": "Office software",
       "description": "Document, spreadsheet, presentation, collaboration, and cloud productivity applications.",
       "developer": "Microsoft",
+      "downloadSize": "Not published",
+      "ecosystem": "MICROSOFT",
       "evidence": [
         {
-          "claim": "Microsoft documents privacy controls and connected experiences.",
+          "claim": "Connected experiences and cloud collaboration create different data flows from local-only document editing.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Microsoft Privacy Statement",
+          "source": "Microsoft privacy and product documentation",
           "url": "https://privacy.microsoft.com/privacystatement",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -2121,15 +2811,19 @@
         "Office collaboration"
       ],
       "id": "microsoft-office",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for online services; offline/local features depend on app and configuration",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Many features require an account or subscription",
         "Cloud and AI features require network access"
       ],
+      "minimumAndroid": "Not published",
       "name": "Microsoft 365",
+      "networkActivity": "Network use depends on cloud, synchronization and connected features",
       "offline": true,
       "openSource": false,
       "packageName": "com.microsoft.office.officehubrow",
+      "parentCompany": "Microsoft Corporation",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -2139,24 +2833,44 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow",
       "pricing": "Subscription and limited free use vary; verify current official pricing",
-      "privacySummary": "Microsoft publishes product and company privacy disclosures. Connected experiences can send content or usage data for the selected service.",
+      "privacyDetails": {
+        "advertising": "Feature and provider dependent; not established by checked app-specific documentation.",
+        "analytics": "Provider describes diagnostics; exact fields and defaults depend on app/platform/settings.",
+        "collected": "Documents and collaboration metadata when cloud features are used; diagnostics according to product settings.",
+        "controls": "Connected experiences, account/tenant controls, sharing permissions and document storage choice.",
+        "deletion": "Deleting local documents does not necessarily remove OneDrive/SharePoint or collaborator copies.",
+        "encryption": "Cloud storage protections are not the same as default end-to-end encryption of every shared document.",
+        "practicalImplications": "Connected experiences and cloud collaboration create different data flows from local-only document editing.",
+        "purpose": "Office editing, cloud storage, collaboration and connected experiences.",
+        "recipients": "Microsoft cloud/organization and collaborators selected for shared documents.",
+        "sale": "Not established by checked app-specific documentation.",
+        "sharing": "User-selected collaboration/sharing and enabled service integrations may add recipients.",
+        "tracking": "Privacy controls reduce selected tracking but do not eliminate all network or service data processing."
+      },
+      "privacySummary": "Connected experiences and cloud collaboration create different data flows from local-only document editing.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.microsoft.com/microsoft-365"
     },
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not published",
       "battery": "Unknown.",
       "category": "Authentication",
       "description": "Authenticator app for time-based and counter-based one-time codes with optional account sync.",
       "developer": "Google",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Google documents Authenticator setup, transfers, and optional account synchronization.",
+          "claim": "Google documents offline use, optional Google Account synchronization, use without an account, and QR-based transfer for Authenticator.",
           "classification": "DEVELOPER_DISCLOSED",
           "source": "Google Account Help",
           "url": "https://support.google.com/accounts/answer/1066447",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -2166,38 +2880,63 @@
         "Account sync"
       ],
       "id": "google-authenticator",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for local OTP generation; required for optional Google Account synchronization and online account services",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Encrypted portable export choices differ from some alternatives"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Authenticator",
+      "networkActivity": "OTP generation works offline; optional Google Account synchronization and account-related features use network access",
       "offline": true,
       "openSource": false,
       "packageName": "com.google.android.apps.authenticator2",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "IOS"
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2",
       "pricing": "No purchase price documented",
+      "privacyDetails": {
+        "advertising": "Not documented for Authenticator itself",
+        "analytics": "Not documented in the checked Authenticator support material",
+        "collected": "Google Authenticator can generate codes without an account; enabling Google Account sync expands the data boundary to Google's account services.",
+        "controls": "Users can use the app without a Google Account or enable account synchronization; manual QR transfer is also documented.",
+        "deletion": "Removing local entries, disabling sync, and deleting account-held data are separate actions and should be handled deliberately.",
+        "encryption": "The checked support source documents sync and transfer behavior but does not establish a product-specific end-to-end encryption claim for synchronized Authenticator data.",
+        "practicalImplications": "Local-only use keeps OTP generation on the device; account sync improves recovery and multi-device access but expands the service data boundary.",
+        "purpose": "Generate one-time codes and, when enabled, synchronize authenticator entries across devices.",
+        "recipients": "Google account infrastructure is involved when account synchronization is enabled; local-only use does not require that sync path.",
+        "sale": "Not documented in the checked Authenticator support material",
+        "sharing": "Account synchronization shares authenticator data with the user's Google account infrastructure; QR transfer is user-initiated.",
+        "tracking": "Not documented in the checked Authenticator support material"
+      },
       "privacySummary": "Code generation works locally; optional Google Account synchronization changes the data boundary.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Google Account Help, checked 2026-09-22",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://support.google.com/accounts/answer/1066447"
     },
     {
       "accountRequired": true,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown.",
       "category": "Password managers",
       "description": "Password and passkey manager integrated with Chrome and Android.",
       "developer": "Google",
+      "downloadSize": "Not published",
+      "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Google documents security for saved passwords and passkeys.",
+          "claim": "Google Password Manager supports account-based password/passkey access and optional on-device encryption; Google documents analytics/diagnostic collection.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Google Password Manager security",
+          "source": "Google Help",
           "url": "https://support.google.com/accounts/answer/6208650",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -2207,15 +2946,19 @@
         "Account sync"
       ],
       "id": "google-password-manager",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online services/sync require connectivity; local or cached functionality varies by feature",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires a Google account for synchronized access",
         "Strongest integration is within Google platforms and Chrome"
       ],
+      "minimumAndroid": "Not published",
       "name": "Google Password Manager",
+      "networkActivity": "Account sync and online credential services require connectivity; some on-device credential functions can operate locally",
       "offline": true,
       "openSource": false,
       "packageName": "com.google.android.gms",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -2226,24 +2969,51 @@
       ],
       "playUrl": "",
       "pricing": "No purchase price documented",
-      "privacySummary": "Google documents password encryption, account protections, and privacy practices. Sync depends on a Google account.",
+      "privacyDetails": {
+        "advertising": "See provider privacy policy; app-specific ad behavior not established by checked sources.",
+        "analytics": "Google documents page views/taps, crash logs and diagnostics.",
+        "collected": "Saved sign-in data and usage/crash/diagnostic information described by Google.",
+        "controls": "Account/sync settings, on-device encryption, credential deletion and password export.",
+        "deletion": "Password export formats may be plaintext and may not include passkeys; verify migration of each credential type.",
+        "encryption": "Google documents encryption for saved credentials and optional on-device encryption; do not generalize to all operational metadata.",
+        "practicalImplications": "Google Password Manager supports account-based password/passkey access and optional on-device encryption; Google documents analytics/diagnostic collection.",
+        "purpose": "Credential storage, autofill, security alerts and optional account synchronization.",
+        "recipients": "Google infrastructure when account synchronization is used; credentials are provided to selected sign-in destinations.",
+        "sale": "Not established by the checked product-specific sources.",
+        "sharing": "Feature-dependent account, recipient or integration flows; no universal no-sharing claim.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Google Password Manager supports account-based password/passkey access and optional on-device encryption; Google documents analytics/diagnostic collection.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://passwords.google.com/"
     },
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Push approvals and some connected sign-in/backup flows require background/network-capable operation",
       "battery": "Unknown.",
       "category": "Authentication",
       "description": "Authenticator for one-time codes, Microsoft account approvals, and supported sign-in flows.",
       "developer": "Microsoft",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Microsoft publishes product privacy disclosures and support documentation.",
+          "claim": "Microsoft documents Authenticator backup and restore behavior and notes that restore is not cross-platform between Android and iOS.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Microsoft Privacy Statement",
-          "url": "https://privacy.microsoft.com/privacystatement",
-          "verified": "2026-09-21"
+          "source": "Microsoft Authenticator backup guidance",
+          "url": "https://support.microsoft.com/en-us/authenticator/back-up-your-accounts-in-microsoft-authenticator",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "Microsoft documents that restore behavior varies by account type and that some work/school or passwordless credentials require sign-in or re-registration.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Authenticator restore guidance",
+          "url": "https://support.microsoft.com/en-US/authenticator/restore-account-credentials-from-microsoft-authenticator",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -2253,12 +3023,15 @@
         "Offline access"
       ],
       "id": "microsoft-authenticator",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for local TOTP generation; required for push approvals, backup/restore and connected sign-in flows",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Microsoft-specific push approvals are not portable to standard TOTP apps",
         "Backup and recovery behavior is platform-dependent"
       ],
+      "minimumAndroid": "Not published",
       "name": "Microsoft Authenticator",
+      "networkActivity": "Local TOTP can work offline; push approvals, account backup/restore and connected Microsoft sign-in flows require network access",
       "offline": true,
       "openSource": false,
       "packageName": "com.azure.authenticator",
@@ -2268,8 +3041,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.azure.authenticator",
       "pricing": "No purchase price documented",
+      "privacyDetails": {
+        "advertising": "Not documented for Authenticator itself in the checked support sources",
+        "analytics": "Not documented in the checked Authenticator support sources",
+        "collected": "Data handling varies by feature. Local TOTP generation has a different data boundary from cloud backup, push approvals, and Microsoft account sign-in flows.",
+        "controls": "Backup and account configuration are feature-dependent; some credentials require re-registration rather than portable export.",
+        "deletion": "Removing an app entry does not necessarily remove an authentication method from the underlying Microsoft/work/school account.",
+        "encryption": "The checked support sources describe backup/restore behavior but do not establish a universal end-to-end encryption claim for every credential type.",
+        "practicalImplications": "A migration must distinguish standard TOTP entries from push, passwordless, work/school, and device-bound credentials. The latter may require re-registration.",
+        "purpose": "Generate one-time codes, approve sign-ins, support passwordless or account-bound authentication flows, and optionally back up supported credentials.",
+        "recipients": "Microsoft infrastructure is involved for push approvals, backup/restore, and Microsoft-connected authentication features.",
+        "sale": "Not documented in the checked Authenticator support sources",
+        "sharing": "Cloud backup and connected authentication flows transmit data to Microsoft services; local TOTP generation does not require those flows.",
+        "tracking": "Not documented in the checked Authenticator support sources"
+      },
       "privacySummary": "Microsoft publishes privacy disclosures; local code generation and connected approval or backup features have different network needs.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Microsoft Authenticator backup/restore support, checked 2026-09-22",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.microsoft.com/security/mobile-authenticator-app"
     },
     {
@@ -2277,17 +3067,27 @@
       "alternativesFor": [
         "google-password-manager"
       ],
+      "architecture": "arm64-v8a, armeabi-v7a, x86, x86_64 (F-Droid 4.5.3)",
+      "backgroundActivity": "F-Droid lists foreground-service capabilities for the current package; actual use depends on enabled features",
       "battery": "Unknown.",
       "category": "Password managers",
       "description": "Open-source Android password manager for local KeePass database files.",
       "developer": "Kunzisoft",
+      "downloadSize": "Approximately 15 MiB APK (F-Droid 4.5.3; not installed size)",
       "evidence": [
         {
-          "claim": "KeePassDX source and documentation are publicly available.",
-          "classification": "INDEPENDENTLY_VERIFIED",
+          "claim": "KeePassDX documents local KeePass database support and multiple distribution channels.",
+          "classification": "DEVELOPER_DISCLOSED",
           "source": "KeePassDX repository",
           "url": "https://github.com/Kunzisoft/KeePassDX",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "F-Droid lists KeePassDX 4.5.3 (45300) as requiring Android 4.4+ and supporting arm64-v8a, armeabi-v7a, x86 and x86_64.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "F-Droid KeePassDX package metadata",
+          "url": "https://f-droid.org/packages/com.kunzisoft.keepass.libre/",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/com.kunzisoft.keepass.libre/",
@@ -2298,12 +3098,15 @@
         "Local only"
       ],
       "id": "keepassdx",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for local database use; external sync/storage can require network access",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Android only",
         "Users must design and secure their own synchronization and backups"
       ],
+      "minimumAndroid": "Android 4.4+ (F-Droid 4.5.3)",
       "name": "KeePassDX",
+      "networkActivity": "KeePassDX manages local KeePass databases; network behavior depends on external storage/synchronization choices",
       "offline": true,
       "openSource": true,
       "packageName": "com.kunzisoft.keepass.free",
@@ -2312,8 +3115,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free",
       "pricing": "No purchase price documented",
+      "privacyDetails": {
+        "advertising": "Not documented",
+        "analytics": "Not documented",
+        "collected": "KeePassDX is designed around local KeePass database files and does not require a hosted KeePassDX account.",
+        "controls": "Users control database location, backup, synchronization method and encryption credentials.",
+        "deletion": "Deleting the app does not necessarily delete database copies stored elsewhere; users must manage database/backups separately.",
+        "encryption": "KeePassDX works with encrypted KeePass/KDBX databases; database security depends on configuration and credentials.",
+        "practicalImplications": "A local KDBX workflow can minimize service exposure, but privacy and availability depend heavily on how the database is backed up and synchronized.",
+        "purpose": "Open, edit and use encrypted KeePass database files on Android.",
+        "recipients": "No remote recipient is inherent to local-only use; a user-selected sync or storage provider may receive the database file.",
+        "sale": "Not documented",
+        "sharing": "Sharing/synchronization depends on user-selected file workflows or external storage providers.",
+        "tracking": "Not documented"
+      },
       "privacySummary": "KeePassDX works with local encrypted databases; any cross-device sync depends on the storage provider the user chooses.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "F-Droid 4.5.3 metadata and project documentation, checked 2026-09-22",
       "sourceRepo": "https://github.com/Kunzisoft/KeePassDX",
+      "storageRequirement": "Not published",
       "website": "https://www.keepassdx.com/"
     },
     {
@@ -2322,17 +3142,27 @@
         "google-authenticator",
         "microsoft-authenticator"
       ],
+      "architecture": "arm64-v8a, armeabi-v7a, x86_64 (F-Droid 4.4.25)",
+      "backgroundActivity": "Not published",
       "battery": "Unknown.",
       "category": "Authentication",
       "description": "Open-source authenticator with end-to-end encrypted backup and multi-device access.",
       "developer": "Ente Technologies",
+      "downloadSize": "61 MiB APK (F-Droid 4.4.25; not installed size)",
       "evidence": [
         {
-          "claim": "Ente Auth publishes source and describes end-to-end encrypted synchronization.",
+          "claim": "Ente documents optional offline use and end-to-end encrypted synchronization for Auth.",
           "classification": "DEVELOPER_DISCLOSED",
           "source": "Ente Auth",
-          "url": "https://ente.io/auth/",
-          "verified": "2026-09-21"
+          "url": "https://ente.com/auth/",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "F-Droid lists Ente Auth 4.4.25 (1072) as requiring Android 7.0+, supporting arm64-v8a, armeabi-v7a and x86_64, with a 61 MiB APK.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "F-Droid Ente Auth package metadata",
+          "url": "https://f-droid.org/packages/io.ente.auth/",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/io.ente.auth/",
@@ -2343,12 +3173,15 @@
         "Offline access"
       ],
       "id": "ente-auth",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for offline code generation; required for encrypted synchronization and online account features",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Connected synchronization requires an account",
         "Provider-specific push approvals do not transfer as TOTP secrets"
       ],
+      "minimumAndroid": "Android 7.0+ (F-Droid 4.4.25)",
       "name": "Ente Auth",
+      "networkActivity": "Network is optional for local code generation; encrypted sync/backup requires network access",
       "offline": true,
       "openSource": true,
       "packageName": "io.ente.auth",
@@ -2362,8 +3195,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=io.ente.auth",
       "pricing": "No purchase price documented",
+      "privacyDetails": {
+        "advertising": "Not documented",
+        "analytics": "Not documented",
+        "collected": "An Ente account is optional for offline-only Auth use; account and synchronization data are involved when encrypted sync is enabled.",
+        "controls": "Users can operate offline without an account, use encrypted synchronization, and create local encrypted backups/exports.",
+        "deletion": "Local and synchronized copies need to be handled according to the mode in use; exported backup files remain separate copies.",
+        "encryption": "Ente documents end-to-end encrypted synchronization for Auth data.",
+        "practicalImplications": "Offline mode reduces the service data boundary, while sync improves recovery and multi-device access. Backup passwords and exported files must be protected.",
+        "purpose": "Generate OTP codes locally and, when enabled, synchronize encrypted authenticator data across devices.",
+        "recipients": "Ente infrastructure receives encrypted synchronization data when sync is enabled.",
+        "sale": "Not documented",
+        "sharing": "User-controlled export and encrypted sync are documented.",
+        "tracking": "Not documented"
+      },
       "privacySummary": "Ente publishes source and encryption documentation; an account is optional for local use and needed for encrypted synchronization.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "F-Droid 4.4.25 metadata and Ente documentation, checked 2026-09-22",
       "sourceRepo": "https://github.com/ente-io/ente",
+      "storageRequirement": "Not published",
       "unsupportedFeatures": [
         "Push approval",
         "Passkeys"
@@ -2375,18 +3225,21 @@
       "alternativesFor": [
         "google-maps"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature- and permission-dependent; no comparable measured battery/background-use figure established in checked sources",
       "battery": "Unknown; live GPS navigation uses location, screen, processor, and network resources.",
       "category": "Maps",
       "description": "Community-driven navigation with live traffic, incident reporting, and route guidance.",
       "developer": "Waze Mobile",
+      "downloadSize": "Not published",
       "ecosystem": "GOOGLE",
       "evidence": [
         {
-          "claim": "Waze publishes product privacy information and identifies Google as its parent ecosystem.",
+          "claim": "Waze provides ads personalization, invisible mode and navigation-history controls; location may be checked outside active use when permissions/settings allow.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Waze Privacy Policy",
-          "url": "https://www.waze.com/legal/privacy",
-          "verified": "2026-09-21"
+          "source": "Waze Help",
+          "url": "https://support.google.com/waze/answer/7680098",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -2397,24 +3250,44 @@
         "Incident reporting"
       ],
       "id": "waze",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Online services/sync require connectivity; local or cached functionality varies by feature",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "No full offline navigation",
         "Live features require network access"
       ],
+      "minimumAndroid": "Not published",
       "name": "Waze",
+      "networkActivity": "Core cloud/search/navigation/sync functionality uses network access; available offline features vary by app and configuration",
       "offline": false,
       "openSource": false,
       "packageName": "com.waze",
-      "parentCompany": "Google LLC",
+      "parentCompany": "Alphabet Inc.",
       "platforms": [
         "ANDROID",
         "IOS"
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.waze",
       "pricing": "No purchase price documented",
-      "privacySummary": "Waze is part of Google's ecosystem and publishes product privacy information. Live routing depends on location and network processing.",
+      "privacyDetails": {
+        "advertising": "Waze documents ad personalization controls; turning personalization off does not remove ads.",
+        "analytics": "Not fully established in the checked app-specific sources.",
+        "collected": "Navigation/recent locations, account details, ad-related activity and optional background location.",
+        "controls": "Personalize ads, Go invisible, navigation/recent location deletion and device location permissions.",
+        "deletion": "Deleting the Waze account does not necessarily remove contributed map edits/statistical drive data, according to Waze.",
+        "encryption": "No end-to-end encryption claim for route history is established by the checked privacy-controls source.",
+        "practicalImplications": "Waze provides ads personalization, invisible mode and navigation-history controls; location may be checked outside active use when permissions/settings allow.",
+        "purpose": "Live navigation, traffic reporting, personalized ads and community contributions.",
+        "recipients": "Waze/Google infrastructure and user-chosen sharing; public map visibility varies with invisible mode.",
+        "sale": "Waze states that it does not sell personal information.",
+        "sharing": "Feature-dependent account, recipient or integration flows; no universal no-sharing claim.",
+        "tracking": "Depends on app, account, permissions and optional personalization; do not equate disabling personalization with disabling all data collection."
+      },
+      "privacySummary": "Waze provides ads personalization, invisible mode and navigation-history controls; location may be checked outside active use when permissions/settings allow.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked product support pages; verify specific release/channel",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "unsupportedFeatures": [
         "Offline navigation"
       ],

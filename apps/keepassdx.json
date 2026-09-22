@@ -6,17 +6,27 @@
       "alternativesFor": [
         "google-password-manager"
       ],
+      "architecture": "arm64-v8a, armeabi-v7a, x86, x86_64 (F-Droid 4.5.3)",
+      "backgroundActivity": "F-Droid lists foreground-service capabilities for the current package; actual use depends on enabled features",
       "battery": "Unknown.",
       "category": "Password managers",
       "description": "Open-source Android password manager for local KeePass database files.",
       "developer": "Kunzisoft",
+      "downloadSize": "Approximately 15 MiB APK (F-Droid 4.5.3; not installed size)",
       "evidence": [
         {
-          "claim": "KeePassDX source and documentation are publicly available.",
-          "classification": "INDEPENDENTLY_VERIFIED",
+          "claim": "KeePassDX documents local KeePass database support and multiple distribution channels.",
+          "classification": "DEVELOPER_DISCLOSED",
           "source": "KeePassDX repository",
           "url": "https://github.com/Kunzisoft/KeePassDX",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "F-Droid lists KeePassDX 4.5.3 (45300) as requiring Android 4.4+ and supporting arm64-v8a, armeabi-v7a, x86 and x86_64.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "F-Droid KeePassDX package metadata",
+          "url": "https://f-droid.org/packages/com.kunzisoft.keepass.libre/",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/com.kunzisoft.keepass.libre/",
@@ -27,12 +37,15 @@
         "Local only"
       ],
       "id": "keepassdx",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for local database use; external sync/storage can require network access",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Android only",
         "Users must design and secure their own synchronization and backups"
       ],
+      "minimumAndroid": "Android 4.4+ (F-Droid 4.5.3)",
       "name": "KeePassDX",
+      "networkActivity": "KeePassDX manages local KeePass databases; network behavior depends on external storage/synchronization choices",
       "offline": true,
       "openSource": true,
       "packageName": "com.kunzisoft.keepass.free",
@@ -41,8 +54,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free",
       "pricing": "No purchase price documented",
+      "privacyDetails": {
+        "advertising": "Not documented",
+        "analytics": "Not documented",
+        "collected": "KeePassDX is designed around local KeePass database files and does not require a hosted KeePassDX account.",
+        "controls": "Users control database location, backup, synchronization method and encryption credentials.",
+        "deletion": "Deleting the app does not necessarily delete database copies stored elsewhere; users must manage database/backups separately.",
+        "encryption": "KeePassDX works with encrypted KeePass/KDBX databases; database security depends on configuration and credentials.",
+        "practicalImplications": "A local KDBX workflow can minimize service exposure, but privacy and availability depend heavily on how the database is backed up and synchronized.",
+        "purpose": "Open, edit and use encrypted KeePass database files on Android.",
+        "recipients": "No remote recipient is inherent to local-only use; a user-selected sync or storage provider may receive the database file.",
+        "sale": "Not documented",
+        "sharing": "Sharing/synchronization depends on user-selected file workflows or external storage providers.",
+        "tracking": "Not documented"
+      },
       "privacySummary": "KeePassDX works with local encrypted databases; any cross-device sync depends on the storage provider the user chooses.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "F-Droid 4.5.3 metadata and project documentation, checked 2026-09-22",
       "sourceRepo": "https://github.com/Kunzisoft/KeePassDX",
+      "storageRequirement": "Not published",
       "website": "https://www.keepassdx.com/"
     }
   ]

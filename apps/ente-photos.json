@@ -6,17 +6,20 @@
       "alternativesFor": [
         "google-photos"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; automatic backup frequency and media volume affect battery and network use.",
       "category": "Photo management",
       "description": "End-to-end encrypted photo backup and gallery with import tools.",
       "developer": "Ente Technologies",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Ente publishes its cryptographic design and audit materials.",
-          "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "Ente security and privacy",
-          "url": "https://ente.io/security/",
-          "verified": "2026-09-21"
+          "claim": "Ente documents end-to-end encrypted photo backup and encrypted sharing; public-link holders can decrypt content if they have the link.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ente sharing documentation",
+          "url": "https://ente.io/help/photos/faq/sharing-and-collaboration",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/io.ente.photos.fdroid/",
@@ -29,12 +32,15 @@
         "Face recognition"
       ],
       "id": "ente-photos",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Requires an Ente account for cloud backup",
         "Migration from Google Photos may need Takeout exports and metadata reconciliation"
       ],
+      "minimumAndroid": "Not published",
       "name": "Ente Photos",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "io.ente.photos",
@@ -48,8 +54,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=io.ente.photos",
       "pricing": "Free allowance and paid plans; verify current official pricing",
-      "privacySummary": "Ente publishes source code, encryption documentation, and an external audit report.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Encrypted photo/video data and account/service metadata needed to operate backup and sync.",
+        "controls": "Backup selection, sharing access, link passwords/expiry and account recovery settings.",
+        "deletion": "A public link already copied by someone may remain accessible until access is revoked; local and remote copies differ.",
+        "encryption": "Ente describes end-to-end encryption and URL-fragment sharing keys; a recipient with the link can decrypt.",
+        "practicalImplications": "Ente documents end-to-end encrypted photo backup and encrypted sharing; public-link holders can decrypt content if they have the link.",
+        "purpose": "Encrypted backup, multi-device access, sharing and optional photo features.",
+        "recipients": "Ente stores encrypted media; selected recipients and anyone with a shared link may decrypt the content.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Ente documents end-to-end encrypted photo backup and encrypted sharing; public-link holders can decrypt content if they have the link.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/ente-io/ente",
+      "storageRequirement": "Not published",
       "website": "https://ente.io/"
     }
   ]

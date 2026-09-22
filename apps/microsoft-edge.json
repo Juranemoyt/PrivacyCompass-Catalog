@@ -4,17 +4,21 @@
     {
       "accountRequired": false,
       "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Feature-dependent; comparable battery/background-use measurement not established",
       "battery": "Unknown.",
       "category": "Browsers",
       "description": "Chromium-based browser integrated with Microsoft services.",
       "developer": "Microsoft",
+      "downloadSize": "Not published",
+      "ecosystem": "MICROSOFT",
       "evidence": [
         {
-          "claim": "Microsoft provides an Edge privacy whitepaper and privacy statement.",
+          "claim": "Local browsing history, cookies, optional diagnostic data and Microsoft-account sync are separate data flows.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Microsoft Edge privacy",
-          "url": "https://learn.microsoft.com/deployedge/microsoft-edge-security-privacy",
-          "verified": "2026-09-21"
+          "source": "Microsoft privacy and product documentation",
+          "url": "https://support.microsoft.com/en-us/edge/microsoft-edge-browsing-data-and-privacy",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -24,14 +28,18 @@
         "Password manager"
       ],
       "id": "microsoft-edge",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for online services; offline/local features depend on app and configuration",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Some integrated services and sync features require a Microsoft account"
       ],
+      "minimumAndroid": "Not published",
       "name": "Microsoft Edge",
+      "networkActivity": "Network use depends on cloud, synchronization and connected features",
       "offline": true,
       "openSource": false,
       "packageName": "com.microsoft.emmx",
+      "parentCompany": "Microsoft Corporation",
       "platforms": [
         "ANDROID",
         "WINDOWS",
@@ -41,8 +49,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx",
       "pricing": "No purchase price documented",
-      "privacySummary": "Microsoft documents diagnostic and browsing-data controls. Sync requires an account.",
+      "privacyDetails": {
+        "advertising": "Feature and provider dependent; not established by checked app-specific documentation.",
+        "analytics": "Provider describes diagnostics; exact fields and defaults depend on app/platform/settings.",
+        "collected": "Browsing history, optional diagnostic data, synced favorites/passwords and search suggestions according to settings.",
+        "controls": "Tracking prevention, optional diagnostics, sync categories and local/account browsing-data deletion.",
+        "deletion": "Local history deletion and Microsoft-account history deletion are separate; InPrivate does not hide traffic from sites or networks.",
+        "encryption": "The checked source does not establish end-to-end encryption for all synchronized browser data.",
+        "practicalImplications": "Local browsing history, cookies, optional diagnostic data and Microsoft-account sync are separate data flows.",
+        "purpose": "Browser functionality, security, diagnostics and optional synchronization.",
+        "recipients": "Microsoft receives required and enabled optional diagnostics and sync data; visited websites and search provider receive requested traffic.",
+        "sale": "Not established by checked app-specific documentation.",
+        "sharing": "User-selected collaboration/sharing and enabled service integrations may add recipients.",
+        "tracking": "Privacy controls reduce selected tracking but do not eliminate all network or service data processing."
+      },
+      "privacySummary": "Local browsing history, cookies, optional diagnostic data and Microsoft-account sync are separate data flows.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source",
       "sourceRepo": "",
+      "storageRequirement": "Not published",
       "website": "https://www.microsoft.com/edge"
     }
   ]

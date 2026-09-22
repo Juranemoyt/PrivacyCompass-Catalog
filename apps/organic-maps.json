@@ -6,17 +6,20 @@
       "alternativesFor": [
         "google-maps"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown; offline maps can reduce mobile-network activity, while GPS navigation still consumes power.",
       "category": "Maps",
       "description": "Offline-first open-source maps and navigation using OpenStreetMap data.",
       "developer": "Organic Maps community",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Organic Maps publishes source and a privacy policy describing its data practices.",
+          "claim": "Organic Maps documents offline-first navigation and its privacy policy; map downloads and external links still create network requests.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Organic Maps privacy policy",
+          "source": "Official project documentation",
           "url": "https://organicmaps.app/privacy/",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/app.organicmaps/",
@@ -27,13 +30,16 @@
         "Cycling maps"
       ],
       "id": "organic-maps",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for supported local/offline features; required for online services, downloads or sync",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "No live traffic",
         "No Android Auto support documented",
         "Place and transit depth varies by OpenStreetMap coverage"
       ],
+      "minimumAndroid": "Not published",
       "name": "Organic Maps",
+      "networkActivity": "Local/offline functionality exists; online services, downloads or sync may use network",
       "offline": true,
       "openSource": true,
       "packageName": "app.organicmaps",
@@ -43,8 +49,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=app.organicmaps",
       "pricing": "No purchase price documented",
-      "privacySummary": "The project states it has no tracking and publishes its source. Map downloads and external links still involve network requests when used.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Map/location processing for navigation; precise remote data categories depend on features and privacy policy.",
+        "controls": "Location permissions, downloaded map storage and optional network use.",
+        "deletion": "Removing offline maps does not delete user-created exports stored elsewhere.",
+        "encryption": "No end-to-end encryption claim for navigation history is established.",
+        "practicalImplications": "Organic Maps documents offline-first navigation and its privacy policy; map downloads and external links still create network requests.",
+        "purpose": "Offline maps, routing and optional map downloads.",
+        "recipients": "Map download infrastructure and selected external links; third-party map data is not equivalent to an account service.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Organic Maps documents offline-first navigation and its privacy policy; map downloads and external links still create network requests.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/organicmaps/organicmaps",
+      "storageRequirement": "Not published",
       "unsupportedFeatures": [
         "Live traffic",
         "Android Auto"

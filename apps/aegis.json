@@ -7,17 +7,27 @@
         "google-authenticator",
         "microsoft-authenticator"
       ],
+      "architecture": "arm64-v8a, armeabi-v7a, x86, x86_64 (F-Droid 3.4.3)",
+      "backgroundActivity": "F-Droid lists run-at-startup permission for 3.4.3; no general background-use measurement published",
       "battery": "Unknown; authenticator code generation is local.",
       "category": "Authentication",
       "description": "Open-source Android authenticator with encrypted local vaults and export support.",
       "developer": "Beem Development",
+      "downloadSize": "6.6 MiB APK (F-Droid 3.4.3; not installed size)",
       "evidence": [
         {
-          "claim": "Aegis publishes source and documents vault encryption and backups.",
+          "claim": "Aegis documents an encrypted local vault and user-controlled backup/export behavior.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Aegis project documentation",
+          "url": "https://github.com/beemdevelopment/Aegis",
+          "verified": "2026-09-22"
+        },
+        {
+          "claim": "F-Droid lists Aegis 3.4.3 (82) as requiring Android 6.0+, supporting arm64-v8a, armeabi-v7a, x86 and x86_64, with a 6.6 MiB APK.",
           "classification": "INDEPENDENTLY_VERIFIED",
-          "source": "Aegis documentation",
-          "url": "https://getaegis.app/",
-          "verified": "2026-09-21"
+          "source": "F-Droid Aegis package metadata",
+          "url": "https://f-droid.org/en/packages/com.beemdevelopment.aegis/",
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "https://f-droid.org/packages/com.beemdevelopment.aegis/",
@@ -28,12 +38,15 @@
         "Offline access"
       ],
       "id": "aegis",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Not required for local OTP generation; network may be used by user-selected backup/export workflows",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "Android only",
         "User is responsible for securely backing up exported vaults"
       ],
+      "minimumAndroid": "Android 6.0+ (F-Droid 3.4.3)",
       "name": "Aegis Authenticator",
+      "networkActivity": "Core OTP generation is local; backup/export destination behavior depends on user choices",
       "offline": true,
       "openSource": true,
       "packageName": "com.beemdevelopment.aegis",
@@ -42,8 +55,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis",
       "pricing": "No purchase price documented",
+      "privacyDetails": {
+        "advertising": "Not documented",
+        "analytics": "Not documented",
+        "collected": "No account is required for local use; the checked project documentation describes a local encrypted vault rather than a hosted account service.",
+        "controls": "Vault encryption, password/biometric unlock, and user-controlled export/backup options are documented.",
+        "deletion": "Local app data and exported backup copies must be managed separately by the user.",
+        "encryption": "Project documentation describes AES-256-GCM vault encryption with password-derived and Android Keystore-supported unlocking.",
+        "practicalImplications": "Aegis can operate as a local-only authenticator, but the privacy of exported backups depends on where the user stores them. Plaintext exports expose OTP secrets.",
+        "purpose": "Local storage and generation of OTP credentials; optional exports/backups are user-directed.",
+        "recipients": "No routine remote recipient is documented for local vault use; external backup/storage providers chosen by the user are separate recipients.",
+        "sale": "Not documented",
+        "sharing": "User-initiated export or backup can share vault data with the selected destination.",
+        "tracking": "Not documented"
+      },
       "privacySummary": "The app is open source and keeps its vault locally unless the user exports or backs it up through another system.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "F-Droid 3.4.3 metadata, checked 2026-09-22",
       "sourceRepo": "https://github.com/beemdevelopment/Aegis",
+      "storageRequirement": "Not published",
       "website": "https://getaegis.app/"
     }
   ]

@@ -7,17 +7,20 @@
         "gmail",
         "microsoft-outlook"
       ],
+      "architecture": "Not published",
+      "backgroundActivity": "No comparable measured background-use or battery figure established; depends on enabled features and workload",
       "battery": "Unknown.",
       "category": "Email",
       "description": "Email service with end-to-end encryption between Proton users and optional encrypted messages to others.",
       "developer": "Proton AG",
+      "downloadSize": "Not published",
       "evidence": [
         {
-          "claim": "Proton documents Mail data processing and encryption limits.",
+          "claim": "Proton documents end-to-end encryption within supported mail flows; email to outside providers is not universally end-to-end encrypted by default.",
           "classification": "DEVELOPER_DISCLOSED",
-          "source": "Proton Mail Privacy Policy",
+          "source": "Official project documentation",
           "url": "https://proton.me/legal/privacy",
-          "verified": "2026-09-21"
+          "verified": "2026-09-22"
         }
       ],
       "fdroidUrl": "",
@@ -27,12 +30,15 @@
         "Multiple accounts"
       ],
       "id": "proton-mail",
-      "lastVerified": "2026-09-21",
+      "internetRequirement": "Required for primary online service",
+      "lastVerified": "2026-09-22",
       "limitations": [
         "An account is required",
         "Not every message to non-Proton recipients is end-to-end encrypted by default"
       ],
+      "minimumAndroid": "Not published",
       "name": "Proton Mail",
+      "networkActivity": "Network required for primary online service; local features may vary",
       "offline": false,
       "openSource": true,
       "packageName": "ch.protonmail.android",
@@ -46,8 +52,25 @@
       ],
       "playUrl": "https://play.google.com/store/apps/details?id=ch.protonmail.android",
       "pricing": "Free and paid plans; verify current official pricing",
-      "privacySummary": "Proton publishes service-specific privacy disclosures and open-source clients. Email metadata cannot all be end-to-end encrypted.",
+      "privacyDetails": {
+        "advertising": "Not established by the checked app-specific source.",
+        "analytics": "Not fully established by the checked source.",
+        "collected": "Account metadata, encrypted mailbox data and routing metadata according to Proton's service disclosures.",
+        "controls": "Account security, encrypted message options, aliases and retention/deletion controls.",
+        "deletion": "Recipients can retain copies; removing an account does not retract previously delivered mail.",
+        "encryption": "Proton-to-Proton mail is end-to-end encrypted; standard external email is not automatically end-to-end encrypted.",
+        "practicalImplications": "Proton documents end-to-end encryption within supported mail flows; email to outside providers is not universally end-to-end encrypted by default.",
+        "purpose": "Mail delivery, encryption, account operation and optional features.",
+        "recipients": "Proton infrastructure, message recipients and external mail providers as relevant.",
+        "sale": "Not established by the checked app-specific source; consult full service privacy notice.",
+        "sharing": "User-selected sharing and optional connected services can create recipients.",
+        "tracking": "Privacy settings and local/offline design do not prevent third-party websites, external providers or chosen integrations from processing data."
+      },
+      "privacySummary": "Proton documents end-to-end encryption within supported mail flows; email to outside providers is not universally end-to-end encrypted by default.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Release/channel-specific requirements not established in the checked source; desktop-only apps have no Android APK requirement",
       "sourceRepo": "https://github.com/ProtonMail/android-mail",
+      "storageRequirement": "Not published",
       "website": "https://proton.me/mail"
     }
   ]
