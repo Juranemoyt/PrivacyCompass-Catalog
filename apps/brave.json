@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-chrome",
+        "microsoft-edge",
+        "samsung-internet"
+      ],
+      "battery": "Unknown — no comparable Galaxy S24 Ultra measurement included.",
+      "category": "Browsers",
+      "description": "Chromium-based browser with built-in content blocking and optional privacy services.",
+      "developer": "Brave Software",
+      "evidence": [
+        {
+          "claim": "Brave documents browser data handling in its privacy policy.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Brave Browser Privacy Policy",
+          "url": "https://brave.com/privacy/browser/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Extension support",
+        "Tracking protection",
+        "Password manager",
+        "Account-free sync"
+      ],
+      "id": "brave",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Includes optional rewards, wallet, and sponsored-content features that some users may disable"
+      ],
+      "name": "Brave",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.brave.browser",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.brave.browser",
+      "pricing": "Core browser available without purchase",
+      "privacySummary": "Brave publishes source code and a browser privacy policy. Optional features may have separate data practices.",
+      "sourceRepo": "https://github.com/brave/brave-browser",
+      "website": "https://brave.com/"
+    }
+  ]
+}

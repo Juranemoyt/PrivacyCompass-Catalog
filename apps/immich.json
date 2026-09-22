@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "google-photos"
+      ],
+      "battery": "Unknown; backup workload and server connectivity affect use.",
+      "category": "Photo management",
+      "description": "Self-hosted open-source photo and video management platform.",
+      "developer": "Immich contributors",
+      "evidence": [
+        {
+          "claim": "Immich publishes source and warns users to maintain independent backups.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Immich documentation",
+          "url": "https://immich.app/docs/overview/introduction",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Automatic backup",
+        "Self hosting",
+        "Face recognition",
+        "Shared albums",
+        "Metadata preservation"
+      ],
+      "id": "immich",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires server setup and maintenance",
+        "Users must plan their own backups",
+        "The project advises against treating it as the only copy of photos"
+      ],
+      "name": "Immich",
+      "offline": true,
+      "openSource": true,
+      "packageName": "app.alextran.immich",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "SELF_HOSTED"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=app.alextran.immich",
+      "pricing": "Open-source software; server and storage costs vary",
+      "privacySummary": "Data location and administrator access depend on the self-hosted server. Open source allows inspection but does not by itself guarantee a secure deployment.",
+      "sourceRepo": "https://github.com/immich-app/immich",
+      "website": "https://immich.app/"
+    }
+  ]
+}

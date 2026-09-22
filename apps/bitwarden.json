@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "google-password-manager"
+      ],
+      "battery": "Unknown.",
+      "category": "Password managers",
+      "description": "Cross-platform password manager with hosted and self-hosted options.",
+      "developer": "Bitwarden Inc.",
+      "evidence": [
+        {
+          "claim": "Bitwarden publishes security assessments and audit information.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Bitwarden compliance and audits",
+          "url": "https://bitwarden.com/help/is-bitwarden-audited/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://mobileapp.bitwarden.com/fdroid/",
+      "features": [
+        "Password manager",
+        "End-to-end encryption",
+        "Self hosting",
+        "Passkeys",
+        "Offline access"
+      ],
+      "id": "bitwarden",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires an account for synchronized vaults"
+      ],
+      "name": "Bitwarden",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.x8bit.bitwarden",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB",
+        "SELF_HOSTED"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
+      "pricing": "Free and paid plans; verify current official pricing",
+      "privacySummary": "Bitwarden publishes source, security documentation, and third-party audit material. Sync requires an account on a hosted or self-hosted server.",
+      "sourceRepo": "https://github.com/bitwarden/android",
+      "website": "https://bitwarden.com/"
+    }
+  ]
+}

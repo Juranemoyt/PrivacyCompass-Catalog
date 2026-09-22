@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Browsers",
+      "description": "Google's cross-platform web browser with account sync and broad web compatibility.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Chrome privacy practices are described in a product-specific privacy notice.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Chrome Privacy Notice",
+          "url": "https://www.google.com/chrome/privacy/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Extension support",
+        "Account sync",
+        "Password manager"
+      ],
+      "id": "google-chrome",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Some sync features require a Google account"
+      ],
+      "name": "Google Chrome",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.android.chrome",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.android.chrome",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Google documents collection and processing in its Chrome Privacy Notice. Use without sign-in is supported, while sync requires an account.",
+      "sourceRepo": "",
+      "website": "https://www.google.com/chrome/"
+    }
+  ]
+}

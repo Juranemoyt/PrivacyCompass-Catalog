@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Browsers",
+      "description": "Chromium-based browser integrated with Microsoft services.",
+      "developer": "Microsoft",
+      "evidence": [
+        {
+          "claim": "Microsoft provides an Edge privacy whitepaper and privacy statement.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Edge privacy",
+          "url": "https://learn.microsoft.com/deployedge/microsoft-edge-security-privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Extension support",
+        "Account sync",
+        "Password manager"
+      ],
+      "id": "microsoft-edge",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Some integrated services and sync features require a Microsoft account"
+      ],
+      "name": "Microsoft Edge",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.microsoft.emmx",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Microsoft documents diagnostic and browsing-data controls. Sync requires an account.",
+      "sourceRepo": "",
+      "website": "https://www.microsoft.com/edge"
+    }
+  ]
+}

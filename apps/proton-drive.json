@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "google-drive",
+        "microsoft-onedrive"
+      ],
+      "battery": "Unknown.",
+      "category": "Cloud storage",
+      "description": "Cloud storage with end-to-end encrypted file content and metadata protections.",
+      "developer": "Proton AG",
+      "evidence": [
+        {
+          "claim": "Proton describes Drive end-to-end encryption architecture.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Proton Drive security",
+          "url": "https://proton.me/drive/security",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "File sync",
+        "File sharing",
+        "End-to-end encryption",
+        "Offline files"
+      ],
+      "id": "proton-drive",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires a Proton account",
+        "Collaboration features differ from Google Workspace"
+      ],
+      "name": "Proton Drive",
+      "offline": true,
+      "openSource": true,
+      "packageName": "me.proton.android.drive",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=me.proton.android.drive",
+      "pricing": "Free and paid plans; verify current official pricing",
+      "privacySummary": "Proton documents end-to-end encryption and publishes Android client source.",
+      "sourceRepo": "https://github.com/ProtonDriveApps/android-drive",
+      "website": "https://proton.me/drive"
+    }
+  ]
+}

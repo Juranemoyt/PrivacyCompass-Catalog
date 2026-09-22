@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown; active GPS navigation commonly uses location, screen, network, and processor resources.",
+      "category": "Maps",
+      "description": "Mapping, navigation, places, traffic, transit, and location-sharing service.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google documents location collection and controls.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google location technologies policy",
+          "url": "https://policies.google.com/technologies/location-data",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Live traffic",
+        "Offline navigation",
+        "Android Auto",
+        "Transit",
+        "Street imagery",
+        "Place reviews"
+      ],
+      "id": "google-maps",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Some personalization and sharing features require an account"
+      ],
+      "name": "Google Maps",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.apps.maps",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Google documents location-data processing and provides account and location-history controls.",
+      "sourceRepo": "",
+      "website": "https://maps.google.com/"
+    }
+  ]
+}

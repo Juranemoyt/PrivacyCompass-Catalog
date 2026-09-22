@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown; automatic backup can use background network and battery.",
+      "category": "Photo management",
+      "description": "Cloud photo backup, organization, search, editing, and sharing service.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google provides product privacy controls and general data disclosures.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Photos privacy",
+          "url": "https://safety.google/photos/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Automatic backup",
+        "Face recognition",
+        "Photo editing",
+        "Shared albums",
+        "Metadata preservation"
+      ],
+      "id": "google-photos",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Cloud backup requires a Google account"
+      ],
+      "name": "Google Photos",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.apps.photos",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos",
+      "pricing": "Storage-plan dependent; verify current official pricing",
+      "privacySummary": "Google documents Photos controls and the broader account data practices in its privacy policy.",
+      "sourceRepo": "",
+      "website": "https://photos.google.com/"
+    }
+  ]
+}

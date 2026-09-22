@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Authentication",
+      "description": "Authenticator app for time-based and counter-based one-time codes with optional account sync.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google documents Authenticator setup, transfers, and optional account synchronization.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Account Help",
+          "url": "https://support.google.com/accounts/answer/1066447",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "TOTP",
+        "Offline access",
+        "Account sync"
+      ],
+      "id": "google-authenticator",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Encrypted portable export choices differ from some alternatives"
+      ],
+      "name": "Google Authenticator",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.apps.authenticator2",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Code generation works locally; optional Google Account synchronization changes the data boundary.",
+      "sourceRepo": "",
+      "website": "https://support.google.com/accounts/answer/1066447"
+    }
+  ]
+}

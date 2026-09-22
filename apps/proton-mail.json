@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "gmail",
+        "microsoft-outlook"
+      ],
+      "battery": "Unknown.",
+      "category": "Email",
+      "description": "Email service with end-to-end encryption between Proton users and optional encrypted messages to others.",
+      "developer": "Proton AG",
+      "evidence": [
+        {
+          "claim": "Proton documents Mail data processing and encryption limits.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Proton Mail Privacy Policy",
+          "url": "https://proton.me/legal/privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "End-to-end encryption",
+        "Custom domains",
+        "Multiple accounts"
+      ],
+      "id": "proton-mail",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "An account is required",
+        "Not every message to non-Proton recipients is end-to-end encrypted by default"
+      ],
+      "name": "Proton Mail",
+      "offline": false,
+      "openSource": true,
+      "packageName": "ch.protonmail.android",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=ch.protonmail.android",
+      "pricing": "Free and paid plans; verify current official pricing",
+      "privacySummary": "Proton publishes service-specific privacy disclosures and open-source clients. Email metadata cannot all be end-to-end encrypted.",
+      "sourceRepo": "https://github.com/ProtonMail/android-mail",
+      "website": "https://proton.me/mail"
+    }
+  ]
+}

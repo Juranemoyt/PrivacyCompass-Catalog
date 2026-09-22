@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-maps"
+      ],
+      "battery": "Unknown; live GPS navigation uses location, screen, processor, and network resources.",
+      "category": "Maps",
+      "description": "Community-driven navigation with live traffic, incident reporting, and route guidance.",
+      "developer": "Waze Mobile",
+      "ecosystem": "GOOGLE",
+      "evidence": [
+        {
+          "claim": "Waze publishes product privacy information and identifies Google as its parent ecosystem.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Waze Privacy Policy",
+          "url": "https://www.waze.com/legal/privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Live traffic",
+        "Android Auto",
+        "Place search",
+        "Incident reporting"
+      ],
+      "id": "waze",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "No full offline navigation",
+        "Live features require network access"
+      ],
+      "name": "Waze",
+      "offline": false,
+      "openSource": false,
+      "packageName": "com.waze",
+      "parentCompany": "Google LLC",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.waze",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Waze is part of Google's ecosystem and publishes product privacy information. Live routing depends on location and network processing.",
+      "sourceRepo": "",
+      "unsupportedFeatures": [
+        "Offline navigation"
+      ],
+      "website": "https://www.waze.com/"
+    }
+  ]
+}

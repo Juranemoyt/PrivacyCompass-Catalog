@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Email",
+      "description": "Email and calendar client integrated with Microsoft and third-party accounts.",
+      "developer": "Microsoft",
+      "evidence": [
+        {
+          "claim": "Microsoft discloses data practices for its products and services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Privacy Statement",
+          "url": "https://privacy.microsoft.com/privacystatement",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Calendar integration",
+        "Multiple accounts",
+        "Offline mail"
+      ],
+      "id": "microsoft-outlook",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires at least one email account",
+        "Some features depend on Microsoft 365"
+      ],
+      "name": "Microsoft Outlook",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.microsoft.office.outlook",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook",
+      "pricing": "Plan-dependent; verify current official pricing",
+      "privacySummary": "Microsoft publishes privacy disclosures and in-product controls; server-side practices also depend on the configured email provider.",
+      "sourceRepo": "",
+      "website": "https://www.microsoft.com/microsoft-365/outlook/outlook-for-business"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-maps"
+      ],
+      "battery": "Unknown; extensive map rendering and GPS navigation can affect device use.",
+      "category": "Maps",
+      "description": "OpenStreetMap-based offline maps and navigation with extensive map controls.",
+      "developer": "OsmAnd B.V.",
+      "evidence": [
+        {
+          "claim": "OsmAnd publishes client source and privacy documentation.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "OsmAnd privacy policy",
+          "url": "https://osmand.net/docs/legal/privacy-policy/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/net.osmand.plus/",
+      "features": [
+        "Offline navigation",
+        "Android Auto",
+        "No mandatory account",
+        "Hiking maps",
+        "Cycling maps"
+      ],
+      "id": "osmand",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Interface and settings can be complex",
+        "Live traffic coverage differs from Google Maps"
+      ],
+      "name": "OsmAnd",
+      "offline": true,
+      "openSource": true,
+      "packageName": "net.osmand",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=net.osmand",
+      "pricing": "Free and paid variants/features; verify current official pricing",
+      "privacySummary": "Core client source is public. Optional services and purchases may have separate processing.",
+      "sourceRepo": "https://github.com/osmandapp/OsmAnd",
+      "website": "https://osmand.net/"
+    }
+  ]
+}

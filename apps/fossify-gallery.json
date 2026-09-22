@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-photos"
+      ],
+      "battery": "Unknown; local-only operation avoids continuous cloud backup by default.",
+      "category": "Photo management",
+      "description": "Offline open-source gallery for viewing and organizing local media.",
+      "developer": "Fossify",
+      "evidence": [
+        {
+          "claim": "The application source is publicly available.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Fossify Gallery repository",
+          "url": "https://github.com/FossifyOrg/Gallery",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/org.fossify.gallery/",
+      "features": [
+        "Photo editing",
+        "No mandatory account",
+        "Local only",
+        "Metadata preservation"
+      ],
+      "id": "fossify-gallery",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "No cloud backup service",
+        "Android only"
+      ],
+      "name": "Fossify Gallery",
+      "offline": true,
+      "openSource": true,
+      "packageName": "org.fossify.gallery",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=org.fossify.gallery",
+      "pricing": "Verify current store listing",
+      "privacySummary": "Designed for local gallery use and published as open source. It is not a cloud backup service.",
+      "sourceRepo": "https://github.com/FossifyOrg/Gallery",
+      "website": "https://www.fossify.org/"
+    }
+  ]
+}

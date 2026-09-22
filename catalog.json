@@ -1,0 +1,2424 @@
+{
+  "catalogVersion": "0.2.1",
+  "guides": [
+    {
+      "destinationId": "ente-auth",
+      "id": "google-authenticator-to-ente-auth",
+      "notTransferable": [
+        "Passkeys",
+        "Google prompts",
+        "SMS or phone verification",
+        "Provider push approvals",
+        "Work or school methods that require device registration"
+      ],
+      "sourceId": "google-authenticator",
+      "sources": [
+        {
+          "claim": "Google documents manual transfer through export and import QR codes.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Account Help",
+          "url": "https://support.google.com/accounts/answer/1066447",
+          "verified": "2026-09-21"
+        },
+        {
+          "claim": "Ente documents Auth migration and encrypted exports.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ente Auth migration documentation",
+          "url": "https://help.ente.io/auth/migration/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "Install Ente Auth from a verified source and unlock both apps on the same trusted device.",
+            "Confirm recovery methods for each important account without storing recovery codes in Privacy Compass."
+          ],
+          "safetyCritical": true,
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Keep Google Authenticator intact. If account sync is enabled, confirm its status; if not, keep the old device powered and secured."
+          ],
+          "safetyCritical": true,
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "In Google Authenticator choose Menu → Transfer accounts → Export accounts and select a small batch.",
+            "Unlock the device when prompted. Treat every displayed QR code as a password."
+          ],
+          "safetyCritical": true,
+          "title": "Export"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "In the Ente Auth mobile app choose the Google Authenticator import option and scan each transfer QR directly.",
+            "Do not route the QR through a camera roll, messaging app, or cloud drive."
+          ],
+          "safetyCritical": true,
+          "title": "Import"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Compare entry names and generate a code in both apps.",
+            "For each critical account, sign in or use its 2FA test flow with Ente Auth, then confirm recovery access."
+          ],
+          "safetyCritical": true,
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "Only after every account is verified, decide whether to retain or remove old entries.",
+            "Never remove the original authenticator merely because import completed."
+          ],
+          "safetyCritical": true,
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Google Authenticator → Ente Auth",
+      "transferable": [
+        "Standard TOTP entries represented by Google Authenticator transfer QR codes"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "Transfer QR codes contain authentication secrets. Never screenshot, save, upload, or share them.",
+        "Keep Google Authenticator until every replacement code is verified."
+      ]
+    },
+    {
+      "destinationId": "aegis",
+      "id": "google-authenticator-to-aegis",
+      "notTransferable": [
+        "Passkeys",
+        "Google prompts",
+        "Push approvals",
+        "SMS methods",
+        "Device-bound work or school credentials"
+      ],
+      "sourceId": "google-authenticator",
+      "sources": [
+        {
+          "claim": "Google documents its transfer QR workflow.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Account Help",
+          "url": "https://support.google.com/accounts/answer/1066447",
+          "verified": "2026-09-21"
+        },
+        {
+          "claim": "Aegis documents Google Authenticator import, HOTP/TOTP support, encrypted exports, and backups.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Aegis project documentation",
+          "url": "https://github.com/beemdevelopment/Aegis",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "Install Aegis from its verified Play, F-Droid, or GitHub release and create an encrypted vault."
+          ],
+          "safetyCritical": true,
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Confirm alternate recovery for critical accounts and keep Google Authenticator unchanged."
+          ],
+          "safetyCritical": true,
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "Use Google Authenticator Menu → Transfer accounts → Export accounts in small batches."
+          ],
+          "safetyCritical": true,
+          "title": "Export"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "Use Aegis Import from app and choose Google Authenticator, then scan directly.",
+            "Do not retain QR images."
+          ],
+          "safetyCritical": true,
+          "title": "Import"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Verify current codes and complete a real or provider-supported test sign-in for every critical account."
+          ],
+          "safetyCritical": true,
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "Create and test an encrypted Aegis backup before considering removal of original entries."
+          ],
+          "safetyCritical": true,
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Google Authenticator → Aegis",
+      "transferable": [
+        "Standard TOTP and supported HOTP entries represented in a compatible transfer"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "Export QR codes expose reusable secrets.",
+        "Keep the original app until account-by-account verification succeeds."
+      ]
+    },
+    {
+      "destinationId": "ente-auth",
+      "id": "microsoft-authenticator-to-ente-auth",
+      "notTransferable": [
+        "Microsoft push approvals",
+        "Passwordless phone sign-in",
+        "Passkeys",
+        "Work or school device registration",
+        "Brokered enterprise authentication"
+      ],
+      "sourceId": "microsoft-authenticator",
+      "sources": [
+        {
+          "claim": "Microsoft states that work/school and passwordless accounts require signing in again after restore, while eligible OTP data has different backup behavior.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Authenticator backup documentation",
+          "url": "https://support.microsoft.com/en-us/authenticator/back-up-your-accounts-in-microsoft-authenticator",
+          "verified": "2026-09-21"
+        },
+        {
+          "claim": "Ente does not document direct Microsoft Authenticator cloud-backup import.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ente Auth migration documentation",
+          "url": "https://help.ente.io/auth/migration/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "List account names only; do not record secrets or recovery codes.",
+            "Ask a work or school administrator about required re-registration before changing enterprise accounts."
+          ],
+          "safetyCritical": true,
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Enable Microsoft Authenticator backup if appropriate for recovery on the same device platform, while recognizing it does not migrate push or passwordless credentials to Ente."
+          ],
+          "safetyCritical": true,
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "For each third-party TOTP account, use the service's security settings to add a new authenticator or replace the existing one.",
+            "Do not confuse Microsoft password export with authenticator-token export."
+          ],
+          "safetyCritical": true,
+          "title": "Export or re-enroll"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "Scan the new service-issued TOTP QR directly into Ente Auth.",
+            "Re-register Microsoft personal, work, or school approvals using Microsoft's official flow where required; they cannot move into Ente Auth."
+          ],
+          "safetyCritical": true,
+          "title": "Enroll Ente Auth"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Test Ente-generated TOTP codes and separately test every retained Microsoft push or passwordless method."
+          ],
+          "safetyCritical": true,
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "Remove an old method only from the provider's security page after a successful replacement sign-in and recovery check."
+          ],
+          "safetyCritical": true,
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Microsoft Authenticator → Ente Auth",
+      "transferable": [
+        "Third-party standard TOTP entries after account-specific re-enrollment",
+        "Some standard OTP secrets when a compatible export is actually available"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "Microsoft cloud backup is not a general export format for Ente Auth.",
+        "Plan account-by-account re-enrollment and keep Microsoft Authenticator registered until verification."
+      ]
+    },
+    {
+      "destinationId": "aegis",
+      "id": "microsoft-authenticator-to-aegis",
+      "notTransferable": [
+        "Microsoft push approvals",
+        "Passwordless sign-in",
+        "Passkeys",
+        "Work/school device registration"
+      ],
+      "sourceId": "microsoft-authenticator",
+      "sources": [
+        {
+          "claim": "Microsoft documents which account types and credentials require re-registration after restore.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Authenticator backup documentation",
+          "url": "https://support.microsoft.com/en-us/authenticator/back-up-your-accounts-in-microsoft-authenticator",
+          "verified": "2026-09-21"
+        },
+        {
+          "claim": "Aegis documents Microsoft Authenticator import support with source-dependent restrictions.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Aegis project documentation",
+          "url": "https://github.com/beemdevelopment/Aegis",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "Create an encrypted Aegis vault and confirm alternate access for every critical account."
+          ],
+          "safetyCritical": true,
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Keep Microsoft Authenticator and its registrations intact throughout migration."
+          ],
+          "safetyCritical": true,
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "Try only Aegis's documented Microsoft Authenticator import path when the device/source conditions are supported; otherwise re-enroll each standard TOTP account at its provider."
+          ],
+          "safetyCritical": true,
+          "title": "Export or re-enroll"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "Import through Aegis or scan newly issued provider QR codes directly into Aegis."
+          ],
+          "safetyCritical": true,
+          "title": "Import"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Test each Aegis code and separately verify Microsoft push, passwordless, and work/school registrations that remain in Microsoft Authenticator."
+          ],
+          "safetyCritical": true,
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "Create an encrypted Aegis backup; remove old provider methods only after successful sign-in and recovery tests."
+          ],
+          "safetyCritical": true,
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Microsoft Authenticator → Aegis",
+      "transferable": [
+        "Standard HOTP/TOTP when Aegis can access a supported export or after account re-enrollment"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "Aegis cannot replace Microsoft-specific approval protocols.",
+        "Import availability depends on source access; account re-enrollment is the reliable fallback."
+      ]
+    },
+    {
+      "destinationId": "ente-auth",
+      "id": "aegis-to-ente-auth",
+      "notTransferable": [
+        "Provider push approvals",
+        "Passkeys",
+        "Account recovery methods"
+      ],
+      "sourceId": "aegis",
+      "sources": [
+        {
+          "claim": "Aegis supports encrypted and plaintext vault exports.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Aegis documentation",
+          "url": "https://github.com/beemdevelopment/Aegis",
+          "verified": "2026-09-21"
+        },
+        {
+          "claim": "Ente documents supported import and encrypted export formats.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ente Auth migration documentation",
+          "url": "https://help.ente.io/auth/migration/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "Update both apps and check Ente's current Aegis import options."
+          ],
+          "safetyCritical": true,
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Create a separate encrypted Aegis backup and retain Aegis."
+          ],
+          "safetyCritical": true,
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "Export using the format Ente currently documents. Keep the file local and protected."
+          ],
+          "safetyCritical": true,
+          "title": "Export"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "In Ente Auth choose Settings → Data → Import Codes and the matching Aegis format."
+          ],
+          "safetyCritical": true,
+          "title": "Import"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Compare counts and test critical account codes in Ente Auth."
+          ],
+          "safetyCritical": true,
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "After verification and an Ente encrypted export, securely remove temporary plaintext exports; retain Aegis until satisfied."
+          ],
+          "safetyCritical": true,
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Aegis → Ente Auth",
+      "transferable": [
+        "TOTP and compatible HOTP entries through an Aegis export format supported by Ente"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "A plaintext export exposes every imported secret; prefer encrypted supported formats and delete temporary plaintext securely."
+      ]
+    },
+    {
+      "destinationId": "aegis",
+      "id": "ente-auth-to-aegis",
+      "notTransferable": [
+        "Provider push approvals",
+        "Passkeys",
+        "Ente account metadata"
+      ],
+      "sourceId": "ente-auth",
+      "sources": [
+        {
+          "claim": "Ente documents encrypted export decryption to newline-separated otpauth URIs.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ente Auth export documentation",
+          "url": "https://help.ente.io/auth/migration/export",
+          "verified": "2026-09-21"
+        },
+        {
+          "claim": "Aegis documents plaintext and compatible authenticator imports.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Aegis documentation",
+          "url": "https://github.com/beemdevelopment/Aegis",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "Create an encrypted Aegis vault and obtain Ente's official CLI only from a verified release."
+          ],
+          "safetyCritical": true,
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Create an Ente encrypted export and retain the original Ente Auth installation."
+          ],
+          "safetyCritical": true,
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "Decrypt the Ente encrypted export locally with the official CLI only when required for Aegis import.",
+            "Keep the resulting otpauth data offline."
+          ],
+          "safetyCritical": true,
+          "title": "Export"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "Import the compatible plaintext/URI data into Aegis, then lock the vault."
+          ],
+          "safetyCritical": true,
+          "title": "Import"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Compare entry counts and test critical account codes before changing either app."
+          ],
+          "safetyCritical": true,
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "Securely remove decrypted temporary files only after verification; keep an encrypted backup and the original app until confident."
+          ],
+          "safetyCritical": true,
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Ente Auth → Aegis",
+      "transferable": [
+        "TOTP URIs after decrypting an Ente encrypted export locally with Ente's documented tooling"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "The decrypted output contains authentication secrets. Keep it offline, minimize its lifetime, and never upload it."
+      ]
+    },
+    {
+      "destinationId": "ente-photos",
+      "id": "google-photos-to-ente-photos",
+      "notTransferable": [
+        "Locked Folder content unless moved first",
+        "Unsaved creations",
+        "Trash",
+        "Some edited metadata, comments, and motion-photo video portions"
+      ],
+      "sourceId": "google-photos",
+      "sources": [
+        {
+          "claim": "Google documents Takeout contents and transfer omissions.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Photos Help",
+          "url": "https://support.google.com/photos/answer/3024190",
+          "verified": "2026-09-21"
+        },
+        {
+          "claim": "Ente documents Google Takeout import.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ente Help",
+          "url": "https://help.ente.io/photos/migration/from-google-photos/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "Confirm Ente storage capacity and finish current Google Photos backup."
+          ],
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Maintain an independent copy of irreplaceable media."
+          ],
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "Use Google Takeout for Google Photos and download every archive part."
+          ],
+          "title": "Export"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "Use Ente's documented desktop Takeout import with media and JSON sidecars together."
+          ],
+          "title": "Import"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Compare counts, dates, albums, videos, and older originals on another device."
+          ],
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "Only after verification and backup, decide whether to disable Google backup or remove cloud copies using Google's controls."
+          ],
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Google Photos → Ente Photos",
+      "transferable": [
+        "Supported photos and videos",
+        "Embedded timestamps",
+        "Some albums and sidecar metadata through supported import tooling"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "A Takeout download does not delete Google data.",
+        "Keep all archive parts and JSON sidecars until verification."
+      ]
+    },
+    {
+      "destinationId": "proton-drive",
+      "id": "google-drive-to-proton-drive",
+      "notTransferable": [
+        "Google-native document collaboration history",
+        "Sharing permissions",
+        "Comments and some shortcuts"
+      ],
+      "sourceId": "google-drive",
+      "sources": [
+        {
+          "claim": "Google documents data downloads through Takeout.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Account Help",
+          "url": "https://support.google.com/accounts/answer/3024190",
+          "verified": "2026-09-21"
+        },
+        {
+          "claim": "Proton documents Drive uploads and migration options.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Proton Drive support",
+          "url": "https://proton.me/support/proton-drive",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "Check Proton storage and identify Google-native documents."
+          ],
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Keep an independent local copy."
+          ],
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "Download folders or use Google Takeout; export Docs, Sheets, and Slides to chosen standard formats."
+          ],
+          "title": "Export"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "Upload through Proton Drive's supported desktop or web workflow."
+          ],
+          "title": "Import"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Compare counts, open representative files, and verify folder structure."
+          ],
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "Change sharing or remove Google copies only after verification and backup."
+          ],
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Google Drive → Proton Drive",
+      "transferable": [
+        "Downloaded files in formats Proton Drive accepts",
+        "Folder structures when preserved locally"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "Export Google-native documents to standard formats and verify formatting."
+      ]
+    },
+    {
+      "destinationId": "nextcloud",
+      "id": "google-drive-to-nextcloud",
+      "notTransferable": [
+        "Google-native revision history",
+        "Existing sharing ACLs",
+        "Comments and Google-specific links"
+      ],
+      "sourceId": "google-drive",
+      "sources": [
+        {
+          "claim": "Google documents Takeout export.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Account Help",
+          "url": "https://support.google.com/accounts/answer/3024190",
+          "verified": "2026-09-21"
+        },
+        {
+          "claim": "Nextcloud documents file upload and synchronization.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Nextcloud user manual",
+          "url": "https://docs.nextcloud.com/server/latest/user_manual/en/files/index.html",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "Confirm server storage, administrator, backup policy, and client compatibility."
+          ],
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Keep a local export independent of both services."
+          ],
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "Use Drive download or Takeout and convert Google-native files."
+          ],
+          "title": "Export"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "Upload with the Nextcloud desktop or web client in manageable batches."
+          ],
+          "title": "Import"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Compare counts, hashes for critical files, and access from each device."
+          ],
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "Recreate shares deliberately; alter Google data only after verification."
+          ],
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Google Drive → Nextcloud",
+      "transferable": [
+        "Downloaded files and folders",
+        "Standard office formats"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "Privacy, retention, and reliability depend on the selected Nextcloud host and administrator."
+      ]
+    },
+    {
+      "destinationId": "firefox",
+      "id": "google-chrome-to-firefox",
+      "notTransferable": [
+        "Chrome extensions as installed packages",
+        "Google account sync state",
+        "Some site permissions and active sessions"
+      ],
+      "sourceId": "google-chrome",
+      "sources": [
+        {
+          "claim": "Mozilla documents importing browser data from Chrome.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Mozilla Support",
+          "url": "https://support.mozilla.org/kb/import-bookmarks-google-chrome",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "List required extensions and confirm Firefox equivalents."
+          ],
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Export bookmarks and ensure password recovery access."
+          ],
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "Use Chrome's bookmark or password export only when Firefox's direct import is insufficient."
+          ],
+          "title": "Export"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "Use Firefox Import Browser Data on a supported desktop, then optionally enable Firefox Sync."
+          ],
+          "title": "Import"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Check bookmarks, logins, extensions, default-browser handling, and essential sites."
+          ],
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "Delete plaintext password exports and retain Chrome until required sites work."
+          ],
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Chrome → Firefox",
+      "transferable": [
+        "Bookmarks",
+        "Browsing history",
+        "Some passwords and autofill data through supported import flows"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "Review imported passwords and remove temporary export files."
+      ]
+    },
+    {
+      "destinationId": "bitwarden",
+      "id": "google-password-manager-to-bitwarden",
+      "notTransferable": [
+        "Passkeys in many current flows",
+        "Some federated sign-in relationships",
+        "Payment methods and provider-specific metadata"
+      ],
+      "sourceId": "google-password-manager",
+      "sources": [
+        {
+          "claim": "Google documents password export.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Password Manager Help",
+          "url": "https://support.google.com/chrome/answer/95606",
+          "verified": "2026-09-21"
+        },
+        {
+          "claim": "Bitwarden documents importing from Chrome and compatible CSV files.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Bitwarden Help",
+          "url": "https://bitwarden.com/help/import-from-chrome/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "steps": [
+        {
+          "id": "preparation",
+          "instructions": [
+            "Create and secure a Bitwarden account or self-hosted vault and confirm emergency recovery."
+          ],
+          "safetyCritical": true,
+          "title": "Preparation"
+        },
+        {
+          "id": "backup",
+          "instructions": [
+            "Keep Google Password Manager unchanged until verification."
+          ],
+          "safetyCritical": true,
+          "title": "Backup"
+        },
+        {
+          "id": "export",
+          "instructions": [
+            "Export passwords from Google's official password manager controls to a trusted local device."
+          ],
+          "safetyCritical": true,
+          "title": "Export"
+        },
+        {
+          "id": "import",
+          "instructions": [
+            "Import the Google/Chrome CSV using Bitwarden's documented importer."
+          ],
+          "safetyCritical": true,
+          "title": "Import"
+        },
+        {
+          "id": "verification",
+          "instructions": [
+            "Compare item counts and test representative logins without overwriting working credentials."
+          ],
+          "safetyCritical": true,
+          "title": "Verification"
+        },
+        {
+          "id": "cleanup",
+          "instructions": [
+            "Delete the plaintext CSV securely after verified import; change Google storage only when confident."
+          ],
+          "safetyCritical": true,
+          "title": "Cleanup"
+        }
+      ],
+      "title": "Google Password Manager → Bitwarden",
+      "transferable": [
+        "Saved logins in supported CSV fields"
+      ],
+      "verified": "2026-09-21",
+      "warnings": [
+        "Password CSV files are plaintext and highly sensitive. Keep them local and delete them immediately after verified import."
+      ]
+    }
+  ],
+  "publishedAt": "2026-09-22T00:00:00Z",
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Browsers",
+      "description": "Google's cross-platform web browser with account sync and broad web compatibility.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Chrome privacy practices are described in a product-specific privacy notice.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Chrome Privacy Notice",
+          "url": "https://www.google.com/chrome/privacy/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Extension support",
+        "Account sync",
+        "Password manager"
+      ],
+      "id": "google-chrome",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Some sync features require a Google account"
+      ],
+      "name": "Google Chrome",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.android.chrome",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.android.chrome",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Google documents collection and processing in its Chrome Privacy Notice. Use without sign-in is supported, while sync requires an account.",
+      "sourceRepo": "",
+      "website": "https://www.google.com/chrome/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-chrome",
+        "microsoft-edge",
+        "samsung-internet"
+      ],
+      "battery": "Unknown — test on your device under the same browsing workload.",
+      "category": "Browsers",
+      "description": "Open-source browser with tracking protection, extensions, and optional account sync.",
+      "developer": "Mozilla",
+      "evidence": [
+        {
+          "claim": "Mozilla publishes Firefox data-practice disclosures.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Firefox Privacy Notice",
+          "url": "https://www.mozilla.org/privacy/firefox/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Extension support",
+        "Account sync",
+        "Tracking protection",
+        "Password manager"
+      ],
+      "id": "firefox",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Some websites are optimized primarily for Chromium browsers"
+      ],
+      "name": "Firefox",
+      "offline": true,
+      "openSource": true,
+      "packageName": "org.mozilla.firefox",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=org.mozilla.firefox",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Mozilla publishes a Firefox privacy notice and the Android source code. Sync is optional.",
+      "sourceRepo": "https://github.com/mozilla-mobile/firefox-android",
+      "website": "https://www.mozilla.org/firefox/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-chrome",
+        "microsoft-edge",
+        "samsung-internet"
+      ],
+      "battery": "Unknown — no comparable Galaxy S24 Ultra measurement included.",
+      "category": "Browsers",
+      "description": "Chromium-based browser with built-in content blocking and optional privacy services.",
+      "developer": "Brave Software",
+      "evidence": [
+        {
+          "claim": "Brave documents browser data handling in its privacy policy.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Brave Browser Privacy Policy",
+          "url": "https://brave.com/privacy/browser/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Extension support",
+        "Tracking protection",
+        "Password manager",
+        "Account-free sync"
+      ],
+      "id": "brave",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Includes optional rewards, wallet, and sponsored-content features that some users may disable"
+      ],
+      "name": "Brave",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.brave.browser",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.brave.browser",
+      "pricing": "Core browser available without purchase",
+      "privacySummary": "Brave publishes source code and a browser privacy policy. Optional features may have separate data practices.",
+      "sourceRepo": "https://github.com/brave/brave-browser",
+      "website": "https://brave.com/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-search"
+      ],
+      "battery": "Unknown.",
+      "category": "Search engines",
+      "description": "Search engine and browser focused on reducing tracking and profiling.",
+      "developer": "DuckDuckGo",
+      "evidence": [
+        {
+          "claim": "DuckDuckGo states that it does not save or sell search history.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "DuckDuckGo Privacy Policy",
+          "url": "https://duckduckgo.com/privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Tracking protection",
+        "No mandatory account",
+        "Private search"
+      ],
+      "id": "duckduckgo",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Search results and local coverage can differ from Google Search",
+        "Search requires network access"
+      ],
+      "name": "DuckDuckGo",
+      "offline": false,
+      "openSource": true,
+      "packageName": "com.duckduckgo.mobile.android",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android",
+      "pricing": "No purchase price documented",
+      "privacySummary": "DuckDuckGo states that search histories are not saved or sold. Browser and search components have separate published details.",
+      "sourceRepo": "https://github.com/duckduckgo/Android",
+      "website": "https://duckduckgo.com/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Search engines",
+      "description": "Web search service and Android app with personalized and account-linked features.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google discloses collection, purposes, controls, and retention at the company-policy level.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Privacy Policy",
+          "url": "https://policies.google.com/privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Voice search",
+        "Personalized results",
+        "Image search"
+      ],
+      "id": "google-search",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Personalized features may use account activity"
+      ],
+      "name": "Google Search",
+      "offline": false,
+      "openSource": false,
+      "packageName": "com.google.android.googlequicksearchbox",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Google describes collected data, purposes, controls, and retention in its privacy policy.",
+      "sourceRepo": "",
+      "website": "https://www.google.com/"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Email",
+      "description": "Email client and service with Google account integration.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google's privacy policy describes data collection and account controls.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Privacy Policy",
+          "url": "https://policies.google.com/privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Custom domains",
+        "Offline mail",
+        "Calendar integration",
+        "Multiple accounts"
+      ],
+      "id": "gmail",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "A Google account is required for the Gmail service"
+      ],
+      "name": "Gmail",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.gm",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.gm",
+      "pricing": "Plan-dependent; verify current official pricing",
+      "privacySummary": "Covered by Google's privacy policy; service use requires an account.",
+      "sourceRepo": "",
+      "website": "https://mail.google.com/"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "gmail",
+        "microsoft-outlook"
+      ],
+      "battery": "Unknown.",
+      "category": "Email",
+      "description": "Email service with end-to-end encryption between Proton users and optional encrypted messages to others.",
+      "developer": "Proton AG",
+      "evidence": [
+        {
+          "claim": "Proton documents Mail data processing and encryption limits.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Proton Mail Privacy Policy",
+          "url": "https://proton.me/legal/privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "End-to-end encryption",
+        "Custom domains",
+        "Multiple accounts"
+      ],
+      "id": "proton-mail",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "An account is required",
+        "Not every message to non-Proton recipients is end-to-end encrypted by default"
+      ],
+      "name": "Proton Mail",
+      "offline": false,
+      "openSource": true,
+      "packageName": "ch.protonmail.android",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=ch.protonmail.android",
+      "pricing": "Free and paid plans; verify current official pricing",
+      "privacySummary": "Proton publishes service-specific privacy disclosures and open-source clients. Email metadata cannot all be end-to-end encrypted.",
+      "sourceRepo": "https://github.com/ProtonMail/android-mail",
+      "website": "https://proton.me/mail"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Cloud storage",
+      "description": "Cloud file storage, synchronization, sharing, and collaboration service.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google documents security and privacy controls for Drive.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Drive security and privacy",
+          "url": "https://www.google.com/drive/safety/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "File sync",
+        "File sharing",
+        "Office collaboration",
+        "Offline files"
+      ],
+      "id": "google-drive",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires a Google account",
+        "Cloud synchronization uses network and background activity"
+      ],
+      "name": "Google Drive",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.apps.docs",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.docs",
+      "pricing": "Free allowance and paid plans; verify current official pricing",
+      "privacySummary": "Covered by Google privacy disclosures. Files are encrypted in transit and at rest; Drive does not advertise general end-to-end encryption.",
+      "sourceRepo": "",
+      "website": "https://drive.google.com/"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "google-drive",
+        "microsoft-onedrive"
+      ],
+      "battery": "Unknown.",
+      "category": "Cloud storage",
+      "description": "Cloud storage with end-to-end encrypted file content and metadata protections.",
+      "developer": "Proton AG",
+      "evidence": [
+        {
+          "claim": "Proton describes Drive end-to-end encryption architecture.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Proton Drive security",
+          "url": "https://proton.me/drive/security",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "File sync",
+        "File sharing",
+        "End-to-end encryption",
+        "Offline files"
+      ],
+      "id": "proton-drive",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires a Proton account",
+        "Collaboration features differ from Google Workspace"
+      ],
+      "name": "Proton Drive",
+      "offline": true,
+      "openSource": true,
+      "packageName": "me.proton.android.drive",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=me.proton.android.drive",
+      "pricing": "Free and paid plans; verify current official pricing",
+      "privacySummary": "Proton documents end-to-end encryption and publishes Android client source.",
+      "sourceRepo": "https://github.com/ProtonDriveApps/android-drive",
+      "website": "https://proton.me/drive"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "google-drive",
+        "microsoft-onedrive"
+      ],
+      "battery": "Unknown; synchronization settings affect background activity.",
+      "category": "Cloud storage",
+      "description": "Open-source, self-hostable file sync and collaboration platform.",
+      "developer": "Nextcloud GmbH / community",
+      "evidence": [
+        {
+          "claim": "The Android client is published as open-source software.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Nextcloud Android repository",
+          "url": "https://github.com/nextcloud/android",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/com.nextcloud.client/",
+      "features": [
+        "File sync",
+        "File sharing",
+        "Self hosting",
+        "Office collaboration",
+        "Offline files"
+      ],
+      "id": "nextcloud",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires a server account",
+        "Maintenance and privacy depend on the hosting provider or administrator"
+      ],
+      "name": "Nextcloud",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.nextcloud.client",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB",
+        "SELF_HOSTED"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.nextcloud.client",
+      "pricing": "Software is open source; hosting costs vary",
+      "privacySummary": "Self-hosting can give the operator control over storage and logs. Actual privacy depends on the chosen server and administrator.",
+      "sourceRepo": "https://github.com/nextcloud/android",
+      "website": "https://nextcloud.com/"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown; automatic backup can use background network and battery.",
+      "category": "Photo management",
+      "description": "Cloud photo backup, organization, search, editing, and sharing service.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google provides product privacy controls and general data disclosures.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Photos privacy",
+          "url": "https://safety.google/photos/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Automatic backup",
+        "Face recognition",
+        "Photo editing",
+        "Shared albums",
+        "Metadata preservation"
+      ],
+      "id": "google-photos",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Cloud backup requires a Google account"
+      ],
+      "name": "Google Photos",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.apps.photos",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos",
+      "pricing": "Storage-plan dependent; verify current official pricing",
+      "privacySummary": "Google documents Photos controls and the broader account data practices in its privacy policy.",
+      "sourceRepo": "",
+      "website": "https://photos.google.com/"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "google-photos"
+      ],
+      "battery": "Unknown; automatic backup frequency and media volume affect battery and network use.",
+      "category": "Photo management",
+      "description": "End-to-end encrypted photo backup and gallery with import tools.",
+      "developer": "Ente Technologies",
+      "evidence": [
+        {
+          "claim": "Ente publishes its cryptographic design and audit materials.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Ente security and privacy",
+          "url": "https://ente.io/security/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/io.ente.photos.fdroid/",
+      "features": [
+        "Automatic backup",
+        "End-to-end encryption",
+        "Photo editing",
+        "Shared albums",
+        "Metadata preservation",
+        "Face recognition"
+      ],
+      "id": "ente-photos",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires an Ente account for cloud backup",
+        "Migration from Google Photos may need Takeout exports and metadata reconciliation"
+      ],
+      "name": "Ente Photos",
+      "offline": true,
+      "openSource": true,
+      "packageName": "io.ente.photos",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=io.ente.photos",
+      "pricing": "Free allowance and paid plans; verify current official pricing",
+      "privacySummary": "Ente publishes source code, encryption documentation, and an external audit report.",
+      "sourceRepo": "https://github.com/ente-io/ente",
+      "website": "https://ente.io/"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "google-photos"
+      ],
+      "battery": "Unknown; backup workload and server connectivity affect use.",
+      "category": "Photo management",
+      "description": "Self-hosted open-source photo and video management platform.",
+      "developer": "Immich contributors",
+      "evidence": [
+        {
+          "claim": "Immich publishes source and warns users to maintain independent backups.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Immich documentation",
+          "url": "https://immich.app/docs/overview/introduction",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Automatic backup",
+        "Self hosting",
+        "Face recognition",
+        "Shared albums",
+        "Metadata preservation"
+      ],
+      "id": "immich",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires server setup and maintenance",
+        "Users must plan their own backups",
+        "The project advises against treating it as the only copy of photos"
+      ],
+      "name": "Immich",
+      "offline": true,
+      "openSource": true,
+      "packageName": "app.alextran.immich",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB",
+        "SELF_HOSTED"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=app.alextran.immich",
+      "pricing": "Open-source software; server and storage costs vary",
+      "privacySummary": "Data location and administrator access depend on the self-hosted server. Open source allows inspection but does not by itself guarantee a secure deployment.",
+      "sourceRepo": "https://github.com/immich-app/immich",
+      "website": "https://immich.app/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-photos"
+      ],
+      "battery": "Unknown; local-only operation avoids continuous cloud backup by default.",
+      "category": "Photo management",
+      "description": "Offline open-source gallery for viewing and organizing local media.",
+      "developer": "Fossify",
+      "evidence": [
+        {
+          "claim": "The application source is publicly available.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Fossify Gallery repository",
+          "url": "https://github.com/FossifyOrg/Gallery",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/org.fossify.gallery/",
+      "features": [
+        "Photo editing",
+        "No mandatory account",
+        "Local only",
+        "Metadata preservation"
+      ],
+      "id": "fossify-gallery",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "No cloud backup service",
+        "Android only"
+      ],
+      "name": "Fossify Gallery",
+      "offline": true,
+      "openSource": true,
+      "packageName": "org.fossify.gallery",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=org.fossify.gallery",
+      "pricing": "Verify current store listing",
+      "privacySummary": "Designed for local gallery use and published as open source. It is not a cloud backup service.",
+      "sourceRepo": "https://github.com/FossifyOrg/Gallery",
+      "website": "https://www.fossify.org/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown; active GPS navigation commonly uses location, screen, network, and processor resources.",
+      "category": "Maps",
+      "description": "Mapping, navigation, places, traffic, transit, and location-sharing service.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google documents location collection and controls.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google location technologies policy",
+          "url": "https://policies.google.com/technologies/location-data",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Live traffic",
+        "Offline navigation",
+        "Android Auto",
+        "Transit",
+        "Street imagery",
+        "Place reviews"
+      ],
+      "id": "google-maps",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Some personalization and sharing features require an account"
+      ],
+      "name": "Google Maps",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.apps.maps",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Google documents location-data processing and provides account and location-history controls.",
+      "sourceRepo": "",
+      "website": "https://maps.google.com/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-maps"
+      ],
+      "battery": "Unknown; offline maps can reduce mobile-network activity, while GPS navigation still consumes power.",
+      "category": "Maps",
+      "description": "Offline-first open-source maps and navigation using OpenStreetMap data.",
+      "developer": "Organic Maps community",
+      "evidence": [
+        {
+          "claim": "Organic Maps publishes source and a privacy policy describing its data practices.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Organic Maps privacy policy",
+          "url": "https://organicmaps.app/privacy/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/app.organicmaps/",
+      "features": [
+        "Offline navigation",
+        "No mandatory account",
+        "Hiking maps",
+        "Cycling maps"
+      ],
+      "id": "organic-maps",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "No live traffic",
+        "No Android Auto support documented",
+        "Place and transit depth varies by OpenStreetMap coverage"
+      ],
+      "name": "Organic Maps",
+      "offline": true,
+      "openSource": true,
+      "packageName": "app.organicmaps",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=app.organicmaps",
+      "pricing": "No purchase price documented",
+      "privacySummary": "The project states it has no tracking and publishes its source. Map downloads and external links still involve network requests when used.",
+      "sourceRepo": "https://github.com/organicmaps/organicmaps",
+      "unsupportedFeatures": [
+        "Live traffic",
+        "Android Auto"
+      ],
+      "website": "https://organicmaps.app/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-maps"
+      ],
+      "battery": "Unknown; extensive map rendering and GPS navigation can affect device use.",
+      "category": "Maps",
+      "description": "OpenStreetMap-based offline maps and navigation with extensive map controls.",
+      "developer": "OsmAnd B.V.",
+      "evidence": [
+        {
+          "claim": "OsmAnd publishes client source and privacy documentation.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "OsmAnd privacy policy",
+          "url": "https://osmand.net/docs/legal/privacy-policy/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/net.osmand.plus/",
+      "features": [
+        "Offline navigation",
+        "Android Auto",
+        "No mandatory account",
+        "Hiking maps",
+        "Cycling maps"
+      ],
+      "id": "osmand",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Interface and settings can be complex",
+        "Live traffic coverage differs from Google Maps"
+      ],
+      "name": "OsmAnd",
+      "offline": true,
+      "openSource": true,
+      "packageName": "net.osmand",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=net.osmand",
+      "pricing": "Free and paid variants/features; verify current official pricing",
+      "privacySummary": "Core client source is public. Optional services and purchases may have separate processing.",
+      "sourceRepo": "https://github.com/osmandapp/OsmAnd",
+      "website": "https://osmand.net/"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "google-password-manager"
+      ],
+      "battery": "Unknown.",
+      "category": "Password managers",
+      "description": "Cross-platform password manager with hosted and self-hosted options.",
+      "developer": "Bitwarden Inc.",
+      "evidence": [
+        {
+          "claim": "Bitwarden publishes security assessments and audit information.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Bitwarden compliance and audits",
+          "url": "https://bitwarden.com/help/is-bitwarden-audited/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://mobileapp.bitwarden.com/fdroid/",
+      "features": [
+        "Password manager",
+        "End-to-end encryption",
+        "Self hosting",
+        "Passkeys",
+        "Offline access"
+      ],
+      "id": "bitwarden",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires an account for synchronized vaults"
+      ],
+      "name": "Bitwarden",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.x8bit.bitwarden",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB",
+        "SELF_HOSTED"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
+      "pricing": "Free and paid plans; verify current official pricing",
+      "privacySummary": "Bitwarden publishes source, security documentation, and third-party audit material. Sync requires an account on a hosted or self-hosted server.",
+      "sourceRepo": "https://github.com/bitwarden/android",
+      "website": "https://bitwarden.com/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-authenticator",
+        "microsoft-authenticator"
+      ],
+      "battery": "Unknown; authenticator code generation is local.",
+      "category": "Authentication",
+      "description": "Open-source Android authenticator with encrypted local vaults and export support.",
+      "developer": "Beem Development",
+      "evidence": [
+        {
+          "claim": "Aegis publishes source and documents vault encryption and backups.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Aegis documentation",
+          "url": "https://getaegis.app/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/com.beemdevelopment.aegis/",
+      "features": [
+        "TOTP",
+        "Encrypted backup",
+        "No mandatory account",
+        "Offline access"
+      ],
+      "id": "aegis",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Android only",
+        "User is responsible for securely backing up exported vaults"
+      ],
+      "name": "Aegis Authenticator",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.beemdevelopment.aegis",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis",
+      "pricing": "No purchase price documented",
+      "privacySummary": "The app is open source and keeps its vault locally unless the user exports or backs it up through another system.",
+      "sourceRepo": "https://github.com/beemdevelopment/Aegis",
+      "website": "https://getaegis.app/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "microsoft-office"
+      ],
+      "battery": "Unknown; desktop workload dependent.",
+      "category": "Office software",
+      "description": "Open-source desktop office suite for documents, spreadsheets, and presentations.",
+      "developer": "The Document Foundation",
+      "evidence": [
+        {
+          "claim": "LibreOffice is published as open-source software by The Document Foundation.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "LibreOffice source code",
+          "url": "https://www.libreoffice.org/about-us/source-code/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Documents",
+        "Spreadsheets",
+        "Presentations",
+        "Offline access",
+        "No mandatory account"
+      ],
+      "id": "libreoffice",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "No official full-featured Android editor",
+        "Complex Microsoft Office documents can render differently"
+      ],
+      "name": "LibreOffice",
+      "offline": true,
+      "openSource": true,
+      "packageName": "",
+      "platforms": [
+        "WINDOWS",
+        "MACOS",
+        "LINUX"
+      ],
+      "playUrl": "",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Desktop software can be used locally without an account. Online update checks and extensions are separate network interactions.",
+      "sourceRepo": "https://git.libreoffice.org/core",
+      "website": "https://www.libreoffice.org/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "microsoft-office"
+      ],
+      "battery": "Unknown.",
+      "category": "Office software",
+      "description": "Office editors available on desktop, mobile, web, and self-hosted servers.",
+      "developer": "Ascensio System SIA",
+      "evidence": [
+        {
+          "claim": "ONLYOFFICE publishes open-source components and licensing details.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "ONLYOFFICE GitHub organization",
+          "url": "https://github.com/ONLYOFFICE",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Documents",
+        "Spreadsheets",
+        "Presentations",
+        "Offline access",
+        "Self hosting"
+      ],
+      "id": "onlyoffice",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Feature set and licensing differ by product and deployment",
+        "Cloud collaboration requires a server or provider"
+      ],
+      "name": "ONLYOFFICE",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.onlyoffice.documents",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB",
+        "SELF_HOSTED"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.onlyoffice.documents",
+      "pricing": "Community and commercial offerings; verify current official pricing",
+      "privacySummary": "Open-source components and self-hosting are available; privacy depends on deployment and any connected cloud provider.",
+      "sourceRepo": "https://github.com/ONLYOFFICE",
+      "website": "https://www.onlyoffice.com/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Browsers",
+      "description": "Chromium-based browser integrated with Microsoft services.",
+      "developer": "Microsoft",
+      "evidence": [
+        {
+          "claim": "Microsoft provides an Edge privacy whitepaper and privacy statement.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Edge privacy",
+          "url": "https://learn.microsoft.com/deployedge/microsoft-edge-security-privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Extension support",
+        "Account sync",
+        "Password manager"
+      ],
+      "id": "microsoft-edge",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Some integrated services and sync features require a Microsoft account"
+      ],
+      "name": "Microsoft Edge",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.microsoft.emmx",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Microsoft documents diagnostic and browsing-data controls. Sync requires an account.",
+      "sourceRepo": "",
+      "website": "https://www.microsoft.com/edge"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Browsers",
+      "description": "Chromium-based Android browser with content blockers and Samsung integration.",
+      "developer": "Samsung Electronics",
+      "evidence": [
+        {
+          "claim": "Samsung publishes privacy disclosures for its services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Samsung Privacy",
+          "url": "https://privacy.samsung.com/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Tracking protection",
+        "Content blockers",
+        "Account sync"
+      ],
+      "id": "samsung-internet",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Android only",
+        "Sync requires a Samsung account"
+      ],
+      "name": "Samsung Internet",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.sec.android.app.sbrowser",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Samsung provides service and company privacy notices; optional sync uses a Samsung account.",
+      "sourceRepo": "",
+      "website": "https://developer.samsung.com/internet"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown; background synchronization can use network and battery.",
+      "category": "Cloud storage",
+      "description": "Cloud file storage, synchronization, sharing, and Microsoft 365 integration.",
+      "developer": "Microsoft",
+      "evidence": [
+        {
+          "claim": "Microsoft publishes a company privacy statement covering online services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Privacy Statement",
+          "url": "https://privacy.microsoft.com/privacystatement",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "File sync",
+        "File sharing",
+        "Offline files",
+        "Office collaboration"
+      ],
+      "id": "microsoft-onedrive",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires a Microsoft account",
+        "General file storage is not advertised as end-to-end encrypted"
+      ],
+      "name": "Microsoft OneDrive",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.microsoft.skydrive",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.skydrive",
+      "pricing": "Free allowance and paid plans; verify current official pricing",
+      "privacySummary": "Microsoft describes collection, processing, sharing, retention, and controls in its privacy statement.",
+      "sourceRepo": "",
+      "website": "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Email",
+      "description": "Email and calendar client integrated with Microsoft and third-party accounts.",
+      "developer": "Microsoft",
+      "evidence": [
+        {
+          "claim": "Microsoft discloses data practices for its products and services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Privacy Statement",
+          "url": "https://privacy.microsoft.com/privacystatement",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Calendar integration",
+        "Multiple accounts",
+        "Offline mail"
+      ],
+      "id": "microsoft-outlook",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires at least one email account",
+        "Some features depend on Microsoft 365"
+      ],
+      "name": "Microsoft Outlook",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.microsoft.office.outlook",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook",
+      "pricing": "Plan-dependent; verify current official pricing",
+      "privacySummary": "Microsoft publishes privacy disclosures and in-product controls; server-side practices also depend on the configured email provider.",
+      "sourceRepo": "",
+      "website": "https://www.microsoft.com/microsoft-365/outlook/outlook-for-business"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Office software",
+      "description": "Document, spreadsheet, presentation, collaboration, and cloud productivity applications.",
+      "developer": "Microsoft",
+      "evidence": [
+        {
+          "claim": "Microsoft documents privacy controls and connected experiences.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Privacy Statement",
+          "url": "https://privacy.microsoft.com/privacystatement",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Documents",
+        "Spreadsheets",
+        "Presentations",
+        "Offline access",
+        "Office collaboration"
+      ],
+      "id": "microsoft-office",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Many features require an account or subscription",
+        "Cloud and AI features require network access"
+      ],
+      "name": "Microsoft 365",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.microsoft.office.officehubrow",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow",
+      "pricing": "Subscription and limited free use vary; verify current official pricing",
+      "privacySummary": "Microsoft publishes product and company privacy disclosures. Connected experiences can send content or usage data for the selected service.",
+      "sourceRepo": "",
+      "website": "https://www.microsoft.com/microsoft-365"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Authentication",
+      "description": "Authenticator app for time-based and counter-based one-time codes with optional account sync.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google documents Authenticator setup, transfers, and optional account synchronization.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Account Help",
+          "url": "https://support.google.com/accounts/answer/1066447",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "TOTP",
+        "Offline access",
+        "Account sync"
+      ],
+      "id": "google-authenticator",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Encrypted portable export choices differ from some alternatives"
+      ],
+      "name": "Google Authenticator",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.apps.authenticator2",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Code generation works locally; optional Google Account synchronization changes the data boundary.",
+      "sourceRepo": "",
+      "website": "https://support.google.com/accounts/answer/1066447"
+    },
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Password managers",
+      "description": "Password and passkey manager integrated with Chrome and Android.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google documents security for saved passwords and passkeys.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Password Manager security",
+          "url": "https://support.google.com/accounts/answer/6208650",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Password manager",
+        "Passkeys",
+        "Account sync"
+      ],
+      "id": "google-password-manager",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires a Google account for synchronized access",
+        "Strongest integration is within Google platforms and Chrome"
+      ],
+      "name": "Google Password Manager",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.gms",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Google documents password encryption, account protections, and privacy practices. Sync depends on a Google account.",
+      "sourceRepo": "",
+      "website": "https://passwords.google.com/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Authentication",
+      "description": "Authenticator for one-time codes, Microsoft account approvals, and supported sign-in flows.",
+      "developer": "Microsoft",
+      "evidence": [
+        {
+          "claim": "Microsoft publishes product privacy disclosures and support documentation.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Privacy Statement",
+          "url": "https://privacy.microsoft.com/privacystatement",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "TOTP",
+        "Push approval",
+        "Offline access"
+      ],
+      "id": "microsoft-authenticator",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Microsoft-specific push approvals are not portable to standard TOTP apps",
+        "Backup and recovery behavior is platform-dependent"
+      ],
+      "name": "Microsoft Authenticator",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.azure.authenticator",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.azure.authenticator",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Microsoft publishes privacy disclosures; local code generation and connected approval or backup features have different network needs.",
+      "sourceRepo": "",
+      "website": "https://www.microsoft.com/security/mobile-authenticator-app"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-password-manager"
+      ],
+      "battery": "Unknown.",
+      "category": "Password managers",
+      "description": "Open-source Android password manager for local KeePass database files.",
+      "developer": "Kunzisoft",
+      "evidence": [
+        {
+          "claim": "KeePassDX source and documentation are publicly available.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "KeePassDX repository",
+          "url": "https://github.com/Kunzisoft/KeePassDX",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/com.kunzisoft.keepass.libre/",
+      "features": [
+        "Password manager",
+        "Offline access",
+        "No mandatory account",
+        "Local only"
+      ],
+      "id": "keepassdx",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Android only",
+        "Users must design and secure their own synchronization and backups"
+      ],
+      "name": "KeePassDX",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.kunzisoft.keepass.free",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free",
+      "pricing": "No purchase price documented",
+      "privacySummary": "KeePassDX works with local encrypted databases; any cross-device sync depends on the storage provider the user chooses.",
+      "sourceRepo": "https://github.com/Kunzisoft/KeePassDX",
+      "website": "https://www.keepassdx.com/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-authenticator",
+        "microsoft-authenticator"
+      ],
+      "battery": "Unknown.",
+      "category": "Authentication",
+      "description": "Open-source authenticator with end-to-end encrypted backup and multi-device access.",
+      "developer": "Ente Technologies",
+      "evidence": [
+        {
+          "claim": "Ente Auth publishes source and describes end-to-end encrypted synchronization.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ente Auth",
+          "url": "https://ente.io/auth/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/io.ente.auth/",
+      "features": [
+        "TOTP",
+        "End-to-end encryption",
+        "Encrypted backup",
+        "Offline access"
+      ],
+      "id": "ente-auth",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Connected synchronization requires an account",
+        "Provider-specific push approvals do not transfer as TOTP secrets"
+      ],
+      "name": "Ente Auth",
+      "offline": true,
+      "openSource": true,
+      "packageName": "io.ente.auth",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=io.ente.auth",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Ente publishes source and encryption documentation; an account is optional for local use and needed for encrypted synchronization.",
+      "sourceRepo": "https://github.com/ente-io/ente",
+      "unsupportedFeatures": [
+        "Push approval",
+        "Passkeys"
+      ],
+      "website": "https://ente.io/auth/"
+    },
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-maps"
+      ],
+      "battery": "Unknown; live GPS navigation uses location, screen, processor, and network resources.",
+      "category": "Maps",
+      "description": "Community-driven navigation with live traffic, incident reporting, and route guidance.",
+      "developer": "Waze Mobile",
+      "ecosystem": "GOOGLE",
+      "evidence": [
+        {
+          "claim": "Waze publishes product privacy information and identifies Google as its parent ecosystem.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Waze Privacy Policy",
+          "url": "https://www.waze.com/legal/privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Live traffic",
+        "Android Auto",
+        "Place search",
+        "Incident reporting"
+      ],
+      "id": "waze",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "No full offline navigation",
+        "Live features require network access"
+      ],
+      "name": "Waze",
+      "offline": false,
+      "openSource": false,
+      "packageName": "com.waze",
+      "parentCompany": "Google LLC",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.waze",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Waze is part of Google's ecosystem and publishes product privacy information. Live routing depends on location and network processing.",
+      "sourceRepo": "",
+      "unsupportedFeatures": [
+        "Offline navigation"
+      ],
+      "website": "https://www.waze.com/"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "microsoft-office"
+      ],
+      "battery": "Unknown; desktop workload dependent.",
+      "category": "Office software",
+      "description": "Open-source desktop office suite for documents, spreadsheets, and presentations.",
+      "developer": "The Document Foundation",
+      "evidence": [
+        {
+          "claim": "LibreOffice is published as open-source software by The Document Foundation.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "LibreOffice source code",
+          "url": "https://www.libreoffice.org/about-us/source-code/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Documents",
+        "Spreadsheets",
+        "Presentations",
+        "Offline access",
+        "No mandatory account"
+      ],
+      "id": "libreoffice",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "No official full-featured Android editor",
+        "Complex Microsoft Office documents can render differently"
+      ],
+      "name": "LibreOffice",
+      "offline": true,
+      "openSource": true,
+      "packageName": "",
+      "platforms": [
+        "WINDOWS",
+        "MACOS",
+        "LINUX"
+      ],
+      "playUrl": "",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Desktop software can be used locally without an account. Online update checks and extensions are separate network interactions.",
+      "sourceRepo": "https://git.libreoffice.org/core",
+      "website": "https://www.libreoffice.org/"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Browsers",
+      "description": "Chromium-based Android browser with content blockers and Samsung integration.",
+      "developer": "Samsung Electronics",
+      "evidence": [
+        {
+          "claim": "Samsung publishes privacy disclosures for its services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Samsung Privacy",
+          "url": "https://privacy.samsung.com/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Tracking protection",
+        "Content blockers",
+        "Account sync"
+      ],
+      "id": "samsung-internet",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Android only",
+        "Sync requires a Samsung account"
+      ],
+      "name": "Samsung Internet",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.sec.android.app.sbrowser",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Samsung provides service and company privacy notices; optional sync uses a Samsung account.",
+      "sourceRepo": "",
+      "website": "https://developer.samsung.com/internet"
+    }
+  ]
+}

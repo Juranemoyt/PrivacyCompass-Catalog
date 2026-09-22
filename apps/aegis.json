@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-authenticator",
+        "microsoft-authenticator"
+      ],
+      "battery": "Unknown; authenticator code generation is local.",
+      "category": "Authentication",
+      "description": "Open-source Android authenticator with encrypted local vaults and export support.",
+      "developer": "Beem Development",
+      "evidence": [
+        {
+          "claim": "Aegis publishes source and documents vault encryption and backups.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Aegis documentation",
+          "url": "https://getaegis.app/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/com.beemdevelopment.aegis/",
+      "features": [
+        "TOTP",
+        "Encrypted backup",
+        "No mandatory account",
+        "Offline access"
+      ],
+      "id": "aegis",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Android only",
+        "User is responsible for securely backing up exported vaults"
+      ],
+      "name": "Aegis Authenticator",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.beemdevelopment.aegis",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis",
+      "pricing": "No purchase price documented",
+      "privacySummary": "The app is open source and keeps its vault locally unless the user exports or backs it up through another system.",
+      "sourceRepo": "https://github.com/beemdevelopment/Aegis",
+      "website": "https://getaegis.app/"
+    }
+  ]
+}

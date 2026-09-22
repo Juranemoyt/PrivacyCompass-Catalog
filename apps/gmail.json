@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Email",
+      "description": "Email client and service with Google account integration.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google's privacy policy describes data collection and account controls.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Privacy Policy",
+          "url": "https://policies.google.com/privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Custom domains",
+        "Offline mail",
+        "Calendar integration",
+        "Multiple accounts"
+      ],
+      "id": "gmail",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "A Google account is required for the Gmail service"
+      ],
+      "name": "Gmail",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.gm",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.gm",
+      "pricing": "Plan-dependent; verify current official pricing",
+      "privacySummary": "Covered by Google's privacy policy; service use requires an account.",
+      "sourceRepo": "",
+      "website": "https://mail.google.com/"
+    }
+  ]
+}

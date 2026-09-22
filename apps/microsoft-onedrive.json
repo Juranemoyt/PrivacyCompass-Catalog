@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown; background synchronization can use network and battery.",
+      "category": "Cloud storage",
+      "description": "Cloud file storage, synchronization, sharing, and Microsoft 365 integration.",
+      "developer": "Microsoft",
+      "evidence": [
+        {
+          "claim": "Microsoft publishes a company privacy statement covering online services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Privacy Statement",
+          "url": "https://privacy.microsoft.com/privacystatement",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "File sync",
+        "File sharing",
+        "Offline files",
+        "Office collaboration"
+      ],
+      "id": "microsoft-onedrive",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires a Microsoft account",
+        "General file storage is not advertised as end-to-end encrypted"
+      ],
+      "name": "Microsoft OneDrive",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.microsoft.skydrive",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.skydrive",
+      "pricing": "Free allowance and paid plans; verify current official pricing",
+      "privacySummary": "Microsoft describes collection, processing, sharing, retention, and controls in its privacy statement.",
+      "sourceRepo": "",
+      "website": "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage"
+    }
+  ]
+}

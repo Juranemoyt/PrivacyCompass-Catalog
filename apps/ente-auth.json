@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-authenticator",
+        "microsoft-authenticator"
+      ],
+      "battery": "Unknown.",
+      "category": "Authentication",
+      "description": "Open-source authenticator with end-to-end encrypted backup and multi-device access.",
+      "developer": "Ente Technologies",
+      "evidence": [
+        {
+          "claim": "Ente Auth publishes source and describes end-to-end encrypted synchronization.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ente Auth",
+          "url": "https://ente.io/auth/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/io.ente.auth/",
+      "features": [
+        "TOTP",
+        "End-to-end encryption",
+        "Encrypted backup",
+        "Offline access"
+      ],
+      "id": "ente-auth",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Connected synchronization requires an account",
+        "Provider-specific push approvals do not transfer as TOTP secrets"
+      ],
+      "name": "Ente Auth",
+      "offline": true,
+      "openSource": true,
+      "packageName": "io.ente.auth",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=io.ente.auth",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Ente publishes source and encryption documentation; an account is optional for local use and needed for encrypted synchronization.",
+      "sourceRepo": "https://github.com/ente-io/ente",
+      "unsupportedFeatures": [
+        "Push approval",
+        "Passkeys"
+      ],
+      "website": "https://ente.io/auth/"
+    }
+  ]
+}

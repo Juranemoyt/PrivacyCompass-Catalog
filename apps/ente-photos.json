@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "google-photos"
+      ],
+      "battery": "Unknown; automatic backup frequency and media volume affect battery and network use.",
+      "category": "Photo management",
+      "description": "End-to-end encrypted photo backup and gallery with import tools.",
+      "developer": "Ente Technologies",
+      "evidence": [
+        {
+          "claim": "Ente publishes its cryptographic design and audit materials.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Ente security and privacy",
+          "url": "https://ente.io/security/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/io.ente.photos.fdroid/",
+      "features": [
+        "Automatic backup",
+        "End-to-end encryption",
+        "Photo editing",
+        "Shared albums",
+        "Metadata preservation",
+        "Face recognition"
+      ],
+      "id": "ente-photos",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires an Ente account for cloud backup",
+        "Migration from Google Photos may need Takeout exports and metadata reconciliation"
+      ],
+      "name": "Ente Photos",
+      "offline": true,
+      "openSource": true,
+      "packageName": "io.ente.photos",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=io.ente.photos",
+      "pricing": "Free allowance and paid plans; verify current official pricing",
+      "privacySummary": "Ente publishes source code, encryption documentation, and an external audit report.",
+      "sourceRepo": "https://github.com/ente-io/ente",
+      "website": "https://ente.io/"
+    }
+  ]
+}

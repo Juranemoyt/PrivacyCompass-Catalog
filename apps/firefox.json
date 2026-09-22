@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-chrome",
+        "microsoft-edge",
+        "samsung-internet"
+      ],
+      "battery": "Unknown — test on your device under the same browsing workload.",
+      "category": "Browsers",
+      "description": "Open-source browser with tracking protection, extensions, and optional account sync.",
+      "developer": "Mozilla",
+      "evidence": [
+        {
+          "claim": "Mozilla publishes Firefox data-practice disclosures.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Firefox Privacy Notice",
+          "url": "https://www.mozilla.org/privacy/firefox/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Extension support",
+        "Account sync",
+        "Tracking protection",
+        "Password manager"
+      ],
+      "id": "firefox",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Some websites are optimized primarily for Chromium browsers"
+      ],
+      "name": "Firefox",
+      "offline": true,
+      "openSource": true,
+      "packageName": "org.mozilla.firefox",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=org.mozilla.firefox",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Mozilla publishes a Firefox privacy notice and the Android source code. Sync is optional.",
+      "sourceRepo": "https://github.com/mozilla-mobile/firefox-android",
+      "website": "https://www.mozilla.org/firefox/"
+    }
+  ]
+}

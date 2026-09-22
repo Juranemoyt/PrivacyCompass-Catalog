@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Search engines",
+      "description": "Web search service and Android app with personalized and account-linked features.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google discloses collection, purposes, controls, and retention at the company-policy level.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Privacy Policy",
+          "url": "https://policies.google.com/privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Voice search",
+        "Personalized results",
+        "Image search"
+      ],
+      "id": "google-search",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Personalized features may use account activity"
+      ],
+      "name": "Google Search",
+      "offline": false,
+      "openSource": false,
+      "packageName": "com.google.android.googlequicksearchbox",
+      "platforms": [
+        "ANDROID",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Google describes collected data, purposes, controls, and retention in its privacy policy.",
+      "sourceRepo": "",
+      "website": "https://www.google.com/"
+    }
+  ]
+}

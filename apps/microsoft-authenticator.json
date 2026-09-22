@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Authentication",
+      "description": "Authenticator for one-time codes, Microsoft account approvals, and supported sign-in flows.",
+      "developer": "Microsoft",
+      "evidence": [
+        {
+          "claim": "Microsoft publishes product privacy disclosures and support documentation.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Privacy Statement",
+          "url": "https://privacy.microsoft.com/privacystatement",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "TOTP",
+        "Push approval",
+        "Offline access"
+      ],
+      "id": "microsoft-authenticator",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Microsoft-specific push approvals are not portable to standard TOTP apps",
+        "Backup and recovery behavior is platform-dependent"
+      ],
+      "name": "Microsoft Authenticator",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.azure.authenticator",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.azure.authenticator",
+      "pricing": "No purchase price documented",
+      "privacySummary": "Microsoft publishes privacy disclosures; local code generation and connected approval or backup features have different network needs.",
+      "sourceRepo": "",
+      "website": "https://www.microsoft.com/security/mobile-authenticator-app"
+    }
+  ]
+}

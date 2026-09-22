@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Cloud storage",
+      "description": "Cloud file storage, synchronization, sharing, and collaboration service.",
+      "developer": "Google",
+      "evidence": [
+        {
+          "claim": "Google documents security and privacy controls for Drive.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Google Drive security and privacy",
+          "url": "https://www.google.com/drive/safety/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "File sync",
+        "File sharing",
+        "Office collaboration",
+        "Offline files"
+      ],
+      "id": "google-drive",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires a Google account",
+        "Cloud synchronization uses network and background activity"
+      ],
+      "name": "Google Drive",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.google.android.apps.docs",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.docs",
+      "pricing": "Free allowance and paid plans; verify current official pricing",
+      "privacySummary": "Covered by Google privacy disclosures. Files are encrypted in transit and at rest; Drive does not advertise general end-to-end encryption.",
+      "sourceRepo": "",
+      "website": "https://drive.google.com/"
+    }
+  ]
+}

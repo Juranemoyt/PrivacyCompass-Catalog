@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "microsoft-office"
+      ],
+      "battery": "Unknown.",
+      "category": "Office software",
+      "description": "Office editors available on desktop, mobile, web, and self-hosted servers.",
+      "developer": "Ascensio System SIA",
+      "evidence": [
+        {
+          "claim": "ONLYOFFICE publishes open-source components and licensing details.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "ONLYOFFICE GitHub organization",
+          "url": "https://github.com/ONLYOFFICE",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Documents",
+        "Spreadsheets",
+        "Presentations",
+        "Offline access",
+        "Self hosting"
+      ],
+      "id": "onlyoffice",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Feature set and licensing differ by product and deployment",
+        "Cloud collaboration requires a server or provider"
+      ],
+      "name": "ONLYOFFICE",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.onlyoffice.documents",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB",
+        "SELF_HOSTED"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.onlyoffice.documents",
+      "pricing": "Community and commercial offerings; verify current official pricing",
+      "privacySummary": "Open-source components and self-hosting are available; privacy depends on deployment and any connected cloud provider.",
+      "sourceRepo": "https://github.com/ONLYOFFICE",
+      "website": "https://www.onlyoffice.com/"
+    }
+  ]
+}

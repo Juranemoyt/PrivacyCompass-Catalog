@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-password-manager"
+      ],
+      "battery": "Unknown.",
+      "category": "Password managers",
+      "description": "Open-source Android password manager for local KeePass database files.",
+      "developer": "Kunzisoft",
+      "evidence": [
+        {
+          "claim": "KeePassDX source and documentation are publicly available.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "KeePassDX repository",
+          "url": "https://github.com/Kunzisoft/KeePassDX",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/com.kunzisoft.keepass.libre/",
+      "features": [
+        "Password manager",
+        "Offline access",
+        "No mandatory account",
+        "Local only"
+      ],
+      "id": "keepassdx",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Android only",
+        "Users must design and secure their own synchronization and backups"
+      ],
+      "name": "KeePassDX",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.kunzisoft.keepass.free",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free",
+      "pricing": "No purchase price documented",
+      "privacySummary": "KeePassDX works with local encrypted databases; any cross-device sync depends on the storage provider the user chooses.",
+      "sourceRepo": "https://github.com/Kunzisoft/KeePassDX",
+      "website": "https://www.keepassdx.com/"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-search"
+      ],
+      "battery": "Unknown.",
+      "category": "Search engines",
+      "description": "Search engine and browser focused on reducing tracking and profiling.",
+      "developer": "DuckDuckGo",
+      "evidence": [
+        {
+          "claim": "DuckDuckGo states that it does not save or sell search history.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "DuckDuckGo Privacy Policy",
+          "url": "https://duckduckgo.com/privacy",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Tracking protection",
+        "No mandatory account",
+        "Private search"
+      ],
+      "id": "duckduckgo",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Search results and local coverage can differ from Google Search",
+        "Search requires network access"
+      ],
+      "name": "DuckDuckGo",
+      "offline": false,
+      "openSource": true,
+      "packageName": "com.duckduckgo.mobile.android",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android",
+      "pricing": "No purchase price documented",
+      "privacySummary": "DuckDuckGo states that search histories are not saved or sold. Browser and search components have separate published details.",
+      "sourceRepo": "https://github.com/duckduckgo/Android",
+      "website": "https://duckduckgo.com/"
+    }
+  ]
+}

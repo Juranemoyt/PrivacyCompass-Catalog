@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": false,
+      "alternativesFor": [
+        "google-maps"
+      ],
+      "battery": "Unknown; offline maps can reduce mobile-network activity, while GPS navigation still consumes power.",
+      "category": "Maps",
+      "description": "Offline-first open-source maps and navigation using OpenStreetMap data.",
+      "developer": "Organic Maps community",
+      "evidence": [
+        {
+          "claim": "Organic Maps publishes source and a privacy policy describing its data practices.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Organic Maps privacy policy",
+          "url": "https://organicmaps.app/privacy/",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/app.organicmaps/",
+      "features": [
+        "Offline navigation",
+        "No mandatory account",
+        "Hiking maps",
+        "Cycling maps"
+      ],
+      "id": "organic-maps",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "No live traffic",
+        "No Android Auto support documented",
+        "Place and transit depth varies by OpenStreetMap coverage"
+      ],
+      "name": "Organic Maps",
+      "offline": true,
+      "openSource": true,
+      "packageName": "app.organicmaps",
+      "platforms": [
+        "ANDROID",
+        "IOS"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=app.organicmaps",
+      "pricing": "No purchase price documented",
+      "privacySummary": "The project states it has no tracking and publishes its source. Map downloads and external links still involve network requests when used.",
+      "sourceRepo": "https://github.com/organicmaps/organicmaps",
+      "unsupportedFeatures": [
+        "Live traffic",
+        "Android Auto"
+      ],
+      "website": "https://organicmaps.app/"
+    }
+  ]
+}

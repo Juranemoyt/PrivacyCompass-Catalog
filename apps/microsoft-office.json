@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "battery": "Unknown.",
+      "category": "Office software",
+      "description": "Document, spreadsheet, presentation, collaboration, and cloud productivity applications.",
+      "developer": "Microsoft",
+      "evidence": [
+        {
+          "claim": "Microsoft documents privacy controls and connected experiences.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Microsoft Privacy Statement",
+          "url": "https://privacy.microsoft.com/privacystatement",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Documents",
+        "Spreadsheets",
+        "Presentations",
+        "Offline access",
+        "Office collaboration"
+      ],
+      "id": "microsoft-office",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Many features require an account or subscription",
+        "Cloud and AI features require network access"
+      ],
+      "name": "Microsoft 365",
+      "offline": true,
+      "openSource": false,
+      "packageName": "com.microsoft.office.officehubrow",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "IOS",
+        "WEB"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow",
+      "pricing": "Subscription and limited free use vary; verify current official pricing",
+      "privacySummary": "Microsoft publishes product and company privacy disclosures. Connected experiences can send content or usage data for the selected service.",
+      "sourceRepo": "",
+      "website": "https://www.microsoft.com/microsoft-365"
+    }
+  ]
+}

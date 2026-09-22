@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [
+        "google-drive",
+        "microsoft-onedrive"
+      ],
+      "battery": "Unknown; synchronization settings affect background activity.",
+      "category": "Cloud storage",
+      "description": "Open-source, self-hostable file sync and collaboration platform.",
+      "developer": "Nextcloud GmbH / community",
+      "evidence": [
+        {
+          "claim": "The Android client is published as open-source software.",
+          "classification": "INDEPENDENTLY_VERIFIED",
+          "source": "Nextcloud Android repository",
+          "url": "https://github.com/nextcloud/android",
+          "verified": "2026-09-21"
+        }
+      ],
+      "fdroidUrl": "https://f-droid.org/packages/com.nextcloud.client/",
+      "features": [
+        "File sync",
+        "File sharing",
+        "Self hosting",
+        "Office collaboration",
+        "Offline files"
+      ],
+      "id": "nextcloud",
+      "lastVerified": "2026-09-21",
+      "limitations": [
+        "Requires a server account",
+        "Maintenance and privacy depend on the hosting provider or administrator"
+      ],
+      "name": "Nextcloud",
+      "offline": true,
+      "openSource": true,
+      "packageName": "com.nextcloud.client",
+      "platforms": [
+        "ANDROID",
+        "WINDOWS",
+        "MACOS",
+        "LINUX",
+        "IOS",
+        "WEB",
+        "SELF_HOSTED"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.nextcloud.client",
+      "pricing": "Software is open source; hosting costs vary",
+      "privacySummary": "Self-hosting can give the operator control over storage and logs. Actual privacy depends on the chosen server and administrator.",
+      "sourceRepo": "https://github.com/nextcloud/android",
+      "website": "https://nextcloud.com/"
+    }
+  ]
+}
