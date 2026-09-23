@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "0.3.0",
+  "catalogVersion": "0.3.1",
   "lookupBaseUrl": "https://raw.githubusercontent.com/Juranemoyt/PrivacyCompass-Catalog/main/apps",
   "lookupSha256": {
     "aegis": "bab25983229e01f27ed2ce208089d92b46a6ca40bc7398286c1c5f61ab2bd462",
@@ -36,9 +36,9 @@
     "waze": "0bb7cdecaaf7a343249a0a59c1fc2eff863ec901c4658a38232e0ce42d22c7f0"
   },
   "minimumAppVersion": "0.2.1",
-  "packageSize": 2056363,
+  "packageSize": 2151566,
   "packageUrl": "https://raw.githubusercontent.com/Juranemoyt/PrivacyCompass-Catalog/main/catalog.json",
-  "publishedAt": "2026-09-23T04:19:45Z",
+  "publishedAt": "2026-09-23T16:20:34Z",
   "schemaVersion": 1,
-  "sha256": "b34c74dc088c4c2358335767473e1d0341a98474e047b8cd647b62d1d5a49fd8"
+  "sha256": "c45f66cb0d3bce131d3ce588b1f98afb3278da125cb63b664fe4077bbc654513"
 }
