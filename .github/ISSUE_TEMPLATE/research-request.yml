@@ -1,24 +1,40 @@
 # Issue form for Privacy Compass research requests. The Android app links here with
 # ?template=research-request.yml and prefills the fields `package`, `name` and `type`.
+# Public issues: please do not add personal information or your installed-app list.
 name: Research request
-description: Ask Privacy Compass to research an Android app
+description: Ask Privacy Compass to research the privacy practices of an Android app.
 title: "Research request: "
 labels: ["research-request"]
 body:
   - type: markdown
     attributes:
-      value: "Only the app name and package name are needed. Never paste your installed-app list or personal information. Requests do not buy priority and do not guarantee publication."
+      value: |
+        Thanks for helping Privacy Compass cover more apps. Privacy Compass filled in the details
+        below from the app page you came from — please check they look right, then press **Submit new issue**.
+
+        - This issue is **public**. Only the app name and package name are needed; please don't add personal information or your installed-app list.
+        - A request is a suggestion, not a promise: it doesn't guarantee research or publication, and it doesn't change priority for anyone.
   - type: input
     id: package
-    attributes: { label: Package name, placeholder: com.example.app }
-    validations: { required: true }
+    attributes:
+      label: Package name
+      description: The app's exact Android package name (shown on the app's page in Privacy Compass).
+      placeholder: com.example.app
+    validations:
+      required: true
   - type: input
     id: name
-    attributes: { label: Application name }
-    validations: { required: true }
+    attributes:
+      label: Application name
+    validations:
+      required: true
   - type: dropdown
     id: type
     attributes:
       label: Request type
-      options: [privacy-research, recognition-and-research]
-    validations: { required: true }
+      description: "privacy-research: the app is already recognized. recognition-and-research: Privacy Compass doesn't know the app yet."
+      options:
+        - privacy-research
+        - recognition-and-research
+    validations:
+      required: true
