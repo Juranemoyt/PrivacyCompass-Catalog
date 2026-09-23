@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Developer tools",
+      "description": "GitHub's mobile app for repositories, issues and pull requests.",
+      "developer": "GitHub",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "GitHub says it collects account data such as handle, name, email address, password, payment and transaction information when you open an account.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "GitHub General Privacy Statement",
+          "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "GitHub says that if it detects a Global Privacy Control signal it will not share your data, and states that it does not sell your data.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "GitHub General Privacy Statement",
+          "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "GitHub says its analytics and advertising partners may use tracking technologies in its Services to collect personal information about online activities.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "GitHub General Privacy Statement",
+          "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "GitHub says you reserve the right to request deletion of your data, barring a few exceptions.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "GitHub General Privacy Statement",
+          "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "GitHub says it does not sell your data, but its analytics and advertising partners may use tracking technologies in its Services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "GitHub General Privacy Statement",
+          "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 1.276.0 (report dated Sept. 14, 2026) found code signatures for 2 known tracker SDK(s): Google CrashLytics (crash reporting), Google Firebase Analytics (analytics). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.github.android/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "github",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "The checked source is GitHub's general privacy statement, which largely concerns its website and services; mobile-app-specific practices are not separately established.",
+        "Version 1.276.0 lists these sensitive Android permissions in its manifest: advertising ID, biometrics, microphone (Exodus Privacy, Sept. 14, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "GitHub",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.github.android",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.github.android",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "GitHub says its analytics and advertising partners may use tracking technologies in its Services to collect personal information about online activities. Third-party finding (Exodus Privacy static analysis of version 1.276.0): no advertising SDK signatures were detected; absence of a signature does not prove none is used.",
+        "analytics": "Third-party finding (Exodus Privacy static analysis of version 1.276.0): code signatures for analytics, crash-reporting or profiling SDKs were detected: Google CrashLytics, Google Firebase Analytics. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "GitHub says it collects account data such as handle, name, email address, password, payment and transaction information when you open an account.",
+        "controls": "Not established in the checked sources.",
+        "deletion": "GitHub says you reserve the right to request deletion of your data, barring a few exceptions.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "GitHub says it does not sell your data, but its analytics and advertising partners may use tracking technologies in its Services.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "GitHub says that if it detects a Global Privacy Control signal it will not share your data, and states that it does not sell your data.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "GitHub says it does not sell your data, but its analytics and advertising partners may use tracking technologies in its Services.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://github.com/"
+    }
+  ]
+}

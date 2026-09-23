@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": null,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Browsers",
+      "description": "Opera's gaming-oriented mobile web browser.",
+      "developer": "Opera",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "Opera says the categories of data it collects vary by product, purpose and location.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Opera Privacy Policy",
+          "url": "https://www.opera.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Opera says it collects an identifier, Machine ID, hardware specifications, operating system, environment configuration and feature usage data to improve its products and services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Opera Privacy Policy",
+          "url": "https://www.opera.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Opera states it does not sell users' personal data to anyone, either to monetize or to provide advertising.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Opera Privacy Policy",
+          "url": "https://www.opera.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Opera says it monetizes its products primarily by selling advertising within the applications themselves, and separately that it does not sell users' personal data to provide advertising.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Opera Privacy Policy",
+          "url": "https://www.opera.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Opera states it does not share Opera account data with anyone, including OpenAI or Google.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Opera Privacy Policy",
+          "url": "https://www.opera.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Personalized content can be disabled under Settings > Privacy and security > Privacy consent settings.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Opera Privacy Policy",
+          "url": "https://www.opera.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Debug and improvement data is stored in server logs for up to forty-five days and then deleted automatically; synced data is kept until the Opera account is deleted.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Opera Privacy Policy",
+          "url": "https://www.opera.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Opera says it does not sell users' personal data and does not share account data with OpenAI or Google, but it earns revenue mainly from in-app advertising and collects device and usage data to improve its products.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Opera Privacy Policy",
+          "url": "https://www.opera.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 3.3.1 (report dated June 25, 2026) found code signatures for 2 known tracker SDK(s): Google CrashLytics (crash reporting), Google Firebase Analytics (analytics). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.opera.gx/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "Web browser"
+      ],
+      "id": "opera-gx",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "The checked policy is Opera's general privacy policy for its products; Opera GX-specific behavior is not separately established.",
+        "Version 3.3.1 lists these sensitive Android permissions in its manifest: advertising ID, approximate location, camera, microphone, precise location, write shared storage (Exodus Privacy, June 25, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Opera GX",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.opera.gx",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.opera.gx",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "Opera says it monetizes its products primarily by selling advertising within the applications themselves, and separately that it does not sell users' personal data to provide advertising. Third-party finding (Exodus Privacy static analysis of version 3.3.1): no advertising SDK signatures were detected; absence of a signature does not prove none is used.",
+        "analytics": "Third-party finding (Exodus Privacy static analysis of version 3.3.1): code signatures for analytics, crash-reporting or profiling SDKs were detected: Google CrashLytics, Google Firebase Analytics. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "Opera says the categories of data it collects vary by product, purpose and location.",
+        "controls": "Personalized content can be disabled under Settings > Privacy and security > Privacy consent settings.",
+        "deletion": "Debug and improvement data is stored in server logs for up to forty-five days and then deleted automatically; synced data is kept until the Opera account is deleted.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "Opera says it does not sell users' personal data and does not share account data with OpenAI or Google, but it earns revenue mainly from in-app advertising and collects device and usage data to improve its products.",
+        "purpose": "Opera says it collects an identifier, Machine ID, hardware specifications, operating system, environment configuration and feature usage data to improve its products and services.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "Opera states it does not sell users' personal data to anyone, either to monetize or to provide advertising.",
+        "sharing": "Opera states it does not share Opera account data with anyone, including OpenAI or Google.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "Opera says it does not sell users' personal data and does not share account data with OpenAI or Google, but it earns revenue mainly from in-app advertising and collects device and usage data to improve its products.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.opera.com/gx"
+    }
+  ]
+}

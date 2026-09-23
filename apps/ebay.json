@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": null,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Shopping",
+      "description": "Online marketplace app for buying and selling.",
+      "developer": "eBay Inc.",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "eBay says it collects personal data when you use its Services, create an account, submit forms or add or update account information.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "eBay User Privacy Notice",
+          "url": "https://www.ebay.com/help/policies/member-behavior-policy/user-privacy-notice-privacy-policy?id=4260",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "eBay lists data about interactions with its advertising partners, including ads shown and actions taken such as clicks, among the data it processes.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "eBay User Privacy Notice",
+          "url": "https://www.ebay.com/help/policies/member-behavior-policy/user-privacy-notice-privacy-policy?id=4260",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "For users outside the EEA, Switzerland and the UK, eBay lists advertising and content personalization, measurement and analytics, on and off its sites, as a purpose (within those regions it relies on consent).",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "eBay User Privacy Notice",
+          "url": "https://www.ebay.com/help/policies/member-behavior-policy/user-privacy-notice-privacy-policy?id=4260",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "eBay says it deletes or anonymizes personal data under its retention and deletion policy unless legally obliged or permitted to keep it longer.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "eBay User Privacy Notice",
+          "url": "https://www.ebay.com/help/policies/member-behavior-policy/user-privacy-notice-privacy-policy?id=4260",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Cookie settings can be managed in your browser or device settings.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "eBay User Privacy Notice",
+          "url": "https://www.ebay.com/help/policies/member-behavior-policy/user-privacy-notice-privacy-policy?id=4260",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "eBay processes data about your activity and interactions with its advertising partners and lists advertising, personalization and analytics as purposes; it says data is deleted or anonymized under its retention policy.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "eBay User Privacy Notice",
+          "url": "https://www.ebay.com/help/policies/member-behavior-policy/user-privacy-notice-privacy-policy?id=4260",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 6.274.0.1 (report dated Sept. 22, 2026) found code signatures for 7 known tracker SDK(s): AppsFlyer (analytics), Facebook Analytics (analytics), Facebook Login (identification), Facebook Share, Google CrashLytics (crash reporting), Google Firebase Analytics (analytics), OpenTelemetry (OpenCensus, OpenTracing) (analytics). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.ebay.mobile/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "ebay",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "Version 6.274.0.1 lists these sensitive Android permissions in its manifest: advertising ID, approximate location, biometrics, camera, microphone, photos, precise location, read shared storage, videos, write shared storage (Exodus Privacy, Sept. 22, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "eBay",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.ebay.mobile",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.ebay.mobile",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "eBay lists data about interactions with its advertising partners, including ads shown and actions taken such as clicks, among the data it processes. Third-party finding (Exodus Privacy static analysis of version 6.274.0.1): no advertising SDK signatures were detected; absence of a signature does not prove none is used.",
+        "analytics": "For users outside the EEA, Switzerland and the UK, eBay lists advertising and content personalization, measurement and analytics, on and off its sites, as a purpose (within those regions it relies on consent). Third-party finding (Exodus Privacy static analysis of version 6.274.0.1): code signatures for analytics, crash-reporting or profiling SDKs were detected: AppsFlyer, Facebook Analytics, Google CrashLytics, Google Firebase Analytics, OpenTelemetry (OpenCensus, OpenTracing). This shows an SDK is present in the app, not what data it sends.",
+        "collected": "eBay says it collects personal data when you use its Services, create an account, submit forms or add or update account information.",
+        "controls": "Cookie settings can be managed in your browser or device settings.",
+        "deletion": "eBay says it deletes or anonymizes personal data under its retention and deletion policy unless legally obliged or permitted to keep it longer.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "eBay processes data about your activity and interactions with its advertising partners and lists advertising, personalization and analytics as purposes; it says data is deleted or anonymized under its retention policy.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "Not established in the checked sources.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "eBay processes data about your activity and interactions with its advertising partners and lists advertising, personalization and analytics as purposes; it says data is deleted or anonymized under its retention policy.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.ebay.com/"
+    }
+  ]
+}

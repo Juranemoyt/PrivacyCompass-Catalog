@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Family safety",
+      "description": "Family location sharing and safety app.",
+      "developer": "Life360",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "Life360 says that with your consent it collects precise geolocation data (GPS coordinates, latitude/longitude and motion sensor information), and also collects location inferred from IP address, Wi-Fi and Bluetooth.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Life360 Privacy Policy",
+          "url": "https://legal.corp.life360.com/hc/en-us/articles/16038777217175-Life360-Privacy-Policy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "In its 'Sales, Sharing, and Targeted Advertising Activities' section, Life360 says it engages in activities that may be considered 'sales,' 'sharing' or targeted advertising under State Privacy Laws, including licensing certain information, including precise geolocation data, to select business partners for their own advertising and monetization purposes. A Texas notice states 'We may sell your sensitive personal data.' It says it does not share or sell personal information of members it knows to be under 18.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Life360 Privacy Policy",
+          "url": "https://legal.corp.life360.com/hc/en-us/articles/16038777217175-Life360-Privacy-Policy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Life360 says it discloses certain categories of personal information to third parties for targeted advertising, including to promote its products on third-party websites and to inform targeted ads shown in its Services, and engages others for analytics and advertising services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Life360 Privacy Policy",
+          "url": "https://legal.corp.life360.com/hc/en-us/articles/16038777217175-Life360-Privacy-Policy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Life360 says it engages others to provide analytics services within its Services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Life360 Privacy Policy",
+          "url": "https://legal.corp.life360.com/hc/en-us/articles/16038777217175-Life360-Privacy-Policy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Life360 says it or you may disclose information to different Life360 Services, its subsidiaries and third parties, and that you may choose to disclose personal information including precise geolocation to other members.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Life360 Privacy Policy",
+          "url": "https://legal.corp.life360.com/hc/en-us/articles/16038777217175-Life360-Privacy-Policy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Life360 says it retains information for as long as you use its Products or Services or as otherwise necessary for the purposes collected, and points to a section on modifying, accessing, opting out and deleting your information.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Life360 Privacy Policy",
+          "url": "https://legal.corp.life360.com/hc/en-us/articles/16038777217175-Life360-Privacy-Policy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Life360 says it collects precise geolocation with consent and that it licenses certain information, including precise geolocation data, to select business partners for their own advertising and monetization, in activities that may be considered sales, sharing or targeted advertising under State Privacy Laws; it includes a Texas notice that it may sell sensitive personal data, and says it does not sell or share information of members it knows are under 18.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Life360 Privacy Policy",
+          "url": "https://legal.corp.life360.com/hc/en-us/articles/16038777217175-Life360-Privacy-Policy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 26.34.0 (report dated Sept. 15, 2026) found code signatures for 27 known tracker SDK(s): AdColony (advertisement), Amazon Advertisement, Amplitude (analytics profiling), AppLovin (MAX and SparkLabs) (analytics profiling identification advertisement), AppsFlyer (analytics), BidMachine (advertisement), Branch (analytics), ChartBoost, Facebook Ads (advertisement), Facebook Analytics (analytics), Fyber (advertisement), Google AdMob (advertisement), Google CrashLytics (crash reporting), Google Firebase Analytics (analytics), IAB Open Measurement (identification advertisement), Inmobi, ironSource (analytics), Mintegral (analytics advertisement), myTarget (advertisement), Pangle (advertisement), Prebid Mobile (advertisement), PubMatic (advertisement), Rollbar (crash reporting), Sentiance, Sentry (crash reporting), Unity3d Ads (advertisement), Yandex Ad (advertisement). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.life360.android.safetymapd/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "life360",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "Read in a real browser because life360.com rejects non-browser clients. The policy states some ad activities are covered by a separate notice for its Life360 Ads Featuring Nativo division.",
+        "Version 26.34.0 lists these sensitive Android permissions in its manifest: advertising ID, approximate location, background location, biometrics, camera, contacts, microphone, nearby Bluetooth scanning, phone state/identity, physical activity, place calls, precise location, write shared storage (Exodus Privacy, Sept. 15, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Life360",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.life360.android.safetymapd",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.life360.android.safetymapd",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "Life360 says it discloses certain categories of personal information to third parties for targeted advertising, including to promote its products on third-party websites and to inform targeted ads shown in its Services, and engages others for analytics and advertising services. Third-party finding (Exodus Privacy static analysis of version 26.34.0): code signatures for advertising SDKs were detected: AdColony, AppLovin (MAX and SparkLabs), BidMachine, Facebook Ads, Fyber, Google AdMob, IAB Open Measurement, Mintegral, myTarget, Pangle, Prebid Mobile, PubMatic, Unity3d Ads, Yandex Ad. This shows an SDK is present in the app, not what data it sends.",
+        "analytics": "Life360 says it engages others to provide analytics services within its Services. Third-party finding (Exodus Privacy static analysis of version 26.34.0): code signatures for analytics, crash-reporting or profiling SDKs were detected: Amplitude, AppLovin (MAX and SparkLabs), AppsFlyer, Branch, Facebook Analytics, Google CrashLytics, Google Firebase Analytics, ironSource, Mintegral, Rollbar, Sentry. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "Life360 says that with your consent it collects precise geolocation data (GPS coordinates, latitude/longitude and motion sensor information), and also collects location inferred from IP address, Wi-Fi and Bluetooth.",
+        "controls": "Not established in the checked sources.",
+        "deletion": "Life360 says it retains information for as long as you use its Products or Services or as otherwise necessary for the purposes collected, and points to a section on modifying, accessing, opting out and deleting your information.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "Life360 says it collects precise geolocation with consent and that it licenses certain information, including precise geolocation data, to select business partners for their own advertising and monetization, in activities that may be considered sales, sharing or targeted advertising under State Privacy Laws; it includes a Texas notice that it may sell sensitive personal data, and says it does not sell or share information of members it knows are under 18.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Life360 says it or you may disclose information to different Life360 Services, its subsidiaries and third parties, and that you may choose to disclose personal information including precise geolocation to other members.",
+        "sale": "In its 'Sales, Sharing, and Targeted Advertising Activities' section, Life360 says it engages in activities that may be considered 'sales,' 'sharing' or targeted advertising under State Privacy Laws, including licensing certain information, including precise geolocation data, to select business partners for their own advertising and monetization purposes. A Texas notice states 'We may sell your sensitive personal data.' It says it does not share or sell personal information of members it knows to be under 18.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "Life360 says it collects precise geolocation with consent and that it licenses certain information, including precise geolocation data, to select business partners for their own advertising and monetization, in activities that may be considered sales, sharing or targeted advertising under State Privacy Laws; it includes a Texas notice that it may sell sensitive personal data, and says it does not sell or share information of members it knows are under 18.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.life360.com/"
+    }
+  ]
+}

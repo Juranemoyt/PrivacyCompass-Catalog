@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Video streaming",
+      "description": "Disney's subscription video streaming app.",
+      "developer": "Disney",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "Disney says it collects two basic types of information, personal information and other information.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Disney Privacy Policy",
+          "url": "https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Disney says it uses information to operate, understand, optimize, develop or improve its sites, applications, products and services, including with survey research and analytics tools.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Disney Privacy Policy",
+          "url": "https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Disney points to an Online Tracking Technologies and Advertising section covering Do Not Track and how to disable cookies and make choices about such data collection.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Disney Privacy Policy",
+          "url": "https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "The policy page links to Interest-Based Ads and Do Not Sell or Share My Personal Information pages.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Disney Privacy Policy",
+          "url": "https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Disney describes collecting personal and other information, using it to operate and improve its services, and offers cookie and interest-based advertising choices plus a Do Not Sell or Share link.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Disney Privacy Policy",
+          "url": "https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 26.16.0+rc2-2026.09.08 (report dated Sept. 15, 2026) found code signatures for 2 known tracker SDK(s): Conviva, Google Firebase Analytics (analytics). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.disney.disneyplus/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "disney-plus",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "The checked source is The Walt Disney Company's general privacy policy; Disney+-specific practices are not separately established.",
+        "Version 26.16.0+rc2-2026.09.08 lists these sensitive Android permissions in its manifest: approximate location, microphone, precise location (Exodus Privacy, Sept. 15, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Disney+",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.disney.disneyplus",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.disney.disneyplus",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "Disney points to an Online Tracking Technologies and Advertising section covering Do Not Track and how to disable cookies and make choices about such data collection. Third-party finding (Exodus Privacy static analysis of version 26.16.0+rc2-2026.09.08): no advertising SDK signatures were detected; absence of a signature does not prove none is used.",
+        "analytics": "Third-party finding (Exodus Privacy static analysis of version 26.16.0+rc2-2026.09.08): code signatures for analytics, crash-reporting or profiling SDKs were detected: Google Firebase Analytics. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "Disney says it collects two basic types of information, personal information and other information.",
+        "controls": "The policy page links to Interest-Based Ads and Do Not Sell or Share My Personal Information pages.",
+        "deletion": "Not established in the checked sources.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "Disney describes collecting personal and other information, using it to operate and improve its services, and offers cookie and interest-based advertising choices plus a Do Not Sell or Share link.",
+        "purpose": "Disney says it uses information to operate, understand, optimize, develop or improve its sites, applications, products and services, including with survey research and analytics tools.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "Not established in the checked sources.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "Disney describes collecting personal and other information, using it to operate and improve its services, and offers cookie and interest-based advertising choices plus a Do Not Sell or Share link.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.disneyplus.com/"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Video streaming",
+      "description": "NBCUniversal's video streaming app.",
+      "developer": "Peacock TV LLC",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "NBCUniversal says its policy explains the categories of information it collects and the purposes for which they are used.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "NBCUniversal Privacy Policy",
+          "url": "https://www.nbcuniversal.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "NBCUniversal says it may disclose information to advertising partners to better tailor marketing and advertising on its Services and third-party platforms.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "NBCUniversal Privacy Policy",
+          "url": "https://www.nbcuniversal.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "NBCUniversal says it provides information about content viewed on its Services to video measurement services such as Nielsen and other analytics providers.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "NBCUniversal Privacy Policy",
+          "url": "https://www.nbcuniversal.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "NBCUniversal says it may delete or de-identify information sooner on a verifiable deletion request, subject to legal exemptions.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "NBCUniversal Privacy Policy",
+          "url": "https://www.nbcuniversal.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "The policy refers to privacy choices to not sell, share or process personal information for targeted advertising.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "NBCUniversal Privacy Policy",
+          "url": "https://www.nbcuniversal.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "NBCUniversal says it discloses information to advertising partners and to audience measurement and analytics companies such as Nielsen, and offers privacy choices for targeted advertising.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "NBCUniversal Privacy Policy",
+          "url": "https://www.nbcuniversal.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 5.5.32 (report dated May 25, 2024) found code signatures for 10 known tracker SDK(s): Adobe Experience Cloud, Braze (formerly Appboy) (analytics advertisement location), ComScore (analytics advertisement), Conviva, Google Firebase Analytics (analytics), IAB Open Measurement (identification advertisement), Kochava (analytics profiling advertisement), mParticle (analytics), New Relic (analytics), Nielsen (analytics). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.peacocktv.peacockandroid/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "peacock",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "The checked source is NBCUniversal's general privacy policy; Peacock-specific practices are not separately established.",
+        "Version 5.5.32 lists these sensitive Android permissions in its manifest: advertising ID, approximate location, device accounts (Exodus Privacy, May 25, 2024); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Peacock",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.peacocktv.peacockandroid",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.peacocktv.peacockandroid",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "NBCUniversal says it may disclose information to advertising partners to better tailor marketing and advertising on its Services and third-party platforms. Third-party finding (Exodus Privacy static analysis of version 5.5.32): code signatures for advertising SDKs were detected: Braze (formerly Appboy), ComScore, IAB Open Measurement, Kochava. This shows an SDK is present in the app, not what data it sends.",
+        "analytics": "NBCUniversal says it provides information about content viewed on its Services to video measurement services such as Nielsen and other analytics providers. Third-party finding (Exodus Privacy static analysis of version 5.5.32): code signatures for analytics, crash-reporting or profiling SDKs were detected: Braze (formerly Appboy), ComScore, Google Firebase Analytics, Kochava, mParticle, New Relic, Nielsen. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "NBCUniversal says its policy explains the categories of information it collects and the purposes for which they are used.",
+        "controls": "The policy refers to privacy choices to not sell, share or process personal information for targeted advertising.",
+        "deletion": "NBCUniversal says it may delete or de-identify information sooner on a verifiable deletion request, subject to legal exemptions.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "NBCUniversal says it discloses information to advertising partners and to audience measurement and analytics companies such as Nielsen, and offers privacy choices for targeted advertising.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "Not established in the checked sources.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "NBCUniversal says it discloses information to advertising partners and to audience measurement and analytics companies such as Nielsen, and offers privacy choices for targeted advertising.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.peacocktv.com/"
+    }
+  ]
+}

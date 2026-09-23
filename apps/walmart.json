@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": null,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Shopping",
+      "description": "Walmart's shopping app for online and in-store purchases.",
+      "developer": "Walmart",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "The notice describes what personal information Walmart collects, how it is collected and used, who it is disclosed to and why, and the choices available.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Walmart Privacy Notice",
+          "url": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Walmart says it may disclose personal information to other companies in its corporate family, such as Sam's Club and One Finance.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Walmart Privacy Notice",
+          "url": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Walmart's California privacy notice refers to Appendix 1, whose chart lists categories of personal information, whether each is used for targeted advertising, and, under 'Sold or Shared', recipients including advertising networks, marketplace sellers, analytics providers and business partners that receive data for their own independent use.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Walmart Privacy Notice",
+          "url": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Users can opt out of interest-based advertising by advertisers that participate in the NAI or follow the DAA principles.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Walmart Privacy Notice",
+          "url": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Device features require your permission and access can be withdrawn in device settings.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Walmart Privacy Notice",
+          "url": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Walmart's notice (through a California-notice appendix chart) lists categories of personal information used for targeted advertising and recipients such as advertising networks, analytics providers and business partners under 'Sold or Shared'; it offers opt-outs of interest-based advertising.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Walmart Privacy Notice",
+          "url": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 25.10.2 (report dated March 26, 2025) found code signatures for 3 known tracker SDK(s): Facebook Flipper (analytics), Google CrashLytics (crash reporting), Google Firebase Analytics (analytics). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.walmart.android/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "walmart",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "Some Walmart operations such as pharmacies, financial products and vision centers have separate notices that were not reviewed.",
+        "Version 25.10.2 lists these sensitive Android permissions in its manifest: approximate location, biometrics, camera, phone state/identity, precise location, read shared storage, write shared storage (Exodus Privacy, March 26, 2025); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Walmart",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.walmart.android",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.walmart.android",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "Users can opt out of interest-based advertising by advertisers that participate in the NAI or follow the DAA principles. Third-party finding (Exodus Privacy static analysis of version 25.10.2): no advertising SDK signatures were detected; absence of a signature does not prove none is used.",
+        "analytics": "Third-party finding (Exodus Privacy static analysis of version 25.10.2): code signatures for analytics, crash-reporting or profiling SDKs were detected: Facebook Flipper, Google CrashLytics, Google Firebase Analytics. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "The notice describes what personal information Walmart collects, how it is collected and used, who it is disclosed to and why, and the choices available.",
+        "controls": "Device features require your permission and access can be withdrawn in device settings.",
+        "deletion": "Not established in the checked sources.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "Walmart's notice (through a California-notice appendix chart) lists categories of personal information used for targeted advertising and recipients such as advertising networks, analytics providers and business partners under 'Sold or Shared'; it offers opt-outs of interest-based advertising.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Walmart says it may disclose personal information to other companies in its corporate family, such as Sam's Club and One Finance.",
+        "sale": "Walmart's California privacy notice refers to Appendix 1, whose chart lists categories of personal information, whether each is used for targeted advertising, and, under 'Sold or Shared', recipients including advertising networks, marketplace sellers, analytics providers and business partners that receive data for their own independent use.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "Walmart's notice (through a California-notice appendix chart) lists categories of personal information used for targeted advertising and recipients such as advertising networks, analytics providers and business partners under 'Sold or Shared'; it offers opt-outs of interest-based advertising.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.walmart.com/"
+    }
+  ]
+}

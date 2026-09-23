@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": null,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Utilities",
+      "description": "Internet speed test app.",
+      "developer": "Ookla",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "Ookla says that when the app is in use (or running in the background) it collects and shares precise location data of the device, Wi-Fi signals or Bluetooth Low Energy devices nearby, device-based advertising identifiers, app names/identifiers and device information (type, OS, settings, time zone, carrier, IP address) in connection with its partner Outlogic.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ookla Privacy Policy",
+          "url": "https://www.speedtest.net/about/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Ookla says it and third parties, subject to your privacy choices, may collect data about your behavior while using its services to provide interest-based advertising on other websites and applications.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ookla Privacy Policy",
+          "url": "https://www.speedtest.net/about/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Ookla says Weplan Analytics measures network performance linked with location data (GPS or network-based) in a pseudonymized manner.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ookla Privacy Policy",
+          "url": "https://www.speedtest.net/about/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Ookla says that under some circumstances it may sell or share personal data you provide to serve interest-aligned ads.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ookla Privacy Policy",
+          "url": "https://www.speedtest.net/about/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Users can opt out of selling or sharing via Ookla's Privacy Portal or by email, and can opt out of its location data provider Outlogic on Outlogic's privacy choices page.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ookla Privacy Policy",
+          "url": "https://www.speedtest.net/about/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Ookla says it retains personal information as long as necessary for the purposes in its policy and as applicable law allows.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ookla Privacy Policy",
+          "url": "https://www.speedtest.net/about/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Ookla says the app can collect and share precise location and device data (including while running in the background) with location partners such as Outlogic, and that it may sell or share personal data for interest-aligned ads; opt-outs are offered through its privacy portal and Outlogic.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ookla Privacy Policy",
+          "url": "https://www.speedtest.net/about/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Ookla lists purposes for the Outlogic data including customizing and measuring ads, app and user analytics, disease prevention and cybersecurity, research on aggregated foot traffic, and generating pseudonymized identifiers.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ookla Privacy Policy",
+          "url": "https://www.speedtest.net/about/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Ookla says a partner (HUQ) collects information including latitude, longitude, accuracy, network names and scanned networks on an anonymous basis, and that this anonymous information is shared with third parties for their business purposes, including reports, market research and trend analysis.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Ookla Privacy Policy",
+          "url": "https://www.speedtest.net/about/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 7.1.0 (report dated Sept. 11, 2026) found code signatures for 11 known tracker SDK(s): Amazon Advertisement, Amazon Mobile Analytics (Amplify) (analytics), ComScore (analytics advertisement), Google AdMob (advertisement), Google Analytics (analytics), Google CrashLytics (crash reporting), Google Firebase Analytics (analytics), Google Tag Manager (analytics), Huawei Mobile Services (HMS) Core (analytics advertisement location), IAB Open Measurement (identification advertisement), Prebid Mobile (advertisement). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/org.zwanoo.android.speedtest/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "speedtest",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "Version 7.1.0 lists these sensitive Android permissions in its manifest: advertising ID, approximate location, background location, biometrics, phone state/identity, precise location, read shared storage, write shared storage (Exodus Privacy, Sept. 11, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Speedtest by Ookla",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "org.zwanoo.android.speedtest",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=org.zwanoo.android.speedtest",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "Ookla says it and third parties, subject to your privacy choices, may collect data about your behavior while using its services to provide interest-based advertising on other websites and applications. Third-party finding (Exodus Privacy static analysis of version 7.1.0): code signatures for advertising SDKs were detected: ComScore, Google AdMob, Huawei Mobile Services (HMS) Core, IAB Open Measurement, Prebid Mobile. This shows an SDK is present in the app, not what data it sends.",
+        "analytics": "Ookla says Weplan Analytics measures network performance linked with location data (GPS or network-based) in a pseudonymized manner. Third-party finding (Exodus Privacy static analysis of version 7.1.0): code signatures for analytics, crash-reporting or profiling SDKs were detected: Amazon Mobile Analytics (Amplify), ComScore, Google Analytics, Google CrashLytics, Google Firebase Analytics, Google Tag Manager, Huawei Mobile Services (HMS) Core. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "Ookla says that when the app is in use (or running in the background) it collects and shares precise location data of the device, Wi-Fi signals or Bluetooth Low Energy devices nearby, device-based advertising identifiers, app names/identifiers and device information (type, OS, settings, time zone, carrier, IP address) in connection with its partner Outlogic.",
+        "controls": "Users can opt out of selling or sharing via Ookla's Privacy Portal or by email, and can opt out of its location data provider Outlogic on Outlogic's privacy choices page.",
+        "deletion": "Ookla says it retains personal information as long as necessary for the purposes in its policy and as applicable law allows.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "Ookla says the app can collect and share precise location and device data (including while running in the background) with location partners such as Outlogic, and that it may sell or share personal data for interest-aligned ads; opt-outs are offered through its privacy portal and Outlogic.",
+        "purpose": "Ookla lists purposes for the Outlogic data including customizing and measuring ads, app and user analytics, disease prevention and cybersecurity, research on aggregated foot traffic, and generating pseudonymized identifiers.",
+        "recipients": "Ookla says a partner (HUQ) collects information including latitude, longitude, accuracy, network names and scanned networks on an anonymous basis, and that this anonymous information is shared with third parties for their business purposes, including reports, market research and trend analysis.",
+        "sale": "Ookla says that under some circumstances it may sell or share personal data you provide to serve interest-aligned ads.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "Ookla says the app can collect and share precise location and device data (including while running in the background) with location partners such as Outlogic, and that it may sell or share personal data for interest-aligned ads; opt-outs are offered through its privacy portal and Outlogic.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.speedtest.net/"
+    }
+  ]
+}

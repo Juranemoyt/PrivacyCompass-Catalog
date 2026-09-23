@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": null,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Gaming",
+      "description": "Steam's mobile companion app.",
+      "developer": "Valve Corporation",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "Steam says it may share or provide access to each category of personal data it collects as needed for listed business purposes.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Steam Privacy Policy",
+          "url": "https://store.steampowered.com/privacy_agreement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Steam says it uses cookies, pixels, ad tags and device identifiers to analyze use of its services and improve services, marketing and analytics.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Steam Privacy Policy",
+          "url": "https://store.steampowered.com/privacy_agreement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "In its California (CCPA) section, Steam says it does not sell Personal Data and has not done so in the past 12 months.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Steam Privacy Policy",
+          "url": "https://store.steampowered.com/privacy_agreement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Marketing emails can be opted out of or consent withdrawn at any time, including via an unsubscribe link.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Steam Privacy Policy",
+          "url": "https://store.steampowered.com/privacy_agreement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "If you object to processing, Steam says it will review the objection and delete the personal data processed for that purpose without undue delay unless another legal basis applies.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Steam Privacy Policy",
+          "url": "https://store.steampowered.com/privacy_agreement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Steam's California (CCPA) section says it does not sell Personal Data, and its policy describes cookies, pixels and device identifiers used for analytics and marketing.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Steam Privacy Policy",
+          "url": "https://store.steampowered.com/privacy_agreement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 3.10.11 (report dated Aug. 31, 2026) found no known tracker code signatures; absence of a signature does not prove no data is collected.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.valvesoftware.android.steam.community/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "steam",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "Version 3.10.11 lists these sensitive Android permissions in its manifest: approximate location, biometrics, calendar, camera, microphone, nearby Bluetooth scanning, phone state/identity, read shared storage, write shared storage (Exodus Privacy, Aug. 31, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Steam",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.valvesoftware.android.steam.community",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "Third-party finding (Exodus Privacy static analysis of version 3.10.11): no advertising SDK signatures were detected; absence of a signature does not prove none is used.",
+        "analytics": "Steam says it uses cookies, pixels, ad tags and device identifiers to analyze use of its services and improve services, marketing and analytics. Third-party finding (Exodus Privacy static analysis of version 3.10.11): no analytics, crash-reporting or profiling SDK signatures were detected; absence of a signature does not prove none is used.",
+        "collected": "Steam says it may share or provide access to each category of personal data it collects as needed for listed business purposes.",
+        "controls": "Marketing emails can be opted out of or consent withdrawn at any time, including via an unsubscribe link.",
+        "deletion": "If you object to processing, Steam says it will review the objection and delete the personal data processed for that purpose without undue delay unless another legal basis applies.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "Steam's California (CCPA) section says it does not sell Personal Data, and its policy describes cookies, pixels and device identifiers used for analytics and marketing.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "In its California (CCPA) section, Steam says it does not sell Personal Data and has not done so in the past 12 months.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "Steam's California (CCPA) section says it does not sell Personal Data, and its policy describes cookies, pixels and device identifiers used for analytics and marketing.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://store.steampowered.com/"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "AI assistants",
+      "description": "Anthropic's AI assistant app for conversations, writing and analysis.",
+      "developer": "Anthropic",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "The policy lists categories of personal data collected, including identity and contact data such as name, email address and phone number at sign-up.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Anthropic Privacy Policy",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Personal data may be processed in aggregated or de-identified form to analyze and improve the Services, including analytics, research, studying user behavior and training AI models, as permitted by law.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Anthropic Privacy Policy",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Anthropic states it discloses personal data to, or receives it from, categories of third parties, beginning with affiliates and corporate partners; the policy's Recipients section has the full list.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Anthropic Privacy Policy",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Anthropic states it does not \"sell\" personal data as defined by applicable laws.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Anthropic Privacy Policy",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Users can opt out of sharing personal data for targeted advertising of Anthropic's own products, and Anthropic says it honors global privacy controls.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Anthropic Privacy Policy",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Inputs and Outputs may be used to train and improve Anthropic models unless you opt out in account settings; the policy says conversations flagged for safety review may still be used for model improvement even if you opt out.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Anthropic Privacy Policy",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Individual conversations can be deleted; they are removed from conversation history immediately and deleted from back-end systems within 30 days. Users can also request deletion of personal data, subject to exceptions.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Anthropic Privacy Policy",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Anthropic says conversation Inputs and Outputs may train its models unless you opt out in account settings (with stated exceptions such as safety review), and that it does not sell personal data. Individual conversations can be deleted.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Anthropic Privacy Policy",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 1.260921.19 (report dated Sept. 23, 2026) found code signatures for 2 known tracker SDK(s): Segment (analytics profiling), Sentry (crash reporting). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.anthropic.claude/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [
+        "AI chat"
+      ],
+      "id": "claude",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "Version 1.260921.19 lists these sensitive Android permissions in its manifest: approximate location, biometrics, calendar, microphone, precise location, write shared storage (Exodus Privacy, Sept. 23, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Claude",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.anthropic.claude",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.anthropic.claude",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "Users can opt out of sharing personal data for targeted advertising of Anthropic's own products, and Anthropic says it honors global privacy controls. Third-party finding (Exodus Privacy static analysis of version 1.260921.19): no advertising SDK signatures were detected; absence of a signature does not prove none is used.",
+        "analytics": "Third-party finding (Exodus Privacy static analysis of version 1.260921.19): code signatures for analytics, crash-reporting or profiling SDKs were detected: Segment, Sentry. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "The policy lists categories of personal data collected, including identity and contact data such as name, email address and phone number at sign-up.",
+        "controls": "Inputs and Outputs may be used to train and improve Anthropic models unless you opt out in account settings; the policy says conversations flagged for safety review may still be used for model improvement even if you opt out.",
+        "deletion": "Individual conversations can be deleted; they are removed from conversation history immediately and deleted from back-end systems within 30 days. Users can also request deletion of personal data, subject to exceptions.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "Anthropic says conversation Inputs and Outputs may train its models unless you opt out in account settings (with stated exceptions such as safety review), and that it does not sell personal data. Individual conversations can be deleted.",
+        "purpose": "Personal data may be processed in aggregated or de-identified form to analyze and improve the Services, including analytics, research, studying user behavior and training AI models, as permitted by law.",
+        "recipients": "Anthropic states it discloses personal data to, or receives it from, categories of third parties, beginning with affiliates and corporate partners; the policy's Recipients section has the full list.",
+        "sale": "Anthropic states it does not \"sell\" personal data as defined by applicable laws.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "Anthropic says conversation Inputs and Outputs may train its models unless you opt out in account settings (with stated exceptions such as safety review), and that it does not sell personal data. Individual conversations can be deleted.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.anthropic.com/"
+    }
+  ]
+}

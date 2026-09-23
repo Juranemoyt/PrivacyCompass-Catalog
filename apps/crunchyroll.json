@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": null,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Video streaming",
+      "description": "Anime streaming app.",
+      "developer": "Crunchyroll, LLC",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "The policy lists the categories of personal information collected and the business purposes for which each is used.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Crunchyroll Privacy Policy (Sony Pictures Entertainment)",
+          "url": "https://www.crunchyroll.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "The policy says Sony Pictures Entertainment (SPE) does not sell personal information for money and does not profile individuals for decisions with legal or similarly significant effects under applicable state laws.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Crunchyroll Privacy Policy (Sony Pictures Entertainment)",
+          "url": "https://www.crunchyroll.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "The policy says SPE uses analytics services such as Google Analytics.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Crunchyroll Privacy Policy (Sony Pictures Entertainment)",
+          "url": "https://www.crunchyroll.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "The policy describes rights to opt out of targeted advertising and of the sale of personal information.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Crunchyroll Privacy Policy (Sony Pictures Entertainment)",
+          "url": "https://www.crunchyroll.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "The policy says personal information may be shared with other Sony group companies for stated purposes such as account authentication, account management or marketing.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Crunchyroll Privacy Policy (Sony Pictures Entertainment)",
+          "url": "https://www.crunchyroll.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "The policy is published by Sony Pictures Entertainment: it says personal information is not sold for money, analytics services such as Google Analytics are used, information may be shared with Sony group companies, and users can opt out of targeted advertising.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Crunchyroll Privacy Policy (Sony Pictures Entertainment)",
+          "url": "https://www.crunchyroll.com/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 3.119.0 (report dated Sept. 9, 2026) found code signatures for 5 known tracker SDK(s): Google AdMob (advertisement), Google CrashLytics (crash reporting), Google Firebase Analytics (analytics), Segment (analytics profiling), Singular (analytics). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.crunchyroll.crunchyroid/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "crunchyroll",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "The checked policy is published by Sony Pictures Entertainment (SPE) and covers Crunchyroll services generally; app-specific behavior is not separately established.",
+        "Version 3.119.0 lists these sensitive Android permissions in its manifest: advertising ID, microphone, write shared storage (Exodus Privacy, Sept. 9, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Crunchyroll",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.crunchyroll.crunchyroid",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "The policy describes rights to opt out of targeted advertising and of the sale of personal information. Third-party finding (Exodus Privacy static analysis of version 3.119.0): code signatures for advertising SDKs were detected: Google AdMob. This shows an SDK is present in the app, not what data it sends.",
+        "analytics": "The policy says SPE uses analytics services such as Google Analytics. Third-party finding (Exodus Privacy static analysis of version 3.119.0): code signatures for analytics, crash-reporting or profiling SDKs were detected: Google CrashLytics, Google Firebase Analytics, Segment, Singular. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "The policy lists the categories of personal information collected and the business purposes for which each is used.",
+        "controls": "Not established in the checked sources.",
+        "deletion": "Not established in the checked sources.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "The policy is published by Sony Pictures Entertainment: it says personal information is not sold for money, analytics services such as Google Analytics are used, information may be shared with Sony group companies, and users can opt out of targeted advertising.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "The policy says Sony Pictures Entertainment (SPE) does not sell personal information for money and does not profile individuals for decisions with legal or similarly significant effects under applicable state laws.",
+        "sharing": "The policy says personal information may be shared with other Sony group companies for stated purposes such as account authentication, account management or marketing.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "The policy is published by Sony Pictures Entertainment: it says personal information is not sold for money, analytics services such as Google Analytics are used, information may be shared with Sony group companies, and users can opt out of targeted advertising.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.crunchyroll.com/"
+    }
+  ]
+}

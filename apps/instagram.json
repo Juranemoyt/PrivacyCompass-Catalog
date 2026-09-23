@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Social media",
+      "description": "Meta's photo and video sharing app.",
+      "developer": "Instagram",
+      "downloadSize": "Not published",
+      "ecosystem": "META",
+      "evidence": [
+        {
+          "claim": "Meta says it collects information about the friends, followers, groups, accounts, Pages and communities you connect and interact with, on and off Meta Products.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Meta Privacy Policy",
+          "url": "https://www.facebook.com/privacy/policy/printable/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Meta states it does not sell any of your information to anyone, and notes that if it sells or transfers all or part of its business, in some cases it will give the new owner your information as the law allows.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Meta Privacy Policy",
+          "url": "https://www.facebook.com/privacy/policy/printable/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Meta lists advertisers who show ads on its Products and businesses it hires to market its Products among those it shares certain information with.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Meta Privacy Policy",
+          "url": "https://www.facebook.com/privacy/policy/printable/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Meta says it gives advertisers reports about the number and kinds of people who see and engage with their ads.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Meta Privacy Policy",
+          "url": "https://www.facebook.com/privacy/policy/printable/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Meta says it uses information collected across your accounts on its Products to provide measurement and analytics services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Meta Privacy Policy",
+          "url": "https://www.facebook.com/privacy/policy/printable/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Meta says it may take up to 90 days to delete information after starting account deletion or receiving a content deletion request.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Meta Privacy Policy",
+          "url": "https://www.facebook.com/privacy/policy/printable/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Meta says it does not sell users' information but shares certain information with advertisers and other partners, and uses information across accounts on its Products for measurement and analytics.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Meta Privacy Policy",
+          "url": "https://www.facebook.com/privacy/policy/printable/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 448.0.0.52.84 (report dated Sept. 22, 2026) found code signatures for 4 known tracker SDK(s): Facebook Flipper (analytics), Facebook Login (identification), Facebook Notifications, Google Analytics (analytics). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.instagram.android/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "instagram",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "The checked source is Meta's Privacy Policy covering multiple Meta Products; app-specific settings and behavior are not separately established.",
+        "Version 448.0.0.52.84 lists these sensitive Android permissions in its manifest: advertising ID, biometrics, call log, camera, contacts, device accounts, microphone, nearby Wi-Fi devices, phone number, phone state/identity, photos, place calls, precise location, read shared storage, videos, write shared storage (Exodus Privacy, Sept. 22, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Instagram",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.instagram.android",
+      "parentCompany": "Meta Platforms, Inc.",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.instagram.android",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "Meta says it gives advertisers reports about the number and kinds of people who see and engage with their ads. Third-party finding (Exodus Privacy static analysis of version 448.0.0.52.84): no advertising SDK signatures were detected; absence of a signature does not prove none is used.",
+        "analytics": "Meta says it uses information collected across your accounts on its Products to provide measurement and analytics services. Third-party finding (Exodus Privacy static analysis of version 448.0.0.52.84): code signatures for analytics, crash-reporting or profiling SDKs were detected: Facebook Flipper, Google Analytics. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "Meta says it collects information about the friends, followers, groups, accounts, Pages and communities you connect and interact with, on and off Meta Products.",
+        "controls": "Not established in the checked sources.",
+        "deletion": "Meta says it may take up to 90 days to delete information after starting account deletion or receiving a content deletion request.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "Meta says it does not sell users' information but shares certain information with advertisers and other partners, and uses information across accounts on its Products for measurement and analytics.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Meta lists advertisers who show ads on its Products and businesses it hires to market its Products among those it shares certain information with.",
+        "sale": "Meta states it does not sell any of your information to anyone, and notes that if it sells or transfers all or part of its business, in some cases it will give the new owner your information as the law allows.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "Meta says it does not sell users' information but shares certain information with advertisers and other partners, and uses information across accounts on its Products for measurement and analytics.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.instagram.com/"
+    }
+  ]
+}

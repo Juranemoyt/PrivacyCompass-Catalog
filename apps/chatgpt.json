@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": null,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "AI assistants",
+      "description": "OpenAI's AI assistant app.",
+      "developer": "OpenAI",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "OpenAI's US policy describes its practices for personal data collected from or about you across its website, applications and services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "OpenAI US Privacy Policy",
+          "url": "https://openai.com/policies/privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "OpenAI says it also collects information from other sources, such as publicly available internet information, to develop the models that power its Services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "OpenAI US Privacy Policy",
+          "url": "https://openai.com/policies/privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "OpenAI points to its policy and a help center article for how training information is used and the choices available; Free and Go users can use advertising controls in account settings to control what data is used to personalize ads.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "OpenAI US Privacy Policy",
+          "url": "https://openai.com/policies/privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "OpenAI says it receives information from advertisers and data partners to measure and improve its Services, including ads shown to Free and Go users.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "OpenAI US Privacy Policy",
+          "url": "https://openai.com/policies/privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Users can delete specific or all ChatGPT conversations or their account; OpenAI says it retains personal data only as long as needed to provide Services or for legitimate purposes such as safety and legal compliance.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "OpenAI US Privacy Policy",
+          "url": "https://openai.com/policies/privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "OpenAI says it develops its models using training information (including some publicly available internet data), shows ads to Free and Go users with account controls, and allows deleting conversations, memories and accounts.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "OpenAI US Privacy Policy",
+          "url": "https://openai.com/policies/privacy-policy/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 1.2026.258 (report dated Sept. 21, 2026) found code signatures for 2 known tracker SDK(s): Segment (analytics profiling), Sentry (crash reporting). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.openai.chatgpt/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "chatgpt",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "Read in a real browser because openai.com rejects non-browser clients; the checked policy is OpenAI's US privacy policy, and other regions differ.",
+        "Version 1.2026.258 lists these sensitive Android permissions in its manifest: approximate location, biometrics, camera, contacts, microphone, phone state/identity, precise location, send SMS (Exodus Privacy, Sept. 21, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "ChatGPT",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.openai.chatgpt",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.openai.chatgpt",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "OpenAI says it receives information from advertisers and data partners to measure and improve its Services, including ads shown to Free and Go users. Third-party finding (Exodus Privacy static analysis of version 1.2026.258): no advertising SDK signatures were detected; absence of a signature does not prove none is used.",
+        "analytics": "Third-party finding (Exodus Privacy static analysis of version 1.2026.258): code signatures for analytics, crash-reporting or profiling SDKs were detected: Segment, Sentry. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "OpenAI's US policy describes its practices for personal data collected from or about you across its website, applications and services.",
+        "controls": "OpenAI points to its policy and a help center article for how training information is used and the choices available; Free and Go users can use advertising controls in account settings to control what data is used to personalize ads.",
+        "deletion": "Users can delete specific or all ChatGPT conversations or their account; OpenAI says it retains personal data only as long as needed to provide Services or for legitimate purposes such as safety and legal compliance.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "OpenAI says it develops its models using training information (including some publicly available internet data), shows ads to Free and Go users with account controls, and allows deleting conversations, memories and accounts.",
+        "purpose": "OpenAI says it also collects information from other sources, such as publicly available internet information, to develop the models that power its Services.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "Not established in the checked sources.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "OpenAI says it develops its models using training information (including some publicly available internet data), shows ads to Free and Go users with account controls, and allows deleting conversations, memories and accounts.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://chatgpt.com/"
+    }
+  ]
+}

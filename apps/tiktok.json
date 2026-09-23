@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": null,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Social media",
+      "description": "Short-video social app.",
+      "developer": "TikTok Pte. Ltd.",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "TikTok says it collects information you provide, automatically collected information, and information from other sources.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "TikTok US Privacy Policy",
+          "url": "https://www.tiktok.com/legal/page/us/privacy-policy/en",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "TikTok says some advertisers and partners integrate TikTok Advertiser Tools (such as TikTok Pixel) that let TikTok collect similar information from their websites or apps.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "TikTok US Privacy Policy",
+          "url": "https://www.tiktok.com/legal/page/us/privacy-policy/en",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "TikTok says it uses information to provide and improve advertising services and measure the effectiveness of ads it serves.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "TikTok US Privacy Policy",
+          "url": "https://www.tiktok.com/legal/page/us/privacy-policy/en",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Cookies can be refused or disabled in device browser settings, which may control some information collected.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "TikTok US Privacy Policy",
+          "url": "https://www.tiktok.com/legal/page/us/privacy-policy/en",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "In-app settings let you update account information, request a copy of your data, or deactivate or delete your account.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "TikTok US Privacy Policy",
+          "url": "https://www.tiktok.com/legal/page/us/privacy-policy/en",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "TikTok says advertisers and partners can integrate its Advertiser Tools to let it collect information from their sites and apps, and offers in-app settings to request your data or delete your account.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "TikTok US Privacy Policy",
+          "url": "https://www.tiktok.com/legal/page/us/privacy-policy/en",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 36.5.4 (report dated Sept. 17, 2024) found code signatures for 7 known tracker SDK(s): AppsFlyer (analytics), Facebook Analytics (analytics), Facebook Login (identification), Facebook Share, Google Firebase Analytics (analytics), IAB Open Measurement (identification advertisement), Pangle (advertisement). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.zhiliaoapp.musically/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "tiktok",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "The checked source is TikTok's US privacy policy; other regions have different policies.",
+        "Version 36.5.4 lists these sensitive Android permissions in its manifest: advertising ID, approximate location, audio files, camera, contacts, microphone, photos, read shared storage, videos, write shared storage (Exodus Privacy, Sept. 17, 2024); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "TikTok",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.zhiliaoapp.musically",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "TikTok says some advertisers and partners integrate TikTok Advertiser Tools (such as TikTok Pixel) that let TikTok collect similar information from their websites or apps. Third-party finding (Exodus Privacy static analysis of version 36.5.4): code signatures for advertising SDKs were detected: IAB Open Measurement, Pangle. This shows an SDK is present in the app, not what data it sends.",
+        "analytics": "Third-party finding (Exodus Privacy static analysis of version 36.5.4): code signatures for analytics, crash-reporting or profiling SDKs were detected: AppsFlyer, Facebook Analytics, Google Firebase Analytics. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "TikTok says it collects information you provide, automatically collected information, and information from other sources.",
+        "controls": "Cookies can be refused or disabled in device browser settings, which may control some information collected.",
+        "deletion": "In-app settings let you update account information, request a copy of your data, or deactivate or delete your account.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "TikTok says advertisers and partners can integrate its Advertiser Tools to let it collect information from their sites and apps, and offers in-app settings to request your data or delete your account.",
+        "purpose": "TikTok says it uses information to provide and improve advertising services and measure the effectiveness of ads it serves.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "Not established in the checked sources.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "TikTok says advertisers and partners can integrate its Advertiser Tools to let it collect information from their sites and apps, and offers in-app settings to request your data or delete your account.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.tiktok.com/"
+    }
+  ]
+}

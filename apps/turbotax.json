@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Finance",
+      "description": "Tax preparation app.",
+      "developer": "Intuit Inc.",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "Intuit says the personal information it collects depends on your interactions, account configuration and choices, including privacy settings.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Intuit Global Privacy Statement",
+          "url": "https://www.intuit.com/privacy/statement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Intuit says Intuit and Mailchimp do not sell personal information under the CCPA.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Intuit Global Privacy Statement",
+          "url": "https://www.intuit.com/privacy/statement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Intuit says advertising partners may place cookies on unaffiliated websites to serve ads based on browsing activities and interests and measure their effectiveness.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Intuit Global Privacy Statement",
+          "url": "https://www.intuit.com/privacy/statement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Users may be able to opt out of interest-based advertising via the Choices opt-out page.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Intuit Global Privacy Statement",
+          "url": "https://www.intuit.com/privacy/statement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Intuit says unless you ask it to delete personal information, it retains it as long as needed to meet retention requirements and provide services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Intuit Global Privacy Statement",
+          "url": "https://www.intuit.com/privacy/statement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Intuit says it does not sell personal information under the CCPA (for Intuit and Mailchimp), but advertising partners may place cookies for interest-based ads, with an opt-out available.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Intuit Global Privacy Statement",
+          "url": "https://www.intuit.com/privacy/statement/",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 9.5.0 (report dated April 7, 2023) found code signatures for 6 known tracker SDK(s): Appdynamics (analytics profiling), Braze (formerly Appboy) (analytics advertisement location), Google CrashLytics (crash reporting), Google Firebase Analytics (analytics), OpenTelemetry (OpenCensus, OpenTracing) (analytics), Segment (analytics profiling). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.intuit.turbotax.mobile/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "turbotax",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "The checked source is Intuit's global privacy statement covering many products; TurboTax-specific practices are not separately established.",
+        "Version 9.5.0 lists these sensitive Android permissions in its manifest: biometrics, calendar, camera, microphone, phone state/identity, read shared storage, write shared storage (Exodus Privacy, April 7, 2023); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "TurboTax",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.intuit.turbotax.mobile",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.intuit.turbotax.mobile",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "Intuit says advertising partners may place cookies on unaffiliated websites to serve ads based on browsing activities and interests and measure their effectiveness. Third-party finding (Exodus Privacy static analysis of version 9.5.0): code signatures for advertising SDKs were detected: Braze (formerly Appboy). This shows an SDK is present in the app, not what data it sends.",
+        "analytics": "Third-party finding (Exodus Privacy static analysis of version 9.5.0): code signatures for analytics, crash-reporting or profiling SDKs were detected: Appdynamics, Braze (formerly Appboy), Google CrashLytics, Google Firebase Analytics, OpenTelemetry (OpenCensus, OpenTracing), Segment. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "Intuit says the personal information it collects depends on your interactions, account configuration and choices, including privacy settings.",
+        "controls": "Users may be able to opt out of interest-based advertising via the Choices opt-out page.",
+        "deletion": "Intuit says unless you ask it to delete personal information, it retains it as long as needed to meet retention requirements and provide services.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "Intuit says it does not sell personal information under the CCPA (for Intuit and Mailchimp), but advertising partners may place cookies for interest-based ads, with an opt-out available.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "Intuit says Intuit and Mailchimp do not sell personal information under the CCPA.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "Intuit says it does not sell personal information under the CCPA (for Intuit and Mailchimp), but advertising partners may place cookies for interest-based ads, with an opt-out available.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://turbotax.intuit.com/"
+    }
+  ]
+}

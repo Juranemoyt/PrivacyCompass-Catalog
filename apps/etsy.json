@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": null,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Shopping",
+      "description": "Online marketplace app for handmade, vintage and creative goods.",
+      "developer": "Etsy, Inc",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "Etsy says it collects and uses information to provide and improve its Services, protect their security and integrity, and comply with legal obligations.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Etsy Privacy Policy",
+          "url": "https://www.etsy.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Etsy says it works with third-party advertising and marketing partners for interest-based advertising and links to more information and choices.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Etsy Privacy Policy",
+          "url": "https://www.etsy.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Etsy says it engages third-party companies such as research companies, analytics services and security providers to help operate, provide and advertise the Services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Etsy Privacy Policy",
+          "url": "https://www.etsy.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Etsy says it engages third-party service providers who facilitate sharing of data between similar companies, such as retail companies, for purposes like fraud prevention and security.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Etsy Privacy Policy",
+          "url": "https://www.etsy.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Buyers and sellers can choose to make certain information and activities private through account or public profile settings; Etsy links to interest-based advertising choices.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Etsy Privacy Policy",
+          "url": "https://www.etsy.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Etsy says it retains information only as long as necessary for its stated purposes, while the account is active, or as needed for legal obligations, internal policies or law.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Etsy Privacy Policy",
+          "url": "https://www.etsy.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Etsy says it works with third-party advertising and marketing partners for interest-based advertising and engages analytics and other service providers, and lets users make some information private in settings.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "Etsy Privacy Policy",
+          "url": "https://www.etsy.com/legal/privacy",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 7.96.0 (report dated Sept. 21, 2026) found code signatures for 10 known tracker SDK(s): AppsFlyer (analytics), Branch (analytics), Facebook Analytics (analytics), Facebook Login (identification), Facebook Share, fullstory (analytics), Google AdMob (advertisement), Google Firebase Analytics (analytics), Qualtrics, Sentry (crash reporting). A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.etsy.android/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "etsy",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "Read in a real browser because etsy.com rejects non-browser clients. The checked page did not state an explicit sale statement, so sale is not established.",
+        "Version 7.96.0 lists these sensitive Android permissions in its manifest: advertising ID, approximate location, camera, device accounts, microphone, precise location, read shared storage, write shared storage (Exodus Privacy, Sept. 21, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "Etsy",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.etsy.android",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.etsy.android",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "Etsy says it works with third-party advertising and marketing partners for interest-based advertising and links to more information and choices. Third-party finding (Exodus Privacy static analysis of version 7.96.0): code signatures for advertising SDKs were detected: Google AdMob. This shows an SDK is present in the app, not what data it sends.",
+        "analytics": "Etsy says it engages third-party companies such as research companies, analytics services and security providers to help operate, provide and advertise the Services. Third-party finding (Exodus Privacy static analysis of version 7.96.0): code signatures for analytics, crash-reporting or profiling SDKs were detected: AppsFlyer, Branch, Facebook Analytics, fullstory, Google Firebase Analytics, Sentry. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "Etsy says it collects and uses information to provide and improve its Services, protect their security and integrity, and comply with legal obligations.",
+        "controls": "Buyers and sellers can choose to make certain information and activities private through account or public profile settings; Etsy links to interest-based advertising choices.",
+        "deletion": "Etsy says it retains information only as long as necessary for its stated purposes, while the account is active, or as needed for legal obligations, internal policies or law.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "Etsy says it works with third-party advertising and marketing partners for interest-based advertising and engages analytics and other service providers, and lets users make some information private in settings.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Etsy says it engages third-party service providers who facilitate sharing of data between similar companies, such as retail companies, for purposes like fraud prevention and security.",
+        "sale": "Not established in the checked sources.",
+        "sharing": "Not established in the checked sources.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "Etsy says it works with third-party advertising and marketing partners for interest-based advertising and engages analytics and other service providers, and lets users make some information private in settings.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.etsy.com/"
+    }
+  ]
+}

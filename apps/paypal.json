@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "software": [
+    {
+      "accountRequired": true,
+      "alternativesFor": [],
+      "architecture": "Not published",
+      "backgroundActivity": "Not established in the checked sources",
+      "battery": "Unknown — no device-specific measurement included.",
+      "category": "Finance",
+      "description": "Payments and money transfer app.",
+      "developer": "PayPal, Inc.",
+      "downloadSize": "Not published",
+      "ecosystem": "OTHER",
+      "evidence": [
+        {
+          "claim": "PayPal's statement points to a section listing the precise data points and sources of personal information it collects.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "PayPal Privacy Statement",
+          "url": "https://www.paypal.com/us/legalhub/paypal/privacy-full",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "PayPal says it uses personal information for features such as syncing contacts, personalizing content and offers, targeted advertising, or connecting to third-party platforms.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "PayPal Privacy Statement",
+          "url": "https://www.paypal.com/us/legalhub/paypal/privacy-full",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "PayPal says it may share insights with partners and merchants to help improve their products and services.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "PayPal Privacy Statement",
+          "url": "https://www.paypal.com/us/legalhub/paypal/privacy-full",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "PayPal says it retains personal information for the least amount of time necessary where retention is advisable for litigation, investigations, audit and compliance, or to protect against legal claims.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "PayPal Privacy Statement",
+          "url": "https://www.paypal.com/us/legalhub/paypal/privacy-full",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "PayPal says it uses personal information for personalization and targeted advertising features and may share insights with partners and merchants.",
+          "classification": "DEVELOPER_DISCLOSED",
+          "source": "PayPal Privacy Statement",
+          "url": "https://www.paypal.com/us/legalhub/paypal/privacy-full",
+          "verified": "2026-09-23"
+        },
+        {
+          "claim": "Exodus Privacy static analysis of version 10.13.0 (report dated Sept. 20, 2026) found code signatures for 3 known tracker SDK(s): Adjust (analytics), Adobe Experience Cloud, Qualtrics. A signature shows the SDK is present, not what data it sends.",
+          "classification": "THIRD_PARTY_REPORTED",
+          "source": "Exodus Privacy report",
+          "url": "https://reports.exodus-privacy.eu.org/en/reports/com.paypal.android.p2pmobile/latest/",
+          "verified": "2026-09-23"
+        }
+      ],
+      "fdroidUrl": "",
+      "features": [],
+      "id": "paypal",
+      "internetRequirement": "Not established in the checked sources",
+      "lastVerified": "2026-09-23",
+      "limitations": [
+        "Version 10.13.0 lists these sensitive Android permissions in its manifest: approximate location, biometrics, camera, contacts, microphone, nearby Bluetooth scanning, precise location, read shared storage (Exodus Privacy, Sept. 20, 2026); a declared permission does not show the data is collected or how it is used.",
+        "Assembled from the cited sources on the verification date; policies and app versions change."
+      ],
+      "minimumAndroid": "Not published",
+      "name": "PayPal",
+      "networkActivity": "Not established in the checked sources",
+      "offline": null,
+      "openSource": null,
+      "packageName": "com.paypal.android.p2pmobile",
+      "platforms": [
+        "ANDROID"
+      ],
+      "playUrl": "https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile",
+      "pricing": "Not established in the checked sources",
+      "privacyDetails": {
+        "advertising": "PayPal says it uses personal information for features such as syncing contacts, personalizing content and offers, targeted advertising, or connecting to third-party platforms. Third-party finding (Exodus Privacy static analysis of version 10.13.0): no advertising SDK signatures were detected; absence of a signature does not prove none is used.",
+        "analytics": "Third-party finding (Exodus Privacy static analysis of version 10.13.0): code signatures for analytics, crash-reporting or profiling SDKs were detected: Adjust. This shows an SDK is present in the app, not what data it sends.",
+        "collected": "PayPal's statement points to a section listing the precise data points and sources of personal information it collects.",
+        "controls": "Not established in the checked sources.",
+        "deletion": "PayPal says it retains personal information for the least amount of time necessary where retention is advisable for litigation, investigations, audit and compliance, or to protect against legal claims.",
+        "encryption": "Not established in the checked sources.",
+        "practicalImplications": "PayPal says it uses personal information for personalization and targeted advertising features and may share insights with partners and merchants.",
+        "purpose": "Not established in the checked sources.",
+        "recipients": "Not established in the checked sources.",
+        "sale": "Not established in the checked sources.",
+        "sharing": "PayPal says it may share insights with partners and merchants to help improve their products and services.",
+        "tracking": "Not established in the checked sources."
+      },
+      "privacySummary": "PayPal says it uses personal information for personalization and targeted advertising features and may share insights with partners and merchants.",
+      "ramRequirement": "Not published",
+      "requirementEvidence": "Android version, architecture, download and installed footprint not established by the checked sources",
+      "sourceRepo": "",
+      "storageRequirement": "Not published",
+      "website": "https://www.paypal.com/"
+    }
+  ]
+}
