@@ -1,0 +1,24 @@
+# Issue form for Privacy Compass research requests. The Android app links here with
+# ?template=research-request.yml and prefills the fields `package`, `name` and `type`.
+name: Research request
+description: Ask Privacy Compass to research an Android app
+title: "Research request: "
+labels: ["research-request"]
+body:
+  - type: markdown
+    attributes:
+      value: "Only the app name and package name are needed. Never paste your installed-app list or personal information. Requests do not buy priority and do not guarantee publication."
+  - type: input
+    id: package
+    attributes: { label: Package name, placeholder: com.example.app }
+    validations: { required: true }
+  - type: input
+    id: name
+    attributes: { label: Application name }
+    validations: { required: true }
+  - type: dropdown
+    id: type
+    attributes:
+      label: Request type
+      options: [privacy-research, recognition-and-research]
+    validations: { required: true }
